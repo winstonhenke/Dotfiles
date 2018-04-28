@@ -8,7 +8,7 @@
 PS1='[\u@\h \W]\$ '
 
 #Add to the PATH var
-export PATH="${PATH}:$HOME/bin"
+export PATH="${PATH}:$HOME/Bin"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

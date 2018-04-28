@@ -5,7 +5,7 @@
 What it does
 
 * Stores dotfiles in a Git bare repository
-* Use an alias so that Git commands are ran against the repo but files are tracked from $HOME
+* Uses an alias so that Git commands run against the repo but files are tracked from $HOME
 * Eliminates the need for symbolic links like I was using before
 
 Referenced these two guides
@@ -15,7 +15,7 @@ Referenced these two guides
 
 Notes
 
-* I don't really like having this in my home directory but I'm not sure if Github will display it properly if it isn't in the root of the working directory($HOME) and named README.md
+* I don't really like having the README.md in my home directory but I'm not sure if Github will display it properly if it isn't in the root of the working directory($HOME) and named README.md
 
 ## Setup
 
@@ -27,7 +27,7 @@ Created a dot alias in $HOME/.bashrc
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 ```
 
-Create and configure a bare repository in $HOME/.dotfiles
+Created and configured a bare repository in $HOME/.dotgit
 
 ```plain text
 git init --bare $HOME/.dotgit

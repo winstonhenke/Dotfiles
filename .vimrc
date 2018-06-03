@@ -1,7 +1,5 @@
-" This is a collection of settings I have stolen from other people
-" one the internet.
-
-" ====================================================
+" This is a collection of settings I have stolen from other people on the internet.
+" ==================================================================================
 
 " Use Vim settings, rather then Vi settings 
 " This must be first, because it changes other options as a side effect.

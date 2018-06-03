@@ -3,12 +3,18 @@
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+#[[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 
-#Add to the PATH var
-export PATH="${PATH}:$HOME/Bin"
+#Set PATH var
+#/opt/local/* is for MacPorts
+export PATH="/opt/local/bin:/opt/local/sbin:${PATH}:$HOME/Bin"
+
+#Ansi colors in iTerm2
+export CLICOLOR=1
+
+export TERM=xterm-256color
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -28,31 +34,8 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
-#force_color_prompt=yes
-
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
-
 #Aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

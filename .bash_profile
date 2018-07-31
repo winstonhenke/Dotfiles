@@ -1,14 +1,20 @@
 #
-# ~/.bashrc
+#       ~/.bash_profile
+#       Normally on most Linux machines .bash_profile is executed for login
+#       shells while .bashrc is executed for interactive non-login shells
+#       But on OS X, Terminal by default runs a login shell every time. So if
+#       I want to use this config on a noraml Linux distribution again I'll probably
+#       want to sym link this file to a ~/.bashrc
 #
 
 # If not running interactively, don't do anything
+# I don't remember what I was using this for...
 #[[ $- != *i* ]] && return
 
 #PS1='[\u@\h \W]\$ '
 
 #Set PATH var
-#/opt/local/* is for MacPorts
+#/opt/local/* is for MacPorts, I want these before the original PATH so they take precedence
 export PATH="/opt/local/bin:/opt/local/sbin:${PATH}:$HOME/Bin"
 
 #Ansi colors in iTerm2
@@ -36,14 +42,6 @@ shopt -s checkwinsize
 
 #Aliases
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

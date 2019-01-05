@@ -1,6 +1,7 @@
 The following ports are currently installed:
   bash @4.4.23_0 (active)
   bash-completion @2.8_0 (active)
+  git @2.20.1_0+credential_osxkeychain+diff_highlight+doc+pcre+perl5_26 (active)
   less @530_0+pcre (active)
   nodejs8 @8.15.0_0 (active)
   npm6 @6.5.0_0 (active)

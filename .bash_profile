@@ -44,15 +44,35 @@ shopt -s checkwinsize
 #Aliases
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
+# Bash tab completion
+# shopt == SHell OPTions - builtin command to enable/disable/view options for the current bash shell
+# I'm not really sure why I'm checking if Bash is in posix mode...It's something I copy and pasted a long time ago
 if ! shopt -oq posix; then
-  if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then   # MacOS - Bash installed with Macports
     . /opt/local/etc/profile.d/bash_completion.sh
-  elif [ -f /usr/share/bash-completion/bash_completion ]; then
+  elif [ -f /usr/share/bash-completion/bash_completion ]; then  # Arch Linux
     . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
+  elif [ -f /etc/bash_completion ]; then                        # Ubuntu Linux
     . /etc/bash_completion
   fi
 fi
+
+# Git Bash completion
+# Installing Git with Macports this seems to just work.
+# It did install /opt/local/share/git/contrib/completion/git-completion.bash
+# I did find it odd that this wasn't listed as a Macports variant, made it less obvious this was included.
+# I'm still not sure how git-completion.bash is getting executed on each terminal session since it's not listed here.
+
+# Docker Bash completion
+# MacOS - I installed Docker by just downloading the .dmg from docker.com. It was givng me issues when installing through Macports.
+docker_bash_completion_path="/Applications/Docker.app/Contents/Resources/etc"
+if [ -f ${docker_bash_completion_path}/docker.bash-completion ]; then
+  . ${docker_bash_completion_path}/docker.bash-completion
+fi
+if [ -f ${docker_bash_completion_path}/docker-compose.bash-completion ]; then
+  . ${docker_bash_completion_path}/docker-compose.bash-completion
+fi
+if [ -f ${docker_bash_completion_path}/docker-machine.bash-completion ]; then
+  . ${docker_bash_completion_path}/docker-machine.bash-completion
+fi
+

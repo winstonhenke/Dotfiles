@@ -12,6 +12,7 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set autoread                    "Reload files changed outside vim
+set ruler                       "Show line number and column in status bar
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.

@@ -16,7 +16,7 @@ PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]HBC\[\033[m\]@\[\033[32m\]\h:\[\033[33
 
 #Set PATH var
 #/opt/local/* is for MacPorts, I want these before the original PATH so they take precedence
-export PATH="/opt/local/bin:/opt/local/sbin:${PATH}:$HOME/Bin"
+export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:${PATH}:$HOME/Bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1

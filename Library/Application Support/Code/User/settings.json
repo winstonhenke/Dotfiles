@@ -29,6 +29,7 @@
         "graig",
         "helloworld",
         "hosnamectl",
+        "kubectl",
         "lifecycle",
         "macports",
         "mkdir",
@@ -55,12 +56,10 @@
     ],
     "breadcrumbs.enabled": true,
     "editor.renderWhitespace": "none",
-    "vsicons.projectDetection.disableDetect": true,
     "files.exclude": {
         "**/.git": false,
         "**/.svn": false
     },
-    "workbench.iconTheme": "vscode-icons",
     "explorer.confirmDelete": false,
     "extensions.ignoreRecommendations": false,
     "window.restoreWindows": "none",
@@ -69,5 +68,5 @@
         "vs-kubernetes.draft-path": "/Users/whenke/.vs-kubernetes/tools/draft/darwin-amd64/draft",
         "vs-kubernetes.minikube-path": "/Users/whenke/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Visual Studio Dark"
 }

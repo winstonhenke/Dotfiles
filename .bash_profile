@@ -15,8 +15,7 @@
 PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]HBC\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
 #Set PATH var
-#/opt/local/* is for MacPorts, I want these before the original PATH so they take precedence
-export PATH="/usr/local/bin:/opt/local/bin:/opt/local/sbin:${PATH}:$HOME/Bin"
+export PATH="/usr/local/bin:${PATH}:$HOME/Bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1
@@ -48,20 +47,14 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 # shopt == SHell OPTions - builtin command to enable/disable/view options for the current bash shell
 # I'm not really sure why I'm checking if Bash is in posix mode...It's something I copy and pasted a long time ago
 if ! shopt -oq posix; then
-  if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then   # MacOS - Bash installed with Macports
-    . /opt/local/etc/profile.d/bash_completion.sh
+  if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then   # MacOS - Bash & Bash-Completion installed with HomeBrew
+    . /usr/local/etc/profile.d/bash_completion.sh
   elif [ -f /usr/share/bash-completion/bash_completion ]; then  # Arch Linux
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then                        # Ubuntu Linux
     . /etc/bash_completion
   fi
 fi
-
-# Git Bash completion
-# Installing Git with Macports this seems to just work.
-# It did install /opt/local/share/git/contrib/completion/git-completion.bash
-# I did find it odd that this wasn't listed as a Macports variant, made it less obvious this was included.
-# I'm still not sure how git-completion.bash is getting executed on each terminal session since it's not listed here.
 
 # Docker Bash completion
 # MacOS - I installed Docker by just downloading the .dmg from docker.com. It was givng me issues when installing through Macports.

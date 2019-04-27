@@ -16,12 +16,14 @@ Referenced these two guides
 Notes
 
 * I don't really like having the README.md in my home directory but I'm not sure if Github will display it properly if it isn't in the root of the working directory($HOME) and named README.md
+* MacOS uses .bash_profile, Linux uses .bashrc. May need to update some commands below accordingly
+* Don't try use dot add . on tracked changes. It will try add everything under ~/
 
 ## Setup
 
 ### Original creation
 
-Created a dot alias in $HOME/.bashrc
+Created a dot alias in $HOME/.bash_profile
 
 ```plain text
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
@@ -35,15 +37,15 @@ dot config --local status.showUntrackedFiles no
 dot status
 dot add .vimrc
 dot commit -m "Add vimrc"
-dot add .bashrc
-dot commit -m "Add bashrc"
+dot add .bash_profile
+dot commit -m "Add bash_profile"
 dot remote add origin https://github.com/winstonhenke/Dotfiles.git
 dot push origin master
 ```
 
 ### How to use on a new system
 
-Create a dot alias in $HOME/.bashrc
+Create a dot alias in $HOME/.bash_profile
 
 ```plain text
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
@@ -64,7 +66,7 @@ dot config --local status.showUntrackedFiles no
 Copy all dotfiles from $HOME/dotgit-tmp into $HOME
 
 ```plain text
-cp $HOME/dotgit-tmp/.bashrc $HOME
+cp $HOME/dotgit-tmp/.bash_profile $HOME
 cp $HOME/dotgit-tmp/.vimrc $HOME
 ```
 

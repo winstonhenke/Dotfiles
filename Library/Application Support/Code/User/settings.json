@@ -1,9 +1,5 @@
 {
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
     "gitlens.currentLine.enabled": false,
-    "git.enableSmartCommit": true,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "workbench.statusBar.feedback.visible": false,
@@ -58,15 +54,11 @@
     "editor.renderWhitespace": "none",
     "files.exclude": {
         "**/.git": false,
-        "**/.svn": false
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false
     },
     "explorer.confirmDelete": false,
-    "extensions.ignoreRecommendations": false,
     "window.restoreWindows": "none",
-    "vs-kubernetes": {
-        "vs-kubernetes.helm-path": "/Users/whenke/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vs-kubernetes.draft-path": "/Users/whenke/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-        "vs-kubernetes.minikube-path": "/Users/whenke/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
     "workbench.colorTheme": "Visual Studio Dark"
 }

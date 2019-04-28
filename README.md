@@ -68,6 +68,7 @@ Copy all dotfiles from $HOME/dotgit-tmp into $HOME
 ```plain text
 cp $HOME/dotgit-tmp/.bash_profile $HOME
 cp $HOME/dotgit-tmp/.vimrc $HOME
+etc..
 ```
 
 Remove the temp folder

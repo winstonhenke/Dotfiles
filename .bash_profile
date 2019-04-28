@@ -42,6 +42,12 @@ shopt -s checkwinsize
 #Aliases
 alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 
+##########################################################################################
+###
+### Bash Completion
+###
+##########################################################################################
+
 # Bash tab completion
 # shopt == SHell OPTions - builtin command to enable/disable/view options for the current bash shell
 # I'm not really sure why I'm checking if Bash is in posix mode...It's something I copy and pasted a long time ago
@@ -54,6 +60,8 @@ if ! shopt -oq posix; then
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then                        # Ubuntu Linux
     . /etc/bash_completion
+  else
+    echo "Bash completion script not found"
   fi
 fi
 
@@ -63,24 +71,33 @@ fi
 docker_bash_completion_path="/Applications/Docker.app/Contents/Resources/etc"
 if [ -f ${docker_bash_completion_path}/docker.bash-completion ]; then
   . ${docker_bash_completion_path}/docker.bash-completion
+else
+  echo "Bash completion script not found for - docker"
 fi
 if [ -f ${docker_bash_completion_path}/docker-compose.bash-completion ]; then
   . ${docker_bash_completion_path}/docker-compose.bash-completion
+else
+  echo "Bash completion script not found for - docker-compose"
 fi
 if [ -f ${docker_bash_completion_path}/docker-machine.bash-completion ]; then
   . ${docker_bash_completion_path}/docker-machine.bash-completion
+else
+  echo "Bash completion script not found for - docker-machine"
 fi
 
-# bash parameter completion for the dotnet CLI
-_dotnet_bash_complete()
-{
-  local word=${COMP_WORDS[COMP_CWORD]}
+# Dotnet Bash completion
+dotnetBashCompletion="$HOME"'/.bash_completion.d/dotnet-completion.bash'
+if [ -f $dotnetBashCompletion ]; then
+  . $dotnetBashCompletion
+else
+  echo "Bash completion script not found for - dotnet"
+fi
 
-  local completions
-  completions="$(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}")"
-
-  COMPREPLY=( $(compgen -W "$completions" -- "$word") )
-}
-
-complete -F _dotnet_bash_complete dotnet
+# Git Bash completion
+gitBashCompletion=`brew --prefix`/etc/bash_completion.d/git-completion.bash
+if [ -f $gitBashCompletion ]; then
+  . $gitBashCompletion
+else
+  echo "Bash completion script not found for - git"
+fi
 

@@ -76,4 +76,26 @@ Remove the temp folder
 rm -r $HOME/dotgit-tmp
 ```
 
-That's it. Use the alias for entering git commands. All files tracked this way are versioned right from $HOME, no messing around creating symlinks. 
+That's it. Use the alias for entering git commands. All files tracked this way are versioned right from $HOME, no messing around creating symlinks.
+
+### Notes
+
+After installing Bash with Brew make sure to update /etc/shells and set your default shell.
+
+```bash
+brew install bash
+sudo vim /etc/shells
+
+# add to last line
+/usr/local/bin/bash
+
+#Set the shell for the current user
+chsh -s /usr/local/bin/bash $USER
+
+#Might as well do it for root too
+sudo chsh -s /usr/local/bin/bash root # this will set for the current user.
+
+#Quit iTerm and reopen it
+#Verify your version
+echo $BASH_VERSION #bash --version will just tell you what your PATH has set, not what you are actually running
+```

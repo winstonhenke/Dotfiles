@@ -48,6 +48,8 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 # I'm not really sure why I'm checking if Bash is in posix mode...It's something I copy and pasted a long time ago
 if ! shopt -oq posix; then
   if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then   # MacOS - Bash & Bash-Completion installed with HomeBrew
+    # Having issues? Make sure iTerm is running the correct version of Bash (echo $BASH_VERSION)
+    #Installing bash with HomeBrew does not set this appropriately and the bash completion scripts have dependencies on the bash version using them
     . /usr/local/etc/profile.d/bash_completion.sh
   elif [ -f /usr/share/bash-completion/bash_completion ]; then  # Arch Linux
     . /usr/share/bash-completion/bash_completion
@@ -57,7 +59,8 @@ if ! shopt -oq posix; then
 fi
 
 # Docker Bash completion
-# MacOS - I installed Docker by just downloading the .dmg from docker.com. It was givng me issues when installing through Macports.
+# MacOS - I installed Docker by just downloading the .dmg from docker.com
+# Currently theses bash completion scripts get installed without the execution flag so double check they have that on
 docker_bash_completion_path="/Applications/Docker.app/Contents/Resources/etc"
 if [ -f ${docker_bash_completion_path}/docker.bash-completion ]; then
   . ${docker_bash_completion_path}/docker.bash-completion

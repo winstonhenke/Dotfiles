@@ -71,3 +71,16 @@ if [ -f ${docker_bash_completion_path}/docker-machine.bash-completion ]; then
   . ${docker_bash_completion_path}/docker-machine.bash-completion
 fi
 
+# bash parameter completion for the dotnet CLI
+_dotnet_bash_complete()
+{
+  local word=${COMP_WORDS[COMP_CWORD]}
+
+  local completions
+  completions="$(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}")"
+
+  COMPREPLY=( $(compgen -W "$completions" -- "$word") )
+}
+
+complete -F _dotnet_bash_complete dotnet
+

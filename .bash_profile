@@ -12,6 +12,7 @@
 
 #PS1='[\u@\h \W]\$ '
 PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]HBC\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 #Set PATH var
 export PATH="/usr/local/bin:${PATH}:$HOME/Bin"
@@ -45,6 +46,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 ##########################################################################################
 ###
 ### Bash Completion
+### Some commands below require realpath be installed with coreutils. See Brewfile.
 ###
 ##########################################################################################
 
@@ -69,35 +71,62 @@ fi
 # MacOS - I installed Docker by just downloading the .dmg from docker.com
 # Currently theses bash completion scripts get installed without the execution flag so double check they have that on
 docker_bash_completion_path="/Applications/Docker.app/Contents/Resources/etc"
-if [ -f ${docker_bash_completion_path}/docker.bash-completion ]; then
-  . ${docker_bash_completion_path}/docker.bash-completion
+docker_bash_completion="$docker_bash_completion_path/docker.bash-completion"
+docker_compose_bash_completion="$docker_bash_completion_path/docker-compose.bash-completion"
+docker_machine_bash_completion="$docker_bash_completion_path/docker-machine.bash-completion"
+#Docker
+if [[ -f $docker_bash_completion && -x $(realpath $docker_bash_completion) ]]; then
+  . $docker_bash_completion
 else
-  echo "Bash completion script not found for - docker"
+  echo "Script either not found or isn't executable - Docker Completion"
+  echo "Script: $docker_bash_completion"
 fi
-if [ -f ${docker_bash_completion_path}/docker-compose.bash-completion ]; then
-  . ${docker_bash_completion_path}/docker-compose.bash-completion
+#Docker-Compose
+if [[ -f $docker_compose_bash_completion && -x $(realpath $docker_compose_bash_completion) ]]; then
+  . $docker_compose_bash_completion
 else
-  echo "Bash completion script not found for - docker-compose"
+  echo "Script either not found or isn't executable - Docker-Compose Completion"
+  echo "Script: $docker_compose_bash_completion"
 fi
-if [ -f ${docker_bash_completion_path}/docker-machine.bash-completion ]; then
-  . ${docker_bash_completion_path}/docker-machine.bash-completion
+#Docker-Machine
+if [[ -f $docker_machine_bash_completion && -x $(realpath $docker_machine_bash_completion) ]]; then
+  . $docker_machine_bash_completion
 else
-  echo "Bash completion script not found for - docker-machine"
+  echo "Script either not found or isn't executable - Docker-Machine Completion"
+  echo "Script: $docker_machine_bash_completion"
 fi
 
 # Dotnet Bash completion
-dotnetBashCompletion="$HOME"'/.bash_completion.d/dotnet-completion.bash'
-if [ -f $dotnetBashCompletion ]; then
-  . $dotnetBashCompletion
+# Installed with dotfiles git repo
+dotnet_bash_completion="$HOME"'/.bash_completion.d/dotnet-completion.bash'
+if [[ -f $dotnet_bash_completion && -x $(realpath $dotnet_bash_completion) ]]; then
+  . $dotnet_bash_completion
 else
-  echo "Bash completion script not found for - dotnet"
+  echo "Script either not found or isn't executable - Dotnet Completion"
+  echo "Script: $dotnet_bash_completion"
 fi
 
 # Git Bash completion
-gitBashCompletion=`brew --prefix`/etc/bash_completion.d/git-completion.bash
-if [ -f $gitBashCompletion ]; then
-  . $gitBashCompletion
+git_bash_completion=`brew --prefix`/etc/bash_completion.d/git-completion.bash
+git_bash_prompt=`brew --prefix`/etc/bash_completion.d/git-prompt.sh
+if [[ -f $git_bash_completion && -x $(realpath $git_bash_completion) ]]; then
+  . $git_bash_completion
 else
-  echo "Bash completion script not found for - git"
+  echo "Script either not found or isn't executable - Git Completion"
+  echo "Script: $git_bash_completion"
+fi
+if [[ -f $git_bash_prompt && -x $(realpath $git_bash_prompt) ]]; then
+  . $git_bash_prompt
+else
+  echo "Script either not found or isn't executable - Git Bash Prompt"
+  echo "Script: $git_bash_prompt"
 fi
 
+# Brew Bash completion
+brew_bash_completion=`brew --prefix`/etc/bash_completion.d/brew
+if [[ -f $brew_bash_completion && -x $(realpath $brew_bash_completion) ]]; then
+  . $brew_bash_completion
+else
+  echo "Script either not found or isn't executable - Brew Completion"
+  echo "Script: $brew_bash_completion"
+fi

@@ -66,5 +66,6 @@
     },
     "explorer.confirmDelete": false,
     "window.restoreWindows": "none",
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "vscode-icons"
 }

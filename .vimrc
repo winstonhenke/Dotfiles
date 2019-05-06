@@ -29,6 +29,10 @@ syntax on
 " the plugins.
 let mapleader=","
 
+" ================ Status Line ======================
+
+set statusline=2
+
 " ================ Turn Off Swap Files ==============
 
 "set noswapfile

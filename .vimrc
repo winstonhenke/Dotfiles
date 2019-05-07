@@ -41,14 +41,13 @@ set statusline=2
 
 " ================ Indentation ======================
 
-set autoindent
-set smartindent
+set autoindent      "Copy indent from current line when starting a new line
+set smartindent     "Do smart autoindenting when starting a new line. For some dumb reason this indent is removd when the first char is 
 set smarttab
-set shiftwidth=8    "to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation
-set softtabstop=8   "to control how many columns vim uses when you hit Tab in insert mode
-set tabstop=8       "to tell vim how many columns a tab counts for
-
-set expandtab
+set shiftwidth=4    "to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation
+set softtabstop=4   "to control how many columns vim uses when you hit Tab in insert mode
+set tabstop=4       "to tell vim how many columns a tab counts for
+set noexpandtab		"Things like a makefile treat tabs differently than spaces and that's not an issue I want be banging my head against
 
 "filetype plugin on
 "filetype indent on

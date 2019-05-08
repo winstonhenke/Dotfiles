@@ -1,0 +1,4 @@
+[color]
+	ui = auto
+[credential]
+	helper = osxkeychain

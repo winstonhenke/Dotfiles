@@ -41,19 +41,20 @@ set statusline=2
 
 " ================ Indentation ======================
 
-set autoindent      "Copy indent from current line when starting a new line
-set smartindent     "Do smart autoindenting when starting a new line. For some dumb reason this indent is removd when the first char is 
+set autoindent			"Copy indent from current line when starting a new line
+set smartindent			"Do smart autoindenting when starting a new line. For some dumb reason this indent is removed when the first char is a '#'
 set smarttab
-set shiftwidth=4    "to control how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation
-set softtabstop=4   "to control how many columns vim uses when you hit Tab in insert mode
-set tabstop=4       "to tell vim how many columns a tab counts for
-set noexpandtab		"Things like a makefile treat tabs differently than spaces and that's not an issue I want be banging my head against
+"set softtabstop=4		"Number of spaces that a <Tab> counts for while performing editing operations. I'm using tabs though so this isn't really applicable
+set shiftwidth=4		"Number of spaces to use for each step of (auto)indent. It's recommended to just set this equal to tabstop when using hard tabs
+set tabstop=4			"Number of spaces that a <Tab> in the file counts for. So, when Vim opens a file and reads a <TAB> character, it uses that many spaces to visually show the <TAB>.
+set noexpandtab			"Things like a makefile treat tabs differently than spaces and that's not an issue I want be banging my head against
 
 "filetype plugin on
 "filetype indent on
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
+set list
+set listchars=tab:>-,space:·,trail:·,extends:>,precedes:<
 
 set nowrap          "Don't wrap lines
 "set linebreak      "Wrap lines at convenient points

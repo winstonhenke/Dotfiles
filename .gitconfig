@@ -2,3 +2,5 @@
 	ui = auto
 [credential]
 	helper = osxkeychain
+[core]
+	editor = vim

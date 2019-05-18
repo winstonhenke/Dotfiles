@@ -51,12 +51,15 @@ PROMPT_COMMAND=prompt_command
 
 
 #Set PATH var
-export PATH="/usr/local/bin:${PATH}:$HOME/Bin"
+export PATH="/usr/local/bin:${PATH}:$HOME/bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1
 
 export TERM=xterm-256color
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

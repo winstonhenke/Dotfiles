@@ -44,7 +44,7 @@ __prompt_command ()
 		#·This·gets·set·in·__git_ps1 but it still needs to be exported
 		export PS1
 	else
-		echo·"Warning·from·.bashrc·-·Bash·function·__git_ps1·not·found.·This·is·usually·installed·with·Git·along·side·the·bash-git-completion script"
+		echo "Warning from .bashrc - Bash·function __git_ps1 not found. This is usually installed with Git along side the bash-git-completion script"
 	fi
 }
 

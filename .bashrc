@@ -6,49 +6,8 @@
 # Might have weird encoding issues if this isn't set so just verify it
 if [[ $LANG != "en_US.UTF-8" ]]; then echo "Warning Lang not set to en_US.UTF-8"; fi
 
-# The contents of the PROMPT_COMMAND variable are executed as a regular Bash command just before Bash displays a prompt
-prompt_command () {
-	if [[ $? -eq 0 ]]; then # set an error string for the prompt, if applicable
-		ERRPROMPT=""
-	else
-		ERRPROMPT='Exit Status->($?)'
-	fi
-	if type -t __git_ps1 > /dev/null 2>&1; then # if we're in a Git repo, show current branch
-		BRANCH="$(__git_ps1 '[ %s ]')"
-	else
-		echo "Warning from .bashrc - Bash function __git_ps1 not found. This is usually installed with Git along side the bash-git-completion script"
-	fi
-
-	#Colors used in PS1
-	local DEFAULT=$'\[\u001B[0;39m\]'
-	local GREEN=$'\[\u001B[0;32m\]'
-	local CYAN=$'\[\u001B[0;36m\]'
-	local BCYAN=$'\[\u001B[1;36m\]'
-	local BLUE=$'\[\u001B[0;34m\]'
-	local GRAY=$'\[\u001B[0;37m\]'
-	local DKGRAY=$'\[\u001B[1;30m\]'
-	local WHITE=$'\[\u001B[1;37m\]'
-	local MAGENTA=$'\[\u001B[35m\]'
-	local RED=$'\[\u001B[0;31m\]'
-	local BYELLOW=$'\[\u001B[33;1m\]'
-
-	#Unicode symbols used in PS1
-	local HOME=$'\u2302'		# Home
-
-	PS1="${MAGENTA}\n\@-"			# The current time in 12-hour am/pm format
-	PS1+="${DEFAULT}${BRANCH}-"		# Show Git stuff. Not sure why I'm not getting the colors. See GIT_PS1_SHOWCOLORHINTS below.
-	PS1+="${DEFAULT}-"
-	PS1+="${CYAN}HBC"
-	PS1+="${DEFAULT}@"
-	PS1+="${GREEN}\h:"				# The hostname up to the first `.' followed by colon
-	PS1+="${BYELLOW}\w"				# The current working directory, with $HOME abbreviated with a tilde
-	PS1+="${DEFAULT}\n$"			# Newline
-
-	export PS1
-}
-
-PROMPT_COMMAND=prompt_command
-
+# All PROMPT_COMMAND and PS1 configuration
+source "${HOME}/.bash_ps1.sh"
 
 #Set PATH var
 export PATH="/usr/local/bin:${PATH}:$HOME/bin"

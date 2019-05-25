@@ -21,6 +21,7 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+colorscheme desert
 
 " The <Leader> key is mapped to \ by default. So if you have a map of <Leader>t, you can execute it by default with \+t. For more detail or re-assigning it using the mapleader variable, see :help leader
 " Change leader to a comma because the backslash is too far away
@@ -28,6 +29,11 @@ syntax on
 " The mapleader has to be set before vundle starts loading all 
 " the plugins.
 let mapleader=","
+
+" ================ Mappings =========================
+
+"To generate Escape, jj has to be typed quickly. :help 'timeout'
+:imap jj <Esc>
 
 " ================ Status Line ======================
 

@@ -32,11 +32,10 @@ __prompt_command ()
 		ps1_start+="${DEFAULT}-${DEFAULT}"
 		ps1_start+="${GREEN}\h${DEFAULT}"		# The·hostname·up·to·the·first '.'
 		ps1_start+="${DEFAULT}-${DEFAULT}"
-		ps1_start+="${CYAN}HBC${DEFAULT}"
-		ps1_start+="${DEFAULT}-${DEFAULT}"
+		ps1_start+="${CYAN}\u${DEFAULT}"
 
 		ps1_end="${BYELLOW}\w${DEFAULT}"		# The·current·working·directory,·with·$HOME·abbreviated·with·a·tilde
-		ps1_end+="\n$ "
+		ps1_end+="\n\$"							# If you are not root, inserts a "$"; if you are root, you get a "#"  (root uid = 0)
 
 		# __git_ps1 will set PS1 appending and prepending it with the two parameters passed in
 		__git_ps1 $ps1_start $ps1_end
@@ -49,6 +48,3 @@ __prompt_command ()
 }
 
 PROMPT_COMMAND=__prompt_command
-
-
-

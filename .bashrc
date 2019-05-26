@@ -9,7 +9,7 @@ if [[ $LANG != "en_US.UTF-8" ]]; then echo "Warning Lang not set to en_US.UTF-8"
 # All PROMPT_COMMAND and PS1 configuration
 source "${HOME}/.bash_ps1.sh"
 
-#Set PATH var
+#Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
 export PATH="/usr/local/bin:${PATH}:$HOME/bin"
 
 #Ansi colors in iTerm2
@@ -39,7 +39,7 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 #Aliases
-alias dot='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 
 ##########################################################################################
 ###
@@ -63,7 +63,7 @@ load_script () {
 		# Could just use script_real_path here too I guess but most docs just use the symlink
 		source $script_path
 	else
-		printf "Issue loading script into .bashrc\n\tscript_path: $script_path\n\tscript_real_path: $script_real_path\n\tVerify the paths are valid and that the current user had read permission on the file"
+		printf "[~/.bashrc] Issue loading script into .bashrc\n\tscript_path: $script_path\n\tscript_real_path: $script_real_path\n\tVerify the paths are valid and that the current user had read permission on the file"
 	fi
 }
 
@@ -86,12 +86,12 @@ load_script "$HOME"'/.bash_completion.d/dotnet-completion.bash'
 load_script `brew --prefix`"/etc/bash_completion.d/git-completion.bash"
 load_script `brew --prefix`"/etc/bash_completion.d/git-prompt.sh"
 #Configuration for git-prompt.sh
-GIT_PS1_SHOWDIRTYSTATE='y'		# unstaged (*) and staged (+) changes will be shown next to the branch name
-GIT_PS1_SHOWSTASHSTATE='y'		# If something is stashed, then a '$' will be shown next to the branch name.
-GIT_PS1_SHOWUNTRACKEDFILES='y'	# If there're untracked files, then a '%' will be shown next to the branch name.
-GIT_PS1_SHOWUPSTREAM='auto'		# See the difference between HEAD and its upstream
-GIT_PS1_STATESEPARATOR='~'		# The separator between the branch name and the above state symbols
-GIT_PS1_SHOWCOLORHINTS='y'		# colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
+GIT_PS1_SHOWDIRTYSTATE='y'				# Unstaged (*) and staged (+) changes will be shown next to the branch name
+GIT_PS1_SHOWSTASHSTATE='y'				# If something is stashed, then a '$' will be shown next to the branch name.
+GIT_PS1_SHOWUNTRACKEDFILES='y'			# If there're untracked files, then a '%' will be shown next to the branch name.
+GIT_PS1_SHOWUPSTREAM='auto verbose'		# See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
+GIT_PS1_STATESEPARATOR=':'				# The separator between the branch name and the above state symbols
+GIT_PS1_SHOWCOLORHINTS='y'				# Colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
 
 # Brew Bash Completion
 load_script `brew --prefix`"/etc/bash_completion.d/brew"

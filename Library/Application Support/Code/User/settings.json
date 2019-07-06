@@ -67,5 +67,8 @@
     "explorer.confirmDelete": false,
     "window.restoreWindows": "none",
     "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.projectDetection.autoReload": true,
+    "team.showWelcomeMessage": false,
+    "terminal.integrated.shell.osx": "/usr/local/bin/bash"
 }

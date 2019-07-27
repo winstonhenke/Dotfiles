@@ -17,6 +17,7 @@
         "Untracked",
         "Whenke",
         "Xamarin",
+        "artifactstagingdirectory",
         "backend",
         "chsh",
         "cmdlet",
@@ -65,10 +66,13 @@
         "**/CVS": false
     },
     "explorer.confirmDelete": false,
-    "window.restoreWindows": "none",
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.iconTheme": "vscode-icons",
     "vsicons.projectDetection.autoReload": true,
     "team.showWelcomeMessage": false,
-    "terminal.integrated.shell.osx": "/usr/local/bin/bash"
+    "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+    "window.restoreWindows": "none",
+    "workbench.editor.restoreViewState": false,
+    "files.hotExit": "off",
+    "window.newWindowDimensions": "maximized"
 }

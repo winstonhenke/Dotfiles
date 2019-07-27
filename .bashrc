@@ -95,3 +95,5 @@ GIT_PS1_SHOWCOLORHINTS='y'				# Colored hint about the current dirty state.The c
 
 # Brew Bash Completion
 load_script `brew --prefix`"/etc/bash_completion.d/brew"
+# Azure CLI Bash Completion - Installev via Homebrew by default with az
+load_script `brew --prefix`"/etc/bash_completion.d/az"

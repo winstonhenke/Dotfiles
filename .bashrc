@@ -78,7 +78,8 @@ fi
 
 # Docker Bash Completion - MacOS - Installed using .dmg from docker.com
 load_script "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion"
-load_script "/Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion"
+# Docker Desktop now ships with built in k8s support for a single-node cluster. If I ever want to do local development on a multi-node cluster I'd likely need to install docker-machine
+#load_script "/Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion"
 load_script "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion"
 # Dotnet Bash Completion
 load_script "$HOME"'/.bash_completion.d/dotnet-completion.bash'

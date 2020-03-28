@@ -45,5 +45,7 @@
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
     "editor.suggest.statusBar.visible": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "git.confirmSync": false,
+    "git.autofetch": true
 }

@@ -29,7 +29,7 @@
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
     "window.restoreWindows": "none",
     "workbench.editor.restoreViewState": false,
-    "files.hotExit": "onExitAndWindowClose",
+    "files.hotExit": "off",
     "window.newWindowDimensions": "maximized",
     "vsicons.dontShowNewVersionMessage": true,
     "editor.tabCompletion": "on",
@@ -44,5 +44,6 @@
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
-    "editor.suggest.statusBar.visible": true
+    "editor.suggest.statusBar.visible": true,
+    "workbench.startupEditor": "newUntitledFile"
 }

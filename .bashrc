@@ -67,6 +67,11 @@ load_script () {
 	fi
 }
 
+
+# Better tab completion experience. show-all-if-ambiguous: This alters the default behavior of the completion functions. If set to ‘on’, words which have more than one possible completion cause the matches to be listed immediately instead of ringing the bell
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
 # Bash tab completion
 # shopt == SHell OPTions - builtin command to enable/disable/view options for the current bash shell
 # I'm not really sure why I'm checking if Bash is in posix mode...It's something I copy and pasted a long time ago

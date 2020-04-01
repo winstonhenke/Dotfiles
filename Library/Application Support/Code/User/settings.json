@@ -3,15 +3,18 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "cSpell.userWords": [
-        "terraform",
-        "whenke",
         "gitignore",
+        "lbip",
         "mkdir",
+        "naviplan",
         "netstandard",
+        "rabbitmq",
         "repo",
         "symlinks",
+        "terraform",
         "vimrc",
         "virtualbox",
+        "whenke",
         "winstonhenke"
     ],
     "breadcrumbs.enabled": true,
@@ -46,5 +49,8 @@
     "terminal.integrated.cursorBlinking": true,
     "editor.suggest.statusBar.visible": true,
     "git.confirmSync": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "editor.columnSelection": false,
+    "workbench.editor.showTabs": false,
+    "window.title": "${rootName}${separator}${activeEditorShort}"
 }

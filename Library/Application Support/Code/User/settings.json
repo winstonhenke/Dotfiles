@@ -52,5 +52,5 @@
     "git.autofetch": true,
     "editor.columnSelection": false,
     "workbench.editor.showTabs": false,
-    "window.title": "${rootName}${separator}${activeEditorShort}"
+    "window.title": "${rootName}"
 }

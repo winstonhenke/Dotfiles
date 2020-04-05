@@ -3,6 +3,7 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "cSpell.userWords": [
+        "advicent",
         "gitignore",
         "lbip",
         "mkdir",
@@ -52,5 +53,20 @@
     "git.autofetch": true,
     "editor.columnSelection": false,
     "workbench.editor.showTabs": false,
-    "window.title": "${rootName}"
+    "window.title": "${rootName}",
+    "terraform.indexing": {
+        "enabled": true,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "enabled": false,
+        "args": []
+    },
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fill"
 }

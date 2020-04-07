@@ -68,5 +68,6 @@
         "args": []
     },
     "editor.minimap.showSlider": "always",
-    "editor.minimap.size": "fill"
+    "editor.minimap.size": "fill",
+    "explorer.openEditors.visible": 20
 }

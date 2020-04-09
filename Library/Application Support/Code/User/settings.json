@@ -69,5 +69,7 @@
     },
     "editor.minimap.showSlider": "always",
     "editor.minimap.size": "fill",
-    "explorer.openEditors.visible": 20
+    "explorer.openEditors.visible": 20,
+    "gitlens.views.compare.files.layout": "tree",
+    "diffEditor.ignoreTrimWhitespace": false
 }

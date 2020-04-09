@@ -38,7 +38,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
-    "editor.find.autoFindInSelection": "always",
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "files.autoGuessEncoding": true,
@@ -71,5 +70,7 @@
     "editor.minimap.size": "fill",
     "explorer.openEditors.visible": 20,
     "gitlens.views.compare.files.layout": "tree",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.preset": "OTBS"
 }

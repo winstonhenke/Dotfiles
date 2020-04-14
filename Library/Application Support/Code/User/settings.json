@@ -54,7 +54,7 @@
     "workbench.editor.showTabs": false,
     "window.title": "${rootName}",
     "terraform.indexing": {
-        "enabled": true,
+        "enabled": false,
         "liveIndexing": false,
         "delay": 500,
         "exclude": [
@@ -63,7 +63,7 @@
         ]
     },
     "terraform.languageServer": {
-        "enabled": false,
+        "enabled": true,
         "args": []
     },
     "editor.minimap.showSlider": "always",
@@ -72,5 +72,7 @@
     "gitlens.views.compare.files.layout": "tree",
     "diffEditor.ignoreTrimWhitespace": false,
     "powershell.codeFormatting.autoCorrectAliases": true,
-    "powershell.codeFormatting.preset": "OTBS"
+    "powershell.codeFormatting.preset": "OTBS",
+    "editor.detectIndentation": false,
+    "debug.console.wordWrap": false
 }

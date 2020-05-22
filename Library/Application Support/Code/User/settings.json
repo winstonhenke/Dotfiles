@@ -49,7 +49,6 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "editor.columnSelection": false,
-    "workbench.editor.showTabs": false,
     "window.title": "${rootName}",
     "terraform.indexing": {
         "enabled": false,

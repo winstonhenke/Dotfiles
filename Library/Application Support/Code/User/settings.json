@@ -71,5 +71,6 @@
     "powershell.codeFormatting.autoCorrectAliases": true,
     "powershell.codeFormatting.preset": "OTBS",
     "editor.detectIndentation": false,
-    "debug.console.wordWrap": false
+    "debug.console.wordWrap": false,
+    "window.restoreWindows": "none"
 }

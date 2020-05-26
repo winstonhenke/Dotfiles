@@ -20,9 +20,10 @@
     "breadcrumbs.enabled": true,
     "editor.renderWhitespace": "all",
     "files.exclude": {
-        "**/.hg": false,
-        "**/.svn": false,
-        "**/CVS": false
+      "**/.git": false,
+      "**/.hg": false,
+      "**/.svn": false,
+      "**/CVS": false
     },
     "explorer.confirmDelete": false,
     "workbench.colorTheme": "Visual Studio Dark",
@@ -72,5 +73,13 @@
     "powershell.codeFormatting.preset": "OTBS",
     "editor.detectIndentation": false,
     "debug.console.wordWrap": false,
-    "window.restoreWindows": "none"
+    "window.restoreWindows": "none",
+    "editor.comments.insertSpace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.proseWrap": "never",
+    "search.exclude": {
+      "**/.DS_Store": true,
+      "**/.git": true
+    },
+    "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
 }

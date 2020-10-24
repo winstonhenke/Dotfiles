@@ -38,7 +38,6 @@
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
     "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
     "files.autoGuessEncoding": true,
     "explorer.autoReveal": false,
     "explorer.confirmDragAndDrop": false,
@@ -81,5 +80,11 @@
       "**/.DS_Store": true,
       "**/.git": true
     },
-    "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
+    "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    "salesforcedx-vscode-core.telemetry.enabled": false,
+    "workbench.editor.pinnedTabSizing": "compact",
+    "markdownlint.config": {
+      "default": true,
+      "MD004": {"style": "dash"}
+    }
 }

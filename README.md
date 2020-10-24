@@ -1,32 +1,40 @@
 # Dotfiles
 
-## Overview
-
 What it does
 
-* Stores dotfiles in a Git bare repository
-* Uses an alias so that Git commands run against the repo but files are tracked from $HOME
-* Eliminates the need for symbolic links like I was using before
+- Stores dotfiles in a Git bare repository
+- Uses an alias so that Git commands run against the repo but files are tracked from \$HOME
+- Eliminates the need for symbolic links like I was using before
 
 Referenced these two guides
 
-* [What do you use to manage dotfiles?](https://news.ycombinator.com/item?id=11071754)
-* [The best way to store your dotfiles: A bare Git repository](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
+- [What do you use to manage dotfiles?](https://news.ycombinator.com/item?id=11071754)
+- [The best way to store your dotfiles: A bare Git repository](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
+---
+
+## Usage
+
+Once setup use the `dot` alias from your home directory
+
+- `dot status`
+- `dot add -u` (you do not want to run add all)
+
+---
 
 ## Setup
 
-### Original creation
+### Original Creation
 
-Created a dot alias in $HOME/.bashrc
+Created a `dot` alias in `$HOME/.bashrc`
 
-```plain text
+```bash
 alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 ```
 
-Created and configured a bare repository in $HOME/.dotgit
+Created and configured a bare repository in `$HOME/.dotgit`
 
-```plain text
+```bash
 git init --bare $HOME/.dotgit
 dot config --local status.showUntrackedFiles no
 dot status
@@ -38,29 +46,29 @@ dot remote add origin https://github.com/winstonhenke/Dotfiles.git
 dot push origin master
 ```
 
-### How to use on a new system
+### Usage on New System
 
-Create a dot alias in $HOME/.bashrc
+Create a dot alias in `$HOME/.bashrc`
 
-```plain text
+```bash
 alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 ```
 
 Clone the repo, putting the working directory into a temp folder. The temp folder is needed to prevent some conflicts with existing/default dot files
 
-```plain text
+```bash
 git clone --separate-git-dir=$HOME/.dotgit https://github.com/winstonhenke/Dotfiles.git $HOME/dotgit-tmp
 ```
 
-Hide untracked files
+Hide un-tracked files
 
-```plain text
+```bash
 dot config --local status.showUntrackedFiles no
 ```
 
-Copy all dotfiles from $HOME/dotgit-tmp into $HOME
+Copy all dotfiles from `$HOME/dotgit-tmp` into `$HOME`
 
-```plain text
+```bash
 cp $HOME/dotgit-tmp/.bash_profile $HOME
 cp $HOME/dotgit-tmp/.bashrc $HOME
 cp $HOME/dotgit-tmp/.vimrc $HOME
@@ -69,15 +77,15 @@ etc..
 
 Remove the temp folder
 
-```plain text
+```bash
 rm -r $HOME/dotgit-tmp
 ```
 
-That's it. Use the alias for entering git commands. All files tracked this way are versioned right from $HOME, no messing around creating symlinks.
+That's it. Use the alias for entering git commands. All files tracked this way are versioned right from `$HOME`, no messing around creating symlinks.
 
 ### Notes
 
-After installing Bash with Brew make sure to update /etc/shells and set your default shell.
+After installing Bash with Brew make sure to update `/etc/shells` and set your default shell.
 
 ```bash
 brew install bash

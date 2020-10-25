@@ -19,6 +19,22 @@ Once setup use the `dot` alias from your home directory
 
 - `dot status`
 - `dot add -u` (you do not want to run add all)
+- `dot ls-files` - List all files being tracked
+
+---
+
+## HomeBrew Notes
+
+Commands
+
+- `brew help`
+- `brew deps --tree --installed`
+- `brew info python`
+- `brew outdated`
+- `brew update` - Fetch the newest version of Homebrew and all formulae from GitHub
+- `brew list` - List all installed formulae or casks
+  - `brew list --full-name --versions --verbose`
+- `brew bundle dump --force --file ~/.brew/Brewfile` - Write all installed casks/formulae/images/taps into a Brewfile
 
 ---
 

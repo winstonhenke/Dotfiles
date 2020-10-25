@@ -3,6 +3,7 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "cSpell.userWords": [
+      "Brewfile",
       "Hostnames",
       "gitignore",
       "lbip",
@@ -86,5 +87,11 @@
     "markdownlint.config": {
       "default": true,
       "MD004": {"style": "dash"}
-    }
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.pythonPath": "/usr/local/opt/python@3.8/bin/python3.8",
+    "python.languageServer": "Pylance",
+    "python.analysis.completeFunctionParens": true,
+    "vsintellicode.features.python.deepLearning": "enabled"
 }

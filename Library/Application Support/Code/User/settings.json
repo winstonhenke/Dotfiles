@@ -93,5 +93,9 @@
     "python.pythonPath": "/usr/local/opt/python@3.8/bin/python3.8",
     "python.languageServer": "Pylance",
     "python.analysis.completeFunctionParens": true,
-    "vsintellicode.features.python.deepLearning": "enabled"
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "python.defaultInterpreterPath": "/usr/local/opt/python@3.8/bin/python3.8",
+    "debug.console.closeOnEnd": true,
+    "debug.openDebug": "openOnDebugBreak",
+    "debug.openExplorerOnEnd": true
 }

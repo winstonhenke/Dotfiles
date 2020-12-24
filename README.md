@@ -97,6 +97,12 @@ Remove the temp folder
 rm -r $HOME/dotgit-tmp
 ```
 
+Remove .git **file**. Not actually sure how or why this file is created but I'm assuming it has to do with being a bare repo. If you don't remove this file Git thinks you have a million un-tracked files no matter where you are under `$HOME/`. Also why the alias above is needed.
+
+```bash
+rm $HOME/.git
+```
+
 That's it. Use the alias for entering git commands. All files tracked this way are versioned right from `$HOME`, no messing around creating symlinks.
 
 ### Notes

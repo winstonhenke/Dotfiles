@@ -205,7 +205,7 @@
   "debug.openExplorerOnEnd": true,
   "debug.openDebug": "openOnDebugBreak",
   "explorer.decorations.colors": false,
-  "scm.repositories.visible": 0,
+  "scm.repositories.visible": 5,
   "powershell.codeFormatting.useCorrectCasing": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -228,7 +228,12 @@
   "scm.autoReveal": false,
   "explorer.autoReveal": false,
   "python.languageServer": "Pylance",
-  "workbench.editorAssociations": [],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "git.fetchOnPull": true,
   "gitlens.views.stashes.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
@@ -236,5 +241,6 @@
   "python.analysis.completeFunctionParens": true,
   "jupyter.debugJustMyCode": false,
   "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false
+  "gitlens.codeLens.authors.enabled": false,
+  "editor.accessibilitySupport": "off"
 }

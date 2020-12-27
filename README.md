@@ -31,6 +31,7 @@ Commands
 - `brew deps --tree --installed`
 - `brew info python`
 - `brew outdated`
+- `brew upgrade` - Upgrade everything
 - `brew update` - Fetch the newest version of Homebrew and all formulae from GitHub
 - `brew list` - List all installed formulae or casks
   - `brew list --full-name --versions --verbose`

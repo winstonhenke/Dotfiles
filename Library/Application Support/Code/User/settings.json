@@ -239,7 +239,6 @@
   "gitlens.codeLens.authors.enabled": false,
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.find.addExtraSpaceOnTop": false,
   "diffEditor.codeLens": true,
   "editor.minimap.showSlider": "always",
   "editor.suggest.insertMode": "replace",
@@ -248,5 +247,6 @@
   "workbench.list.smoothScrolling": true,
   "workbench.panel.opensMaximized": "never",
   "workbench.editor.revealIfOpen": true,
-  "workbench.editor.untitled.labelFormat": "name"
+  "workbench.editor.untitled.labelFormat": "name",
+  "editor.minimap.size": "fill"
 }

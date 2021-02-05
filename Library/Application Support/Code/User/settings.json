@@ -208,7 +208,6 @@
   "gitlens.views.repositories.enabled": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",
   "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.editor.tabSizing": "shrink",
   "search.quickOpen.history.filterSortOrder": "recency",
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
@@ -248,5 +247,19 @@
   "workbench.panel.opensMaximized": "never",
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.untitled.labelFormat": "name",
-  "editor.minimap.size": "fill"
+  "editor.minimap.size": "fill",
+  "xml.codeLens.enabled": true,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
+  "salesforcedx-vscode-apex.java.home": "/usr/bin/java",
+  "settingsSync.ignoredSettings": [
+    "salesforcedx-vscode-apex.java.home"
+  ],
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+  "search.mode": "newEditor"
 }

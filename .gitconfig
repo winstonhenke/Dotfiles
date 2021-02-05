@@ -4,3 +4,5 @@
 	helper = osxkeychain
 [core]
 	editor = vim
+[pull]
+	rebase = true

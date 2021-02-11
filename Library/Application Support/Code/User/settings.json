@@ -44,24 +44,25 @@
     "!jade",
     "!javascriptreact",
     "!latex",
+    "!log",
     "!php",
     "!pug",
     "!rust",
     "!scala",
     "!scss",
     "!typescriptreact",
+    "!xml",
+    "apex",
     "bat",
     "dockerfile",
     "git-rebase",
-    "!log",
     "makefile",
     "powershell",
     "properties",
     "shellscript",
     "sql",
-    "!xml",
-    "xsl",
-    "terraform"
+    "terraform",
+    "xsl"
   ],
   "window.restoreWindows": "none",
   "window.newWindowDimensions": "maximized",
@@ -160,7 +161,6 @@
   "http.proxySupport": "on",
   "http.proxyStrictSSL": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.columnSelection": false,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.detectIndentation": false,
@@ -222,12 +222,7 @@
   "scm.autoReveal": false,
   "explorer.autoReveal": false,
   "python.languageServer": "Pylance",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": [],
   "git.fetchOnPull": true,
   "gitlens.views.stashes.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
@@ -261,5 +256,8 @@
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": true,
-  "search.mode": "newEditor"
+  "search.mode": "newEditor",
+  "search.experimental.searchInOpenEditors": true,
+  "markdownlint.run": "onSave",
+  "eslint.run": "onSave"
 }

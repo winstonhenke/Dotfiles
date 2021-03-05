@@ -246,7 +246,7 @@
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
-  "salesforcedx-vscode-apex.java.home": "/usr/bin/java",
+  "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
   "settingsSync.ignoredSettings": [
     "salesforcedx-vscode-apex.java.home"
   ],

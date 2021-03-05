@@ -9,8 +9,12 @@ if [[ $LANG != "en_US.UTF-8" ]]; then echo "Warning Lang not set to en_US.UTF-8"
 # All PROMPT_COMMAND and PS1 configuration
 source "${HOME}/.bash_ps1.sh"
 
+# Installed Java11 from HomeBrew on MacOS
+export JAVA_11_HOME="/usr/local/opt/openjdk@11"
+export JAVA_HOME="$JAVA_11_HOME"
+
 #Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
-export PATH="/usr/local/bin:${PATH}:$HOME/bin"
+export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1

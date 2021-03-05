@@ -1,7 +1,7 @@
 #!/usr/local/bin/bash
 
 # Not sure the shebang is necessary since I'm just sourcing it into my .bashrc but I get weird vim highlighting
-# issues around $'' without it. Probably becasue the $'' is only in the new version of bash? idk
+# issues around $'' without it. Probably because the $'' is only in the new version of bash? idk
 
 __prompt_command ()
 {

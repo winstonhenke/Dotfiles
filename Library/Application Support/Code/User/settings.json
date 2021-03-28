@@ -16,7 +16,7 @@
     "**/appbuilder*.yml": "azure-pipelines",
     "**/madcap*.yml": "azure-pipelines"
   },
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
   "diffEditor.renderSideBySide": true,
   "explorer.openEditors.visible": 20,
@@ -220,7 +220,12 @@
   "scm.autoReveal": false,
   "explorer.autoReveal": false,
   "python.languageServer": "Pylance",
-  "workbench.editorAssociations": [],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "git.fetchOnPull": true,
   "gitlens.views.stashes.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,

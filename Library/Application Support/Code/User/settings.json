@@ -351,5 +351,8 @@
       }
     },
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.autoClosingQuotes": "beforeWhitespace"
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "bookmarks.label.suggestion": "useWhenSelected"
 }

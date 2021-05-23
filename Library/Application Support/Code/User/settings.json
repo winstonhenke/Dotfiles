@@ -355,5 +355,10 @@
     "editor.autoClosingQuotes": "beforeWhitespace",
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.suggest.completeFunctionCalls": true,
-    "bookmarks.label.suggestion": "useWhenSelected"
+    "bookmarks.label.suggestion": "useWhenSelected",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.venvFolders": [
+      "Workspace/Python/.venv"
+    ]
 }

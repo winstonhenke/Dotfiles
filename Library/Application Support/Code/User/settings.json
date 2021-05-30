@@ -107,7 +107,8 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": null
   },
-  "python.enableFormatting.black": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "120"],
   "shellLauncher.shells.windows": [
     {
       "shell": "%windir%\\System32\\wsl.exe",

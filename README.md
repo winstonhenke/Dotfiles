@@ -127,3 +127,17 @@ sudo chsh -s /usr/local/bin/bash root # this will set for the current user.
 #Verify your version
 echo $BASH_VERSION #bash --version will just tell you what your PATH has set, not what you are actually running
 ```
+
+---
+
+## Restore Python Virtual Environments
+
+Current Python3 version: `3.9.2`
+
+- `python3 -m venv ~/.venv/default`
+- `source ~/.venv/default/bin/activate`
+- `pip install -r ~/.venv/default.requirements.txt`
+
+`~/.bashrc` is also configured to activate the `default` venv
+
+---

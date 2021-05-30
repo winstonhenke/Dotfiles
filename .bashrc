@@ -85,6 +85,8 @@ if ! shopt -oq posix; then
 	#load_script "/etc/bash_completion" # Ubuntu
 fi
 
+# Default Python venv
+load_script "$HOME"'/.venv/default/bin/activate'
 # Docker Bash Completion - MacOS - Installed using .dmg from docker.com
 load_script "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion"
 # Docker Desktop now ships with built in k8s support for a single-node cluster. If I ever want to do local development on a multi-node cluster I'd likely need to install docker-machine

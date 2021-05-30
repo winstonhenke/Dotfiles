@@ -103,6 +103,11 @@
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
   },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": null
+  },
+  "python.enableFormatting.black": true,
   "shellLauncher.shells.windows": [
     {
       "shell": "%windir%\\System32\\wsl.exe",

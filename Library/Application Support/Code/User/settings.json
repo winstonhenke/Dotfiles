@@ -32,12 +32,14 @@
   "cSpell.userWords": [
     "Gmail",
     "SFDX",
+    "TODOs",
     "cmds",
     "kubectl",
     "msbuild",
     "mssql",
     "nuget",
-    "nupkg"
+    "nupkg",
+    "openid"
   ],
   "cSpell.enableFiletypes": [
     "!jade",
@@ -95,7 +97,9 @@
   "workbench.colorCustomizations": {
     "editorOverviewRuler.errorForeground": "#0000",
     "editorOverviewRuler.warningForeground": "#0000",
-    "editorOverviewRuler.infoForeground": "#0000"
+    "editorOverviewRuler.infoForeground": "#0000",
+    "editorOverviewRuler.modifiedForeground": "#0000",
+    "editorOverviewRuler.addedForeground": "#0000"
   },
   "[azure-pipelines]": {
     "editor.defaultFormatter": "ms-azure-devops.azure-pipelines"
@@ -221,12 +225,9 @@
   "scm.autoReveal": false,
   "explorer.autoReveal": false,
   "python.languageServer": "Pylance",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "git.fetchOnPull": true,
   "gitlens.views.stashes.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
@@ -258,7 +259,7 @@
   ],
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.decorations.badges": true,
-  "search.mode": "newEditor",
+  "search.mode": "reuseEditor",
   "search.searchEditor.defaultNumberOfContextLines": 2,
   "search.showLineNumbers": true,
   "mssql.connections": [
@@ -304,7 +305,7 @@
       "strings": true
     }
   },
-    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.suggestOnTriggerCharacters": true,
     "editor.suggest.localityBonus": true,
@@ -363,9 +364,17 @@
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.suggest.completeFunctionCalls": true,
     "bookmarks.label.suggestion": "useWhenSelected",
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "C:\\Python39\\python.exe",
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.venvFolders": [
       "Workspace/Python/.venv"
-    ]
+    ],
+    "salesforcedx-vscode-core.telemetry.enabled": false,
+    "editor.suggest.showColors": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.maxTokenizationLineLength": 200000,
+    "cSpell.logLevel": "Warning",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.startupPrompt": "never",
+    "editor.wrappingIndent": "deepIndent"
 }

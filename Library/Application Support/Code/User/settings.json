@@ -240,7 +240,6 @@
   "editor.cursorSmoothCaretAnimation": true,
   "diffEditor.codeLens": true,
   "editor.minimap.showSlider": "always",
-  "editor.suggest.insertMode": "replace",
   "editor.suggest.shareSuggestSelections": true,
   "files.maxMemoryForLargeFilesMB": 8192,
   "workbench.list.smoothScrolling": true,
@@ -283,8 +282,6 @@
   "scm.alwaysShowRepositories": true,
   "terminal.external.osxExec": "iTerm.app",
   "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.editor.showTabs": false,
   // Controls whether suggestions should automatically show up while typing.
   "editor.quickSuggestions": {
     "other": true,
@@ -305,8 +302,6 @@
       "strings": true
     }
   },
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "on",
     "editor.suggestOnTriggerCharacters": true,
     "editor.suggest.localityBonus": true,
     "editor.wordBasedSuggestions": true,
@@ -376,5 +371,6 @@
     "cSpell.logLevel": "Warning",
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.startupPrompt": "never",
-    "editor.wrappingIndent": "deepIndent"
+    "editor.wrappingIndent": "deepIndent",
+    "workbench.editor.wrapTabs": true
 }

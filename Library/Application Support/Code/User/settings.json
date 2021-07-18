@@ -362,7 +362,8 @@
     "python.pythonPath": "C:\\Python39\\python.exe",
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.venvFolders": [
-      "Workspace/Python/.venv"
+      "Workspace/Python/.venv",
+      "Workspace/SetGo-Projects/.venv"
     ],
     "salesforcedx-vscode-core.telemetry.enabled": false,
     "editor.suggest.showColors": false,

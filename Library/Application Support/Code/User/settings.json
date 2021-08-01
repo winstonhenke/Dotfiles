@@ -226,7 +226,7 @@
   "explorer.autoReveal": false,
   "python.languageServer": "Pylance",
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
   },
   "git.fetchOnPull": true,
   "gitlens.views.stashes.files.layout": "tree",
@@ -258,7 +258,6 @@
   ],
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.decorations.badges": true,
-  "search.mode": "reuseEditor",
   "search.searchEditor.defaultNumberOfContextLines": 2,
   "search.showLineNumbers": true,
   "mssql.connections": [
@@ -281,7 +280,6 @@
   "debug.terminal.clearBeforeReusing": true,
   "scm.alwaysShowRepositories": true,
   "terminal.external.osxExec": "iTerm.app",
-  "salesforcedx-vscode-core.show-cli-success-msg": false,
   // Controls whether suggestions should automatically show up while typing.
   "editor.quickSuggestions": {
     "other": true,
@@ -363,7 +361,9 @@
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.venvFolders": [
       "Workspace/Python/.venv",
-      "Workspace/SetGo-Projects/.venv"
+      "Workspace/SetGo-Projects/.venv",
+      "Workspace/Crypto/.venv",
+      ".venv"
     ],
     "salesforcedx-vscode-core.telemetry.enabled": false,
     "editor.suggest.showColors": false,
@@ -373,5 +373,10 @@
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.startupPrompt": "never",
     "editor.wrappingIndent": "deepIndent",
-    "workbench.editor.wrapTabs": true
+    "workbench.editor.wrapTabs": true,
+    "salesforcedx-vscode-core.show-cli-success-msg": false,
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    }
 }

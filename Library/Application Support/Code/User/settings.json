@@ -378,5 +378,6 @@
     "notebook.cellToolbarLocation": {
       "default": "right",
       "jupyter-notebook": "left"
-    }
+    },
+    "editor.hover.delay": 2000
 }

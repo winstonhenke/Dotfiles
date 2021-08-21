@@ -44,6 +44,8 @@ shopt -s checkwinsize
 
 #Aliases
 alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+alias ls='ls -alh'
+alias lsalh='ls'
 
 ##########################################################################################
 ###

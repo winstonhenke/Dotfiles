@@ -47,6 +47,7 @@
     "!latex",
     "!log",
     "!php",
+    "!plaintext",
     "!pug",
     "!rust",
     "!scala",
@@ -378,5 +379,7 @@
       "default": "right",
       "jupyter-notebook": "left"
     },
-    "editor.hover.delay": 2000
+    "editor.hover.delay": 2000,
+    "editor.bracketPairColorization.enabled": true,
+    "markdownlint.run": "onSave"
 }

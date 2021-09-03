@@ -12,8 +12,7 @@
   },
   "files.associations": {
     "**/azure-pipelines-*.yml": "azure-pipelines",
-    "**/appbuilder*.yml": "azure-pipelines",
-    "**/madcap*.yml": "azure-pipelines"
+    "*.code-workspace": "JSON"
   },
   "diffEditor.maxComputationTime": 0,
   "diffEditor.renderSideBySide": true,

@@ -95,11 +95,11 @@
   "workbench.sideBar.location": "left",
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.colorCustomizations": {
-    "editorOverviewRuler.errorForeground": "#0000",
-    "editorOverviewRuler.warningForeground": "#0000",
-    "editorOverviewRuler.infoForeground": "#0000",
-    "editorOverviewRuler.modifiedForeground": "#0000",
-    "editorOverviewRuler.addedForeground": "#0000"
+    "editorOverviewRuler.errorForeground": "#00000000",
+    "editorOverviewRuler.warningForeground": "#00000000",
+    "editorOverviewRuler.infoForeground": "#00000000",
+    "editorOverviewRuler.modifiedForeground": "#00000000",
+    "editorOverviewRuler.addedForeground": "#00000000"
   },
   "[azure-pipelines]": {
     "editor.defaultFormatter": "ms-azure-devops.azure-pipelines"
@@ -378,7 +378,8 @@
       "default": "right",
       "jupyter-notebook": "left"
     },
-    "editor.hover.delay": 2000,
+    "editor.hover.delay": 500,
     "editor.bracketPairColorization.enabled": true,
-    "markdownlint.run": "onSave"
+    "markdownlint.run": "onSave",
+    "apexPMD.priorityWarnThreshold": 2
 }

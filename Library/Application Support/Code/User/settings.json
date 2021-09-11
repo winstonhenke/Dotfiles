@@ -151,7 +151,7 @@
   "git.fetchOnPull": true,
   "git.ignoreMissingGitWarning": true,
   "git.untrackedChanges": "separate",
-  "gitlens.advanced.fileHistoryFollowsRenames": false,
+  "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.advanced.maxListItems": 0,
   "gitlens.advanced.maxSearchItems": 0,
   "gitlens.blame.heatmap.location": "left",
@@ -161,14 +161,8 @@
   "gitlens.defaultDateSource": "committed",
   "gitlens.heatmap.toggleMode": "window",
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.views.compare.files.layout": "tree",
-  "gitlens.views.compare.location": "gitlens",
-  "gitlens.views.fileHistory.location": "gitlens",
-  "gitlens.views.lineHistory.location": "gitlens",
   "gitlens.views.repositories.files.layout": "list",
   "gitlens.views.repositories.includeWorkingTree": true,
-  "gitlens.views.repositories.location": "gitlens",
-  "gitlens.views.search.location": "gitlens",
   "gitlens.views.searchAndCompare.files.layout": "tree",
   "gitlens.views.stashes.files.layout": "tree",
   "http.proxyStrictSSL": false,
@@ -186,8 +180,8 @@
     }
   ],
   "markdown.preview.doubleClickToSwitchToEditor": false,
-  "markdown.preview.scrollEditorWithPreview": false,
-  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
   "markdownlint.run": "onSave",
   "mssql.connections": [
     {
@@ -238,9 +232,9 @@
   },
   "search.maintainFileSearchCache": true,
   "search.quickOpen.history.filterSortOrder": "recency",
-  "search.quickOpen.includeHistory": false,
+  "search.quickOpen.includeHistory": true,
   "search.searchEditor.defaultNumberOfContextLines": 2,
-  "search.searchOnType": false,
+  "search.searchOnType": true,
   "search.showLineNumbers": true,
   "search.useReplacePreview": false,
   "security.workspace.trust.banner": "never",
@@ -275,7 +269,6 @@
       "shell": "%comspec%"
     }
   ],
-  "team.showWelcomeMessage": false,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "underline",
@@ -366,7 +359,7 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.untitled.labelFormat": "name",
-  "workbench.editor.wrapTabs": true,
+  "workbench.editor.wrapTabs": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -377,14 +370,7 @@
   "workbench.tree.expandMode": "doubleClick",
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always",
-  "workbench.welcomePage.hiddenCategories": [
-    "Setup",
-    "Beginner"
-  ],
   "xml.codeLens.enabled": true,
-  "yaml.schemas": {
-    "file:///c%3A/Users/whenke/.vscode/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
-  },
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false
 }

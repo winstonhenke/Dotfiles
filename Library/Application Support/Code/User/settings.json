@@ -112,8 +112,6 @@
     "editor.defaultFormatter": null,
     "editor.formatOnPaste": false
   },
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length", "120"],
   "shellLauncher.shells.windows": [
     {
       "shell": "%windir%\\System32\\wsl.exe",
@@ -223,7 +221,18 @@
   "terminal.integrated.splitCwd": "workspaceRoot",
   "scm.autoReveal": false,
   "explorer.autoReveal": false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "80"],
+  "python.analysis.completeFunctionParens": true,
   "python.languageServer": "Pylance",
+  "python.pythonPath": "C:\\Python39\\python.exe",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "python.venvFolders": [
+    "Workspace/Python/.venv",
+    "Workspace/SetGo-Projects/.venv",
+    "Workspace/Crypto/.venv",
+    ".venv"
+  ],
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -231,7 +240,6 @@
   "gitlens.views.stashes.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
   "files.autoSave": "onFocusChange",
-  "python.analysis.completeFunctionParens": true,
   "jupyter.debugJustMyCode": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
@@ -356,14 +364,6 @@
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.suggest.completeFunctionCalls": true,
     "bookmarks.label.suggestion": "useWhenSelected",
-    "python.pythonPath": "C:\\Python39\\python.exe",
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "python.venvFolders": [
-      "Workspace/Python/.venv",
-      "Workspace/SetGo-Projects/.venv",
-      "Workspace/Crypto/.venv",
-      ".venv"
-    ],
     "salesforcedx-vscode-core.telemetry.enabled": false,
     "editor.suggest.showColors": false,
     "security.workspace.trust.untrustedFiles": "open",

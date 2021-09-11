@@ -147,9 +147,7 @@
   },
   "terraform.languageServer": {
     "external": true,
-    "args": [
-      "serve"
-    ]
+    "args": ["serve"]
   },
   "bookmarks.saveBookmarksInProject": true,
   "bookmarks.useWorkaroundForFormatters": true,
@@ -187,16 +185,14 @@
   "window.zoomLevel": 0,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.scrollPreviewWithEditor": false,
-  "[markdown]":{
+  "[markdown]": {
     "editor.wordWrap": "off"
   },
   "vs-kubernetes": {
     "vs-kubernetes.minikube-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
     "vs-kubernetes.helm-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
     "vs-kubernetes.draft-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe",
-    "disable-linters": [
-      "resource-limits"
-    ]
+    "disable-linters": ["resource-limits"]
   },
   "gitlens.views.repositories.files.layout": "list",
   "debug.openExplorerOnEnd": true,
@@ -260,9 +256,7 @@
   },
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
-  "settingsSync.ignoredSettings": [
-    "salesforcedx-vscode-apex.java.home"
-  ],
+  "settingsSync.ignoredSettings": ["salesforcedx-vscode-apex.java.home"],
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.decorations.badges": true,
   "search.searchEditor.defaultNumberOfContextLines": 2,
@@ -307,79 +301,76 @@
       "strings": true
     }
   },
-    "editor.suggestOnTriggerCharacters": true,
-    "editor.suggest.localityBonus": true,
-    "editor.wordBasedSuggestions": true,
-    "editor.parameterHints.enabled": true,
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.optimizeStylesheetParsing": false,
-    "redhat.telemetry.enabled": false,
-    "debug.toolBarLocation": "docked",
-    "salesforcedx-vscode-soql.experimental.validateQueries": true,
-    "workbench.welcomePage.hiddenCategories": [
-      "Setup",
-      "Beginner"
-    ],
-    "explorer.confirmDragAndDrop": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "terminal.integrated.profiles.osx": {
-      "bash": {
-        "path": "bash",
-        "icon": "terminal-bash"
-      },
-      "zsh": {
-        "path": "zsh"
-      },
-      "fish": {
-        "path": "fish"
-      },
-      "tmux": {
-        "path": "tmux",
-        "icon": "terminal-tmux"
-      },
-      "pwsh": {
-        "path": "pwsh",
-        "icon": "terminal-powershell"
-      }
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggest.localityBonus": true,
+  "editor.wordBasedSuggestions": true,
+  "editor.parameterHints.enabled": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.optimizeStylesheetParsing": false,
+  "redhat.telemetry.enabled": false,
+  "debug.toolBarLocation": "docked",
+  "salesforcedx-vscode-soql.experimental.validateQueries": true,
+  "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
     },
-    "terminal.integrated.profiles.windows": {
-      "PowerShell": {
-        "source": "PowerShell",
-        "icon": "terminal-powershell"
-      },
-      "Command Prompt": {
-        "path": [
-          "${env:windir}\\Sysnative\\cmd.exe",
-          "${env:windir}\\System32\\cmd.exe"
-        ],
-        "args": [],
-        "icon": "terminal-cmd"
-      },
-      "Git Bash": {
-        "source": "Git Bash"
-      }
+    "zsh": {
+      "path": "zsh"
     },
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.autoClosingQuotes": "beforeWhitespace",
-    "javascript.suggest.completeFunctionCalls": true,
-    "typescript.suggest.completeFunctionCalls": true,
-    "bookmarks.label.suggestion": "useWhenSelected",
-    "salesforcedx-vscode-core.telemetry.enabled": false,
-    "editor.suggest.showColors": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.maxTokenizationLineLength": 200000,
-    "cSpell.logLevel": "Warning",
-    "security.workspace.trust.banner": "never",
-    "security.workspace.trust.startupPrompt": "never",
-    "editor.wrappingIndent": "deepIndent",
-    "workbench.editor.wrapTabs": true,
-    "salesforcedx-vscode-core.show-cli-success-msg": false,
-    "notebook.cellToolbarLocation": {
-      "default": "right",
-      "jupyter-notebook": "left"
+    "fish": {
+      "path": "fish"
     },
-    "editor.hover.delay": 500,
-    "editor.bracketPairColorization.enabled": true,
-    "markdownlint.run": "onSave",
-    "apexPMD.priorityWarnThreshold": 2
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "bookmarks.label.suggestion": "useWhenSelected",
+  "salesforcedx-vscode-core.telemetry.enabled": false,
+  "editor.suggest.showColors": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.maxTokenizationLineLength": 200000,
+  "cSpell.logLevel": "Warning",
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.startupPrompt": "never",
+  "editor.wrappingIndent": "deepIndent",
+  "workbench.editor.wrapTabs": true,
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "editor.hover.delay": 500,
+  "editor.bracketPairColorization.enabled": true,
+  "markdownlint.run": "onSave",
+  "apexPMD.priorityWarnThreshold": 2
 }

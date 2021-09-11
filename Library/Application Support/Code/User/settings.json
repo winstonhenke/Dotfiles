@@ -1,45 +1,42 @@
 {
+  "[azure-pipelines]": {
+    "editor.defaultFormatter": "ms-azure-devops.azure-pipelines"
+  },
+  "[javascript]": {
+    "editor.quickSuggestions": {
+      "comments": true,
+      "other": true,
+      "strings": true
+    }
+  },
+  "[markdown]": {
+    "editor.wordWrap": "off"
+  },
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "[python]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnPaste": false,
+    "editor.tabSize": 4
+  },
+  "[sql]": {
+    "editor.quickSuggestions": {
+      "comments": true,
+      "other": true,
+      "strings": true
+    }
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "apexPMD.priorityWarnThreshold": 2,
+  "azureTerraform.terminal": "integrated",
+  "bookmarks.label.suggestion": "useWhenSelected",
+  "bookmarks.saveBookmarksInProject": true,
+  "bookmarks.useWorkaroundForFormatters": true,
   "breadcrumbs.enabled": true,
-  "team.showWelcomeMessage": false,
-  "extensions.ignoreRecommendations": true,
-  "vsicons.projectDetection.autoReload": true,
-  "vsicons.dontShowNewVersionMessage": true,
-  "markdown.preview.doubleClickToSwitchToEditor": false,
-  "files.hotExit": "onExitAndWindowClose",
-  "files.autoGuessEncoding": true,
-  "files.exclude": {
-    "**/.git": false
-  },
-  "files.associations": {
-    "**/azure-pipelines-*.yml": "azure-pipelines",
-    "*.code-workspace": "JSON"
-  },
-  "diffEditor.maxComputationTime": 0,
-  "diffEditor.renderSideBySide": true,
-  "explorer.openEditors.visible": 20,
-  "explorer.confirmDelete": false,
-  "search.searchOnType": false,
-  "search.maintainFileSearchCache": true,
-  "search.useReplacePreview": false,
-  "search.quickOpen.includeHistory": false,
-  "search.exclude": {
-    "**/.git": true
-  },
-  "cSpell.enabled": true,
-  "cSpell.language": "en",
   "cSpell.allowCompoundWords": true,
-  "cSpell.userWords": [
-    "Gmail",
-    "SFDX",
-    "TODOs",
-    "cmds",
-    "kubectl",
-    "msbuild",
-    "mssql",
-    "nuget",
-    "nupkg",
-    "openid"
-  ],
   "cSpell.enableFiletypes": [
     "!jade",
     "!javascriptreact",
@@ -65,312 +62,329 @@
     "terraform",
     "xsl"
   ],
-  "window.restoreWindows": "none",
-  "window.newWindowDimensions": "inherit",
-  "window.title": "${rootName}",
-  "window.openWithoutArgumentsInNewWindow": "off",
-  "terminal.integrated.cursorStyle": "underline",
-  "terminal.integrated.cursorBlinking": true,
-  "gitlens.advanced.maxSearchItems": 0,
-  "gitlens.advanced.maxListItems": 0,
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.logLevel": "Warning",
+  "cSpell.userWords": [
+    "Gmail",
+    "SFDX",
+    "TODOs",
+    "cmds",
+    "kubectl",
+    "msbuild",
+    "mssql",
+    "nuget",
+    "nupkg",
+    "openid"
+  ],
+  "debug.console.closeOnEnd": true,
+  "debug.console.wordWrap": false,
+  "debug.openDebug": "openOnDebugBreak",
+  "debug.openExplorerOnEnd": true,
+  "debug.showBreakpointsInOverviewRuler": true,
+  "debug.showSubSessionsInToolBar": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "debug.toolBarLocation": "docked",
+  "diffEditor.codeLens": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.renderSideBySide": true,
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.find.autoFindInSelection": "multiline",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.hover.delay": 500,
+  "editor.maxTokenizationLineLength": 200000,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.size": "fill",
+  "editor.parameterHints.enabled": true,
+  "editor.quickSuggestions": {
+    "comments": true,
+    "other": true,
+    "strings": true
+  },
+  "editor.renderWhitespace": "all",
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showColors": false,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.wordBasedSuggestions": true,
+  "editor.wrappingIndent": "deepIndent",
+  "emmet.optimizeStylesheetParsing": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.colors": false,
+  "explorer.openEditors.visible": 20,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "**/azure-pipelines-*.yml": "azure-pipelines",
+    "*.code-workspace": "JSONC"
+  },
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.hotExit": "onExitAndWindowClose",
+  "files.maxMemoryForLargeFilesMB": 8192,
+  "git-graph.repository.commits.order": "topo",
+  "git.allowForcePush": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.autofetch": true,
+  "git.branchSortOrder": "alphabetically",
+  "git.confirmSync": false,
+  "git.fetchOnPull": true,
+  "git.ignoreMissingGitWarning": true,
+  "git.untrackedChanges": "separate",
   "gitlens.advanced.fileHistoryFollowsRenames": false,
+  "gitlens.advanced.maxListItems": 0,
+  "gitlens.advanced.maxSearchItems": 0,
   "gitlens.blame.heatmap.location": "left",
   "gitlens.codeLens.authors.command": "gitlens.revealCommitInView",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.defaultDateSource": "committed",
   "gitlens.heatmap.toggleMode": "window",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.views.compare.files.layout": "tree",
   "gitlens.views.compare.location": "gitlens",
   "gitlens.views.fileHistory.location": "gitlens",
   "gitlens.views.lineHistory.location": "gitlens",
+  "gitlens.views.repositories.files.layout": "list",
+  "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.repositories.location": "gitlens",
   "gitlens.views.search.location": "gitlens",
-  "git.autofetch": true,
-  "git.allowForcePush": true,
-  "git.branchSortOrder": "alphabetically",
-  "git.confirmSync": false,
-  "git.ignoreMissingGitWarning": true,
-  "git.untrackedChanges": "separate",
-  "git-graph.repository.commits.order": "topo",
-  "workbench.editor.openPositioning": "last",
-  "workbench.sideBar.location": "left",
-  "workbench.editor.limit.perEditorGroup": true,
-  "workbench.colorCustomizations": {
-    "editorOverviewRuler.errorForeground": "#00000000",
-    "editorOverviewRuler.warningForeground": "#00000000",
-    "editorOverviewRuler.infoForeground": "#00000000",
-    "editorOverviewRuler.modifiedForeground": "#00000000",
-    "editorOverviewRuler.addedForeground": "#00000000"
-  },
-  "[azure-pipelines]": {
-    "editor.defaultFormatter": "ms-azure-devops.azure-pipelines"
-  },
-  "[powershell]": {
-    "editor.defaultFormatter": "ms-vscode.powershell"
-  },
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": null,
-    "editor.formatOnPaste": false
-  },
-  "shellLauncher.shells.windows": [
-    {
-      "shell": "%windir%\\System32\\wsl.exe",
-      "label": "bash",
-      "launchName": "bash"
-    },
-    {
-      "shell": "%windir%\\system32\\cmd.exe",
-      "label": "cmd",
-      "launchName": "cmd"
-    },
-    {
-      "shell": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-      "label": "pwsh",
-      "launchName": "pwsh"
-    },
-    {
-      "shell": "%comspec%",
-      "args": [
-        "/k",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
-      ],
-      "label": "vs2015",
-      "launchName": "vs2015"
-    }
-  ],
-  "azureTerraform.terminal": "integrated",
-  "terraform.indexing": {
-    "enabled": false,
-    "liveIndexing": false,
-    "delay": 500,
-    "exclude": [".terraform/**/*", "**/.terraform/**/*"]
-  },
-  "terraform.languageServer": {
-    "external": true,
-    "args": ["serve"]
-  },
-  "bookmarks.saveBookmarksInProject": true,
-  "bookmarks.useWorkaroundForFormatters": true,
-  "powershell.codeFormatting.autoCorrectAliases": true,
-  "powershell.codeFormatting.preset": "OTBS",
-  "powershell.debugging.createTemporaryIntegratedConsole": true,
-  "powershell.promptToUpdatePowerShell": false,
-  "yaml.schemas": {
-    "file:///c%3A/Users/whenke/.vscode/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
-  },
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "http.proxySupport": "on",
+  "gitlens.views.searchAndCompare.files.layout": "tree",
+  "gitlens.views.stashes.files.layout": "tree",
   "http.proxyStrictSSL": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "editor.detectIndentation": false,
-  "editor.find.autoFindInSelection": "multiline",
-  "editor.copyWithSyntaxHighlighting": false,
-  "editor.renderWhitespace": "all",
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "debug.showBreakpointsInOverviewRuler": true,
+  "http.proxySupport": "on",
+  "javascript.suggest.completeFunctionCalls": true,
+  "jupyter.debugJustMyCode": false,
   "logViewer.watch": [
     {
-      "title": "AppBuilder Logs",
-      "pattern": "C:\\logs\\A.log"
+      "pattern": "C:\\logs\\A.log",
+      "title": "AppBuilder Logs"
     },
     {
-      "title": "App Build Log",
-      "pattern": "C:\\logs\\app.build.log"
+      "pattern": "C:\\logs\\app.build.log",
+      "title": "App Build Log"
     }
   ],
-  "window.zoomLevel": 0,
+  "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.scrollPreviewWithEditor": false,
-  "[markdown]": {
-    "editor.wordWrap": "off"
+  "markdownlint.run": "onSave",
+  "mssql.connections": [
+    {
+      "database": "{{put-database-name-here}}",
+      "password": "{{put-password-here}}",
+      "server": "{{put-server-name-here}}",
+      "user": "{{put-username-here}}"
+    }
+  ],
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
   },
-  "vs-kubernetes": {
-    "vs-kubernetes.minikube-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe",
-    "vs-kubernetes.helm-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
-    "vs-kubernetes.draft-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe",
-    "disable-linters": ["resource-limits"]
-  },
-  "gitlens.views.repositories.files.layout": "list",
-  "debug.openExplorerOnEnd": true,
-  "debug.openDebug": "openOnDebugBreak",
-  "explorer.decorations.colors": false,
-  "scm.repositories.visible": 5,
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.preset": "OTBS",
   "powershell.codeFormatting.useCorrectCasing": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.suggest.showStatusBar": true,
-  "gitlens.views.searchAndCompare.files.layout": "tree",
-  "workbench.editor.pinnedTabSizing": "compact",
-  "search.quickOpen.history.filterSortOrder": "recency",
-  "debug.console.closeOnEnd": true,
-  "debug.console.wordWrap": false,
-  "terminal.integrated.enablePersistentSessions": false,
-  "scm.alwaysShowActions": true,
-  "scm.defaultViewMode": "tree",
-  "scm.providerCountBadge": "visible",
-  "git.alwaysShowStagedChangesResourceGroup": true,
-  "gitlens.defaultDateSource": "committed",
-  "terminal.integrated.splitCwd": "workspaceRoot",
-  "scm.autoReveal": false,
-  "explorer.autoReveal": false,
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length", "80"],
+  "powershell.debugging.createTemporaryIntegratedConsole": true,
+  "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
+  "powershell.promptToUpdatePowerShell": false,
   "python.analysis.completeFunctionParens": true,
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "80"
+  ],
+  "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.pythonPath": "C:\\Python39\\python.exe",
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.venvFolders": [
     "Workspace/Python/.venv",
     "Workspace/SetGo-Projects/.venv",
     "Workspace/Crypto/.venv",
     ".venv"
   ],
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "git.fetchOnPull": true,
-  "gitlens.views.stashes.files.layout": "tree",
-  "gitlens.views.repositories.includeWorkingTree": true,
-  "files.autoSave": "onFocusChange",
-  "jupyter.debugJustMyCode": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "editor.accessibilitySupport": "off",
-  "editor.cursorSmoothCaretAnimation": true,
-  "diffEditor.codeLens": true,
-  "editor.minimap.showSlider": "always",
-  "editor.suggest.shareSuggestSelections": true,
-  "files.maxMemoryForLargeFilesMB": 8192,
-  "workbench.list.smoothScrolling": true,
-  "workbench.panel.opensMaximized": "never",
-  "workbench.editor.revealIfOpen": true,
-  "workbench.editor.untitled.labelFormat": "name",
-  "editor.minimap.size": "fill",
-  "xml.codeLens.enabled": true,
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
+  "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
-  "settingsSync.ignoredSettings": ["salesforcedx-vscode-apex.java.home"],
-  "workbench.editor.tabCloseButton": "left",
-  "workbench.editor.decorations.badges": true,
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "salesforcedx-vscode-core.telemetry.enabled": false,
+  "salesforcedx-vscode-soql.experimental.validateQueries": true,
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true,
+  "scm.autoReveal": false,
+  "scm.defaultViewMode": "tree",
+  "scm.providerCountBadge": "visible",
+  "scm.repositories.visible": 5,
+  "search.exclude": {
+    "**/.git": true
+  },
+  "search.maintainFileSearchCache": true,
+  "search.quickOpen.history.filterSortOrder": "recency",
+  "search.quickOpen.includeHistory": false,
   "search.searchEditor.defaultNumberOfContextLines": 2,
+  "search.searchOnType": false,
   "search.showLineNumbers": true,
-  "mssql.connections": [
+  "search.useReplacePreview": false,
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredSettings": [
+    "salesforcedx-vscode-apex.java.home"
+  ],
+  "shellLauncher.shells.windows": [
     {
-      "server": "{{put-server-name-here}}",
-      "database": "{{put-database-name-here}}",
-      "user": "{{put-username-here}}",
-      "password": "{{put-password-here}}"
+      "label": "bash",
+      "launchName": "bash",
+      "shell": "%windir%\\System32\\wsl.exe"
+    },
+    {
+      "label": "cmd",
+      "launchName": "cmd",
+      "shell": "%windir%\\system32\\cmd.exe"
+    },
+    {
+      "label": "pwsh",
+      "launchName": "pwsh",
+      "shell": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+    },
+    {
+      "args": [
+        "/k",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
+      ],
+      "label": "vs2015",
+      "launchName": "vs2015",
+      "shell": "%comspec%"
     }
   ],
-  "editor.autoClosingBrackets": "beforeWhitespace",
-  "workbench.editor.decorations.colors": false,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.tree.expandMode": "doubleClick",
-  "workbench.tree.indent": 10,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.editor.highlightModifiedTabs": true,
-  "explorer.compactFolders": false,
-  "debug.showSubSessionsInToolBar": true,
-  "debug.terminal.clearBeforeReusing": true,
-  "scm.alwaysShowRepositories": true,
+  "team.showWelcomeMessage": false,
   "terminal.external.osxExec": "iTerm.app",
-  // Controls whether suggestions should automatically show up while typing.
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
-  "[javascript]": {
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": true,
-      "strings": true
-    }
-  },
-  "[sql]": {
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": true,
-      "strings": true
-    }
-  },
-  "editor.suggestOnTriggerCharacters": true,
-  "editor.suggest.localityBonus": true,
-  "editor.wordBasedSuggestions": true,
-  "editor.parameterHints.enabled": true,
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.optimizeStylesheetParsing": false,
-  "redhat.telemetry.enabled": false,
-  "debug.toolBarLocation": "docked",
-  "salesforcedx-vscode-soql.experimental.validateQueries": true,
-  "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
-  "explorer.confirmDragAndDrop": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.profiles.osx": {
     "bash": {
-      "path": "bash",
-      "icon": "terminal-bash"
-    },
-    "zsh": {
-      "path": "zsh"
+      "icon": "terminal-bash",
+      "path": "bash"
     },
     "fish": {
       "path": "fish"
     },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
-    },
     "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
+      "icon": "terminal-powershell",
+      "path": "pwsh"
+    },
+    "tmux": {
+      "icon": "terminal-tmux",
+      "path": "tmux"
+    },
+    "zsh": {
+      "path": "zsh"
     }
   },
   "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
     "Command Prompt": {
+      "args": [],
+      "icon": "terminal-cmd",
       "path": [
         "${env:windir}\\Sysnative\\cmd.exe",
         "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
+      ]
     },
     "Git Bash": {
       "source": "Git Bash"
+    },
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell"
     }
   },
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.autoClosingQuotes": "beforeWhitespace",
-  "javascript.suggest.completeFunctionCalls": true,
-  "typescript.suggest.completeFunctionCalls": true,
-  "bookmarks.label.suggestion": "useWhenSelected",
-  "salesforcedx-vscode-core.telemetry.enabled": false,
-  "editor.suggest.showColors": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.maxTokenizationLineLength": 200000,
-  "cSpell.logLevel": "Warning",
-  "security.workspace.trust.banner": "never",
-  "security.workspace.trust.startupPrompt": "never",
-  "editor.wrappingIndent": "deepIndent",
-  "workbench.editor.wrapTabs": true,
-  "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
+  "terminal.integrated.splitCwd": "workspaceRoot",
+  "terraform.indexing": {
+    "delay": 500,
+    "enabled": false,
+    "exclude": [
+      ".terraform/**/*",
+      "**/.terraform/**/*"
+    ],
+    "liveIndexing": false
   },
-  "editor.hover.delay": 500,
-  "editor.bracketPairColorization.enabled": true,
-  "markdownlint.run": "onSave",
-  "apexPMD.priorityWarnThreshold": 2
+  "terraform.languageServer": {
+    "args": [
+      "serve"
+    ],
+    "external": true
+  },
+  "typescript.suggest.completeFunctionCalls": true,
+  "vs-kubernetes": {
+    "disable-linters": [
+      "resource-limits"
+    ],
+    "vs-kubernetes.draft-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe",
+    "vs-kubernetes.helm-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+    "vs-kubernetes.minikube-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsicons.projectDetection.autoReload": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.newWindowDimensions": "inherit",
+  "window.openWithoutArgumentsInNewWindow": "off",
+  "window.restoreWindows": "none",
+  "window.title": "${rootName}",
+  "window.zoomLevel": 0,
+  "workbench.colorCustomizations": {
+    "editorOverviewRuler.addedForeground": "#00000000",
+    "editorOverviewRuler.errorForeground": "#00000000",
+    "editorOverviewRuler.infoForeground": "#00000000",
+    "editorOverviewRuler.modifiedForeground": "#00000000",
+    "editorOverviewRuler.warningForeground": "#00000000"
+  },
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.untitled.labelFormat": "name",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.list.smoothScrolling": true,
+  "workbench.panel.opensMaximized": "never",
+  "workbench.sideBar.location": "left",
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.welcomePage.hiddenCategories": [
+    "Setup",
+    "Beginner"
+  ],
+  "xml.codeLens.enabled": true,
+  "yaml.schemas": {
+    "file:///c%3A/Users/whenke/.vscode/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
+  },
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false
 }

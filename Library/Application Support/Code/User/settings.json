@@ -372,5 +372,6 @@
   "workbench.tree.renderIndentGuides": "always",
   "xml.codeLens.enabled": true,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "workbench.editor.sharedViewState": true
 }

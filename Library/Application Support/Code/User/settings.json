@@ -218,7 +218,6 @@
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
-  "salesforcedx-vscode-core.show-cli-success-msg": false,
   "salesforcedx-vscode-core.telemetry.enabled": false,
   "salesforcedx-vscode-soql.experimental.validateQueries": true,
   "scm.alwaysShowActions": true,
@@ -373,5 +372,7 @@
   "xml.codeLens.enabled": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
-  "workbench.editor.sharedViewState": true
+  "workbench.editor.sharedViewState": true,
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "workbench.editor.tabSizing": "shrink"
 }

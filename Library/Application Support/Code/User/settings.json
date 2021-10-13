@@ -358,7 +358,7 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.untitled.labelFormat": "name",
-  "workbench.editor.wrapTabs": false,
+  "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -374,5 +374,5 @@
   "zenMode.hideTabs": false,
   "workbench.editor.sharedViewState": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "workbench.editor.tabSizing": "shrink"
+  "editor.guides.bracketPairs": true
 }

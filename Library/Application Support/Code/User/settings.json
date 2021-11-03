@@ -375,5 +375,8 @@
   "salesforcedx-vscode-core.show-cli-success-msg": false,
   "editor.guides.bracketPairs": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "output.smartScroll.enabled": false
+  "output.smartScroll.enabled": false,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "salesforcedx-vscode-core.detectConflictsAtSync": true
 }

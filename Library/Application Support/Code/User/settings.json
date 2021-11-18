@@ -87,7 +87,6 @@
   "debug.toolBarLocation": "docked",
   "diffEditor.codeLens": true,
   "diffEditor.maxComputationTime": 0,
-  "diffEditor.renderSideBySide": true,
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",
@@ -101,7 +100,6 @@
   "editor.formatOnType": true,
   "editor.hover.delay": 500,
   "editor.maxTokenizationLineLength": 200000,
-  "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fill",
   "editor.parameterHints.enabled": true,
   "editor.quickSuggestions": {
@@ -378,5 +376,10 @@
   "output.smartScroll.enabled": false,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
-  "salesforcedx-vscode-core.detectConflictsAtSync": true
+  "xml.format.spaceBeforeEmptyCloseTag": false,
+  "editor.find.seedSearchStringFromSelection": "selection",
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "editor.fontSize": 13,
+  "editor.minimap.maxColumn": 50,
+  "editor.minimap.showSlider": "always"
 }

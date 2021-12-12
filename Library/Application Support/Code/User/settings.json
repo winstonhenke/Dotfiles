@@ -81,7 +81,6 @@
   "debug.console.wordWrap": false,
   "debug.openDebug": "openOnDebugBreak",
   "debug.openExplorerOnEnd": true,
-  "debug.showBreakpointsInOverviewRuler": true,
   "debug.showSubSessionsInToolBar": true,
   "debug.terminal.clearBeforeReusing": true,
   "debug.toolBarLocation": "docked",
@@ -226,7 +225,6 @@
   "search.exclude": {
     "**/.git": true
   },
-  "search.maintainFileSearchCache": true,
   "search.quickOpen.history.filterSortOrder": "recency",
   "search.quickOpen.includeHistory": true,
   "search.searchEditor.defaultNumberOfContextLines": 2,

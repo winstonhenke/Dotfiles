@@ -151,7 +151,6 @@
   "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
   "git.fetchOnPull": true,
-  "git.ignoreMissingGitWarning": true,
   "git.untrackedChanges": "separate",
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.advanced.maxListItems": 0,

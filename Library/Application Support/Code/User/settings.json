@@ -66,16 +66,17 @@
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
   "cSpell.userWords": [
-    "Gmail",
-    "SFDX",
-    "TODOs",
     "cmds",
+    "Gmail",
     "kubectl",
     "msbuild",
     "mssql",
     "nuget",
     "nupkg",
-    "openid"
+    "openid",
+    "SFDX",
+    "TODOs",
+    "winstonhenke"
   ],
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
@@ -120,7 +121,6 @@
   "editor.suggest.showStatusBar": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordBasedSuggestions": true,
@@ -148,7 +148,6 @@
   "git-graph.repository.commits.order": "topo",
   "git.allowForcePush": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
-  "git.autofetch": true,
   "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
   "git.fetchOnPull": true,
@@ -347,7 +346,6 @@
   "window.openWithoutArgumentsInNewWindow": "off",
   "window.restoreWindows": "none",
   "window.title": "${rootName}",
-  "window.zoomLevel": 0,
   "workbench.colorCustomizations": {
     "editorOverviewRuler.addedForeground": "#00000000",
     "editorOverviewRuler.errorForeground": "#00000000",
@@ -379,5 +377,13 @@
   "xml.codeLens.enabled": true,
   "xml.format.spaceBeforeEmptyCloseTag": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "git.autofetch": true,
+  "debug.javascript.autoAttachFilter": "always",
+  "json.maxItemsComputed": 8000,
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasError": "off",
+  "audioCues.onDebugBreak": "on"
 }

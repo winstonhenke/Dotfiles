@@ -385,5 +385,7 @@
   "json.maxItemsComputed": 8000,
   "audioCues.lineHasBreakpoint": "off",
   "audioCues.lineHasError": "off",
-  "audioCues.onDebugBreak": "on"
+  "audioCues.onDebugBreak": "on",
+  "git.rebaseWhenSync": true,
+  "git.autoStash": true
 }

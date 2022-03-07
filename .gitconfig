@@ -16,3 +16,7 @@
 [user]
 	name = Winston Henke
 	email = winstonhenke@gmail.com
+[diff]
+	colorMoved = zebra
+[rebase]
+	autoStash = true

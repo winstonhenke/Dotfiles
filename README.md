@@ -34,7 +34,8 @@ Commands
 - `brew upgrade` - Upgrade everything
 - `brew update` - Fetch the newest version of Homebrew and all formulae from GitHub
 - `brew list` - List all installed formulae or casks
-  - `brew list --full-name --versions --verbose`
+  - `brew list --full-name --verbose`
+  - `brew list --versions --verbose`
 - `brew bundle dump --force --file ~/.brew/Brewfile` - Write all installed casks/formulae/images/taps into a Brewfile
 
 ---

@@ -216,7 +216,8 @@
     "Workspace/Python/.venv",
     "Workspace/SetGo-Projects/.venv",
     "Workspace/Crypto/.venv",
-    ".venv"
+    ".venv",
+    "Workspace/Jupyter-Notebook-POC/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",

@@ -213,11 +213,12 @@
   "python.languageServer": "Pylance",
   "python.pythonPath": "C:\\Python39\\python.exe",
   "python.venvFolders": [
+    ".venv",
     "Workspace/Python/.venv",
     "Workspace/SetGo-Projects/.venv",
     "Workspace/Crypto/.venv",
-    ".venv",
-    "Workspace/Jupyter-Notebook-POC/.venv"
+    "Workspace/Jupyter-Notebook-POC/.venv",
+    "Workspace/CryptoTaxes/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",

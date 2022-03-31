@@ -111,9 +111,9 @@
   "editor.minimap.size": "fill",
   "editor.parameterHints.enabled": true,
   "editor.quickSuggestions": {
-    "comments": true,
-    "other": true,
-    "strings": true
+    "comments": "inline",
+    "other": "inline",
+    "strings": "inline"
   },
   "editor.renderWhitespace": "all",
   "editor.suggest.localityBonus": true,

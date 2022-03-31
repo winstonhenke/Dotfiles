@@ -74,6 +74,7 @@
     "nuget",
     "nupkg",
     "openid",
+    "SFDC",
     "SFDX",
     "TODOs",
     "winstonhenke"
@@ -386,7 +387,8 @@
   "json.maxItemsComputed": 8000,
   "audioCues.lineHasBreakpoint": "off",
   "audioCues.lineHasError": "off",
-  "audioCues.onDebugBreak": "on",
+  "audioCues.onDebugBreak": "off",
   "git.rebaseWhenSync": true,
-  "git.autoStash": true
+  "git.autoStash": true,
+  "python.experiments.enabled": false
 }

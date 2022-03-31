@@ -167,8 +167,6 @@
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",
   "gitlens.views.stashes.files.layout": "tree",
-  "http.proxyStrictSSL": false,
-  "http.proxySupport": "on",
   "javascript.suggest.completeFunctionCalls": true,
   "jupyter.debugJustMyCode": false,
   "logViewer.watch": [

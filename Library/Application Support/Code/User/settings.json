@@ -157,40 +157,19 @@
   "gitlens.advanced.maxListItems": 0,
   "gitlens.advanced.maxSearchItems": 0,
   "gitlens.blame.heatmap.location": "left",
-  "gitlens.codeLens.authors.command": "gitlens.revealCommitInView",
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.defaultDateSource": "committed",
   "gitlens.heatmap.toggleMode": "window",
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.views.repositories.files.layout": "list",
+  "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",
   "gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.completeFunctionCalls": true,
   "jupyter.debugJustMyCode": false,
-  "logViewer.watch": [
-    {
-      "pattern": "C:\\logs\\A.log",
-      "title": "AppBuilder Logs"
-    },
-    {
-      "pattern": "C:\\logs\\app.build.log",
-      "title": "App Build Log"
-    }
-  ],
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
   "markdownlint.run": "onSave",
-  "mssql.connections": [
-    {
-      "database": "{{put-database-name-here}}",
-      "password": "{{put-password-here}}",
-      "server": "{{put-server-name-here}}",
-      "user": "{{put-username-here}}"
-    }
-  ],
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -388,5 +367,6 @@
   "audioCues.onDebugBreak": "off",
   "git.rebaseWhenSync": true,
   "git.autoStash": true,
-  "python.experiments.enabled": false
+  "python.experiments.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false
 }

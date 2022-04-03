@@ -361,5 +361,6 @@
   "xml.format.spaceBeforeEmptyCloseTag": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": true,
+  "python.terminal.activateEnvInCurrentTerminal": true
 }

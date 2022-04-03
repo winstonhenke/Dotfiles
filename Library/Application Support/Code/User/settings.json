@@ -362,5 +362,6 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
   "python.linting.pylintEnabled": true,
-  "python.terminal.activateEnvInCurrentTerminal": true
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.linting.enabled": false
 }

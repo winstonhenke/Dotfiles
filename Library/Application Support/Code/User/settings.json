@@ -1,7 +1,4 @@
 {
-  "[azure-pipelines]": {
-    "editor.defaultFormatter": "ms-azure-devops.azure-pipelines"
-  },
   "[javascript]": {
     "editor.quickSuggestions": {
       "comments": true,
@@ -90,7 +87,6 @@
   "debug.toolBarLocation": "docked",
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.maxComputationTime": 0,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -139,7 +135,6 @@
   "explorer.openEditors.visible": 20,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "**/azure-pipelines-*.yml": "azure-pipelines",
     "*.code-workspace": "JSONC"
   },
   "files.autoGuessEncoding": true,

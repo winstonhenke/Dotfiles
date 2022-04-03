@@ -135,7 +135,7 @@
   "explorer.openEditors.visible": 20,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "*.code-workspace": "JSONC"
+    "*.code-workspace": "jsonc"
   },
   "files.autoGuessEncoding": true,
   "files.autoSave": "onFocusChange",
@@ -360,5 +360,6 @@
   "xml.codeLens.enabled": true,
   "xml.format.spaceBeforeEmptyCloseTag": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "python.linting.pylintEnabled": true
 }

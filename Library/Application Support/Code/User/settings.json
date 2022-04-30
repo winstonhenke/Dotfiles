@@ -87,7 +87,6 @@
   "debug.toolBarLocation": "docked",
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",
@@ -187,10 +186,6 @@
   "python.analysis.completeFunctionParens": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.experiments.enabled": false,
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "80"
-  ],
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.pythonPath": "C:\\Python39\\python.exe",
@@ -363,5 +358,6 @@
   "zenMode.hideTabs": false,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.linting.pycodestyleEnabled": true,
-  "python.linting.pydocstyleEnabled": true
+  "python.linting.pydocstyleEnabled": true,
+  "python.linting.pycodestyleCategorySeverity.E": "Warning"
 }

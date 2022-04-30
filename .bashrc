@@ -75,7 +75,8 @@ load_script () {
 
 
 # Better tab completion experience. show-all-if-ambiguous: This alters the default behavior of the completion functions. If set to ‘on’, words which have more than one possible completion cause the matches to be listed immediately instead of ringing the bell
-bind 'set show-all-if-ambiguous on'
+bind 'set show-all-if-ambiguous off'
+bind 'set completion-ignore-case on'
 bind 'TAB:menu-complete'
 
 # Bash tab completion

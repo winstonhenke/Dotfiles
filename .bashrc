@@ -14,7 +14,7 @@ export JAVA_11_HOME="/usr/local/opt/openjdk@11"
 export JAVA_HOME="$JAVA_11_HOME"
 
 #Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
-export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin"
+export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1
@@ -112,3 +112,5 @@ GIT_PS1_SHOWCOLORHINTS='y'				# Colored hint about the current dirty state.The c
 load_script `brew --prefix`"/etc/bash_completion.d/brew"
 # Azure CLI Bash Completion - Installev via Homebrew by default with az
 load_script `brew --prefix`"/etc/bash_completion.d/az"
+# Amazon AWS CLI Completion. aws_completer is installed by default with the CLI tooling.
+complete -C '/usr/local/bin/aws_completer' aws

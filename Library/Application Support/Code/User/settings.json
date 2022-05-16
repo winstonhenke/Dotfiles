@@ -106,7 +106,6 @@
   "editor.minimap.maxColumn": 50,
   "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fill",
-  "editor.parameterHints.enabled": true,
   "editor.quickSuggestions": {
     "comments": "inline",
     "other": "inline",
@@ -120,7 +119,6 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestOnTriggerCharacters": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordBasedSuggestions": true,
   "editor.wrappingIndent": "deepIndent",
@@ -188,7 +186,6 @@
   "python.experiments.enabled": false,
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
-  "python.pythonPath": "C:\\Python39\\python.exe",
   "python.venvFolders": [
     ".venv",
     "Workspace/Python/.venv",
@@ -359,5 +356,7 @@
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.linting.pycodestyleEnabled": true,
   "python.linting.pydocstyleEnabled": true,
-  "python.linting.pycodestyleCategorySeverity.E": "Warning"
+  "python.linting.pycodestyleCategorySeverity.E": "Warning",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "editor.suggest.preview": true
 }

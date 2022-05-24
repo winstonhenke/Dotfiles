@@ -359,5 +359,6 @@
   "python.linting.pycodestyleCategorySeverity.E": "Warning",
   "githubPullRequests.createOnPublishBranch": "never",
   "editor.suggest.preview": true,
-  "editor.inlineSuggest.enabled": false
+  "editor.inlineSuggest.enabled": false,
+  "editor.acceptSuggestionOnEnter": "off"
 }

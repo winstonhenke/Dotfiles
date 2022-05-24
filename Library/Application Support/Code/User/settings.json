@@ -107,16 +107,16 @@
   "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fill",
   "editor.quickSuggestions": {
-    "comments": "inline",
-    "other": "inline",
-    "strings": "inline"
+
+    "comments": "on",
+    "other": "on",
+    "strings": "on"
   },
   "editor.renderWhitespace": "all",
   "editor.suggest.localityBonus": true,
   "editor.suggest.shareSuggestSelections": true,
   "editor.suggest.showColors": false,
   "editor.suggest.showStatusBar": true,
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestOnTriggerCharacters": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabSize": 2,
@@ -358,5 +358,6 @@
   "python.linting.pydocstyleEnabled": true,
   "python.linting.pycodestyleCategorySeverity.E": "Warning",
   "githubPullRequests.createOnPublishBranch": "never",
-  "editor.suggest.preview": true
+  "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": false
 }

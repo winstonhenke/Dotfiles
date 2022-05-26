@@ -8,13 +8,12 @@
   },
   "[markdown]": {
     "editor.wordWrap": "off",
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
   },
   "[python]": {
-    "editor.defaultFormatter": null,
     "editor.formatOnPaste": false,
     "editor.tabSize": 4
   },
@@ -361,5 +360,6 @@
   "githubPullRequests.createOnPublishBranch": "never",
   "editor.suggest.preview": true,
   "editor.inlineSuggest.enabled": false,
-  "editor.acceptSuggestionOnEnter": "off"
+  "editor.acceptSuggestionOnEnter": "off",
+  "markdownlint.focusMode": 2
 }

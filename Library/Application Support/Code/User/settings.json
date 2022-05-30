@@ -88,7 +88,7 @@
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
-  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingBrackets": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
@@ -192,7 +192,8 @@
     "Workspace/SetGo-Projects/.venv",
     "Workspace/Crypto/.venv",
     "Workspace/Jupyter-Notebook-POC/.venv",
-    "Workspace/CryptoTaxes/.venv"
+    "Workspace/CryptoTaxes/.venv",
+    "Workspace/RSS/My-RSS/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",

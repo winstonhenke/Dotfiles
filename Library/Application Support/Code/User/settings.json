@@ -193,7 +193,8 @@
     "Workspace/Crypto/.venv",
     "Workspace/Jupyter-Notebook-POC/.venv",
     "Workspace/CryptoTaxes/.venv",
-    "Workspace/RSS/My-RSS/.venv"
+    "Workspace/RSS/My-RSS/.venv",
+    "Workspace/RSS/feedparser/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
@@ -362,5 +363,6 @@
   "editor.suggest.preview": true,
   "editor.inlineSuggest.enabled": false,
   "editor.acceptSuggestionOnEnter": "off",
-  "markdownlint.focusMode": 2
+  "markdownlint.focusMode": 2,
+  "salesforcedx-vscode-core.retrieve-test-code-coverage": true
 }

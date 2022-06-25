@@ -40,6 +40,19 @@ Commands
 
 ---
 
+## NPM Notes
+
+Globally installed NPM packages: `npm list -g --depth 0`
+
+```bash
+/usr/local/lib
+├── @angular/cli@14.0.3
+├── @salesforce/cli@0.0.43
+└── npm@8.12.1
+```
+
+---
+
 ## Setup
 
 ### Original Creation

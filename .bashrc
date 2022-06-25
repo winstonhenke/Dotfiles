@@ -56,6 +56,9 @@ alias lsalh='ls'
 ### There is a dependency between bash_completion.sh and the version of Bash running and 
 ### HomeBrew does not automatically set the users default shell after installation.
 ###
+### Some Bash completion files are symlinked from here when installed via HomeBrew
+### /usr/local/etc/bash_completion.d
+###
 ##########################################################################################
 
 load_script () {
@@ -114,3 +117,8 @@ load_script `brew --prefix`"/etc/bash_completion.d/brew"
 load_script `brew --prefix`"/etc/bash_completion.d/az"
 # Amazon AWS CLI Completion. aws_completer is installed by default with the CLI tooling.
 complete -C '/usr/local/bin/aws_completer' aws
+
+
+# Load Angular CLI autocompletion.
+# This was added by Angular CLI after installing it
+source <(ng completion script)

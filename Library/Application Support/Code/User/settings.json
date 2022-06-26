@@ -81,7 +81,6 @@
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
   "debug.internalConsoleOptions": "openOnSessionStart",
-  "debug.javascript.autoAttachFilter": "always",
   "debug.openDebug": "openOnDebugBreak",
   "debug.openExplorerOnEnd": true,
   "debug.showSubSessionsInToolBar": true,
@@ -368,5 +367,6 @@
   "editor.acceptSuggestionOnEnter": "off",
   "markdownlint.focusMode": 2,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
-  "security.workspace.trust.enabled": false
+  "security.workspace.trust.enabled": false,
+  "git.autoRepositoryDetection": "subFolders"
 }

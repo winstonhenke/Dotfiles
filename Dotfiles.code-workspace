@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "git.logLevel": "Info",
+    "git.untrackedChanges": "hidden"
+  }
+}

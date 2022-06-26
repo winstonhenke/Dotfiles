@@ -364,7 +364,6 @@
   "python.linting.pydocstyleEnabled": true,
   "python.linting.pycodestyleCategorySeverity.E": "Warning",
   "githubPullRequests.createOnPublishBranch": "never",
-  "editor.suggest.preview": true,
   "editor.inlineSuggest.enabled": false,
   "editor.acceptSuggestionOnEnter": "off",
   "markdownlint.focusMode": 2,

@@ -7,6 +7,8 @@
   "settings": {
     "git.logLevel": "Info",
     "git.untrackedChanges": "hidden",
-    "git-graph.repository.showUntrackedFiles": false
+    "git-graph.repository.showUntrackedFiles": false,
+    "git.autoRepositoryDetection": false,
+    "git.autorefresh": false
   }
 }

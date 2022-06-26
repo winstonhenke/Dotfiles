@@ -14,7 +14,7 @@ export JAVA_11_HOME="/usr/local/opt/openjdk@11"
 export JAVA_HOME="$JAVA_11_HOME"
 
 #Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
-export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer"
+export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1

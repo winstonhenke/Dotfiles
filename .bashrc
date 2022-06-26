@@ -102,13 +102,14 @@ load_script "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash
 load_script "$HOME"'/.bash_completion.d/dotnet-completion.bash'
 # Git Bash Completion
 load_script `brew --prefix`"/etc/bash_completion.d/git-completion.bash"
+# Git Prompt
+# https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 load_script `brew --prefix`"/etc/bash_completion.d/git-prompt.sh"
-#Configuration for git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE='y'				# Unstaged (*) and staged (+) changes will be shown next to the branch name
 GIT_PS1_SHOWSTASHSTATE='y'				# If something is stashed, then a '$' will be shown next to the branch name.
 GIT_PS1_SHOWUNTRACKEDFILES='y'			# If there're untracked files, then a '%' will be shown next to the branch name.
-GIT_PS1_SHOWUPSTREAM='auto verbose'		# See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
-GIT_PS1_STATESEPARATOR=':'				# The separator between the branch name and the above state symbols
+# GIT_PS1_SHOWUPSTREAM='auto verbose'		# See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
+# GIT_PS1_STATESEPARATOR=':'				# The separator between the branch name and the above state symbols
 GIT_PS1_SHOWCOLORHINTS='y'				# Colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
 
 # Brew Bash Completion

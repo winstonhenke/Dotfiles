@@ -109,7 +109,6 @@
   "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fill",
   "editor.quickSuggestions": {
-
     "comments": "on",
     "other": "on",
     "strings": "on"
@@ -327,10 +326,13 @@
   "window.title": "${rootName}",
   "workbench.colorCustomizations": {
     "editorOverviewRuler.addedForeground": "#00000000",
-    "editorOverviewRuler.errorForeground": "#00000000",
     "editorOverviewRuler.infoForeground": "#00000000",
     "editorOverviewRuler.modifiedForeground": "#00000000",
-    "editorOverviewRuler.warningForeground": "#00000000"
+    "minimap.warningHighlight": "#00000000",
+    "minimap.errorHighlight": "#00000000",
+    "minimap.selectionHighlight": "#00000000",
+    "minimap.findMatchHighlight": "#00000000",
+    "minimap.selectionOccurrenceHighlight": "#00000000"
   },
   "workbench.editor.decorations.badges": true,
   "workbench.editor.decorations.colors": false,
@@ -366,5 +368,6 @@
   "editor.inlineSuggest.enabled": false,
   "editor.acceptSuggestionOnEnter": "off",
   "markdownlint.focusMode": 2,
-  "salesforcedx-vscode-core.retrieve-test-code-coverage": true
+  "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+  "security.workspace.trust.enabled": false
 }

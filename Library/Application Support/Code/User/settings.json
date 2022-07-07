@@ -368,5 +368,8 @@
   "markdownlint.focusMode": 2,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "security.workspace.trust.enabled": false,
-  "git.autoRepositoryDetection": "subFolders"
+  "git.autoRepositoryDetection": "subFolders",
+  "githubPullRequests.defaultMergeMethod": "rebase",
+  "git.mergeEditor": true,
+  "window.commandCenter": true
 }

@@ -8,7 +8,9 @@
   },
   "[markdown]": {
     "editor.wordWrap": "off",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
   },
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
@@ -364,7 +366,6 @@
   "python.linting.pycodestyleCategorySeverity.E": "Warning",
   "githubPullRequests.createOnPublishBranch": "never",
   "editor.inlineSuggest.enabled": false,
-  "editor.acceptSuggestionOnEnter": "off",
   "markdownlint.focusMode": 2,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "security.workspace.trust.enabled": false,

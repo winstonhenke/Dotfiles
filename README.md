@@ -83,6 +83,13 @@ Create a dot alias in `$HOME/.bashrc`
 
 ```bash
 alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+
+# Not sure why this isn't working
+alias dotdiff="GIT_WORK_TREE=$HOME GIT_DIR=$HOME/.dotgit/ && code Dotfiles.code-workspace"
+# Or
+alias dottest="GIT_WORK_TREE=$HOME GIT_DIR=$HOME/.dotgit/"
+code Dotfiles.code-workspace
+
 ```
 
 Clone the repo, putting the working directory into a temp folder. The temp folder is needed to prevent some conflicts with existing/default dot files

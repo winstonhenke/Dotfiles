@@ -164,7 +164,7 @@
   "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",
-  "gitlens.views.stashes.files.layout": "tree",
+"gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.completeFunctionCalls": true,
   "json.maxItemsComputed": 8000,
   "jupyter.debugJustMyCode": false,
@@ -185,7 +185,7 @@
   "powershell.promptToUpdatePowerShell": false,
   "python.analysis.completeFunctionParens": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "python.experiments.enabled": false,
+"python.experiments.enabled": false,
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.venvFolders": [
@@ -372,5 +372,8 @@
   "git.autoRepositoryDetection": "subFolders",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "git.mergeEditor": true,
-  "window.commandCenter": true
+  "window.commandCenter": true,
+  "xml.server.binary.trustedHashes": [
+    "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
+  ]
 }

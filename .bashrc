@@ -119,6 +119,9 @@ load_script `brew --prefix`"/etc/bash_completion.d/az"
 # Amazon AWS CLI Completion. aws_completer is installed by default with the CLI tooling.
 complete -C '/usr/local/bin/aws_completer' aws
 
+# This following bash script was installed from the SFDX cli tool
+# Currently that command is: sfdx autocomplete
+load_script '/Users/whenke/Library/Caches/sfdx/autocomplete/bash_setup'
 
 # Load Angular CLI autocompletion.
 # This was added by Angular CLI after installing it

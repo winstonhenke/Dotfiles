@@ -200,7 +200,6 @@
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
-  "salesforcedx-vscode-core.show-cli-success-msg": false,
   "salesforcedx-vscode-core.telemetry.enabled": false,
   "salesforcedx-vscode-soql.experimental.validateQueries": true,
   "scm.alwaysShowActions": true,
@@ -375,5 +374,6 @@
   "window.commandCenter": true,
   "xml.server.binary.trustedHashes": [
     "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
-  ]
+  ],
+  "salesforcedx-vscode-core.detectConflictsAtSync": true
 }

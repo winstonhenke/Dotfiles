@@ -105,7 +105,6 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.hover.delay": 500,
-  "editor.maxTokenizationLineLength": 200000,
   "editor.minimap.maxColumn": 50,
   "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fill",
@@ -166,7 +165,6 @@
   "gitlens.views.searchAndCompare.files.layout": "tree",
 "gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.completeFunctionCalls": true,
-  "json.maxItemsComputed": 8000,
   "jupyter.debugJustMyCode": false,
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.preview.scrollEditorWithPreview": true,
@@ -375,5 +373,9 @@
   "xml.server.binary.trustedHashes": [
     "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
   ],
-  "salesforcedx-vscode-core.show-cli-success-msg": false
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "salesforcedx-vscode-core.clearOutputTab": true,
+  "editor.suggest.matchOnWordStartOnly": false,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true
 }

@@ -135,7 +135,8 @@
   "explorer.openEditors.visible": 20,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "*.code-workspace": "jsonc"
+    "*.code-workspace": "jsonc",
+    "*.md": "markdown"
   },
   "files.autoGuessEncoding": true,
   "files.autoSave": "onFocusChange",
@@ -283,14 +284,6 @@
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.suggest.completeFunctionCalls": true,
-  "vs-kubernetes": {
-    "disable-linters": [
-      "resource-limits"
-    ],
-    "vs-kubernetes.draft-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\draft\\windows-amd64\\draft.exe",
-    "vs-kubernetes.helm-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
-    "vs-kubernetes.minikube-path.windows": "C:\\Users\\whenke\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
-  },
   "vsicons.dontShowNewVersionMessage": true,
   "vsicons.projectDetection.autoReload": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -336,5 +329,9 @@
     "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
   ],
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "prettier.configPath": ".prettierrc",
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+  "editor.formatOnSave": true
 }

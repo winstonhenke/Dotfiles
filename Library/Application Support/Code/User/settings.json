@@ -183,7 +183,7 @@
   "powershell.promptToUpdatePowerShell": false,
   "python.analysis.completeFunctionParens": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
-"python.experiments.enabled": false,
+  "python.experiments.enabled": false,
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.venvFolders": [
@@ -194,7 +194,8 @@
     "Workspace/Jupyter-Notebook-POC/.venv",
     "Workspace/CryptoTaxes/.venv",
     "Workspace/RSS/My-RSS/.venv",
-    "Workspace/RSS/feedparser/.venv"
+    "Workspace/RSS/feedparser/.venv",
+    "Workspace/Python/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",

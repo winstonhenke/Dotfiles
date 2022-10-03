@@ -32,7 +32,6 @@
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "apexPMD.priorityWarnThreshold": 2,
-  "azureTerraform.terminal": "integrated",
   "bookmarks.label.suggestion": "useWhenSelected",
   "bookmarks.saveBookmarksInProject": true,
   "bookmarks.useWorkaroundForFormatters": true,
@@ -238,32 +237,6 @@
   "settingsSync.ignoredSettings": [
     "salesforcedx-vscode-apex.java.home"
   ],
-  "shellLauncher.shells.windows": [
-    {
-      "label": "bash",
-      "launchName": "bash",
-      "shell": "%windir%\\System32\\wsl.exe"
-    },
-    {
-      "label": "cmd",
-      "launchName": "cmd",
-      "shell": "%windir%\\system32\\cmd.exe"
-    },
-    {
-      "label": "pwsh",
-      "launchName": "pwsh",
-      "shell": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
-    },
-    {
-      "args": [
-        "/k",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\VsDevCmd.bat"
-      ],
-      "label": "vs2015",
-      "launchName": "vs2015",
-      "shell": "%comspec%"
-    }
-  ],
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "underline",
@@ -307,21 +280,6 @@
   },
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.splitCwd": "workspaceRoot",
-  "terraform.indexing": {
-    "delay": 500,
-    "enabled": false,
-    "exclude": [
-      ".terraform/**/*",
-      "**/.terraform/**/*"
-    ],
-    "liveIndexing": false
-  },
-  "terraform.languageServer": {
-    "args": [
-      "serve"
-    ],
-    "external": true
-  },
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.suggest.completeFunctionCalls": true,

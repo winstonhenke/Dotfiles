@@ -209,7 +209,7 @@
     "Workspace/Python/.venv"
   ],
   "redhat.telemetry.enabled": false,
-  "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@11",
+  "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@17",
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,

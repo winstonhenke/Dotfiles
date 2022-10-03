@@ -20,22 +20,34 @@ Once setup use the `dot` alias from your home directory
 - `dot status`
 - `dot add -u` (you do not want to run add all)
 - `dot ls-files` - List all files being tracked
+- See `alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'` in `.bashrc`
 
 ---
 
-## HomeBrew Notes
+## HomeBrew
 
-Commands
+- [Online package browser for Homebrew](https://formulae.brew.sh/)
+- Formulae: Typically command line tools
+- Casks: Extension of Homebrew that allows installing MacOS native applications (example Firefox)
+- Tap: By default it will only find packages in the standard Homebrew repository. To add packages from additional sources you first need to `brew tap` that repo.
+- Installs to: `/usr/local/Cellar/`
+  - With symbolic links added to `/usr/local/bin/` (`/opt/homebrew/Cellar` on Apple Silicon)
+
+Commands: <https://docs.brew.sh/>
 
 - `brew help`
 - `brew deps --tree --installed`
-- `brew info python`
-- `brew outdated`
+- `brew update` - Update all package definitions (formulae) and Homebrew itself
+- `brew outdated`- List which of your installed packages (kegs) are outdated
 - `brew upgrade` - Upgrade everything
-- `brew update` - Fetch the newest version of Homebrew and all formulae from GitHub
+  - `brew upgrade <formula>` - Upgrade a specific formula
 - `brew list` - List all installed formulae or casks
   - `brew list --full-name --verbose`
   - `brew list --versions --verbose`
+- `brew doctor` - Check your system for potential problems
+- `brew cleanup`
+- `brew info python`
+- `brew search java`
 - `brew bundle dump --force --file ~/.brew/Brewfile` - Write all installed casks/formulae/images/taps into a Brewfile
 
 ---

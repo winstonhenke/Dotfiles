@@ -11,7 +11,8 @@ source "${HOME}/.bash_ps1.sh"
 
 # Installed Java11 from HomeBrew on MacOS
 export JAVA_11_HOME="/usr/local/opt/openjdk@11"
-export JAVA_HOME="$JAVA_11_HOME"
+export JAVA_17_HOME="/usr/local/opt/openjdk@17"
+export JAVA_HOME="$JAVA_17_HOME"
 
 #Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
 export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

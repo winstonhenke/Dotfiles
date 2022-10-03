@@ -30,8 +30,8 @@ Once setup use the `dot` alias from your home directory
 - Formulae: Typically command line tools
 - Casks: Extension of Homebrew that allows installing MacOS native applications (example Firefox)
 - Tap: By default it will only find packages in the standard Homebrew repository. To add packages from additional sources you first need to `brew tap` that repo.
-- Installs to: `/usr/local/Cellar/`
-  - With symbolic links added to `/usr/local/bin/` (`/opt/homebrew/Cellar` on Apple Silicon)
+- Installs to: `/usr/local/Cellar/` (`/opt/homebrew/Cellar` on Apple Silicon)
+  - With symbolic links added to `/usr/local/bin/`
 
 Commands: <https://docs.brew.sh/>
 

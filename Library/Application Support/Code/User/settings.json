@@ -74,9 +74,11 @@
     "nuget",
     "nupkg",
     "openid",
+    "SETGO",
     "SFDC",
     "SFDX",
     "TODOs",
+    "whenke",
     "winstonhenke"
   ],
   "debug.console.closeOnEnd": true,

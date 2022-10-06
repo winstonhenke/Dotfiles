@@ -335,5 +335,6 @@
   "prettier.configPath": ".prettierrc",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "window.nativeTabs": true
 }

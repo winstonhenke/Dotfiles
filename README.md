@@ -52,6 +52,12 @@ Commands: <https://docs.brew.sh/>
 
 ---
 
+## Git
+
+- `git config --list --show-origin`
+
+---
+
 ## NPM Notes
 
 Globally installed NPM packages: `npm list -g --depth 0`

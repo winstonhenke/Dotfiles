@@ -13,7 +13,7 @@
 	required = true
 [user]
 	name = Winston Henke
-	email = winstonhenke@gmail.com
+	email = winston@winstonhenke.com
 [diff]
 	colorMoved = zebra
 [rebase]

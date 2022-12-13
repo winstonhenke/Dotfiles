@@ -336,5 +336,6 @@
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "editor.formatOnSave": true,
-  "window.nativeTabs": true
+  "window.nativeTabs": true,
+  "editor.suggest.showCustomcolors": false
 }

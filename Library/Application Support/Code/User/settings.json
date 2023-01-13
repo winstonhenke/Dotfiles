@@ -137,7 +137,9 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.code-workspace": "jsonc",
-    "*.md": "markdown"
+    "*.md": "markdown",
+    "*.resbackup": "json",
+    "*.json": "json"
   },
   "files.autoGuessEncoding": true,
   "files.autoSave": "onFocusChange",
@@ -215,7 +217,6 @@
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "salesforcedx-vscode-core.telemetry.enabled": false,
   "salesforcedx-vscode-soql.experimental.validateQueries": true,
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
@@ -237,7 +238,8 @@
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredSettings": [
-    "salesforcedx-vscode-apex.java.home"
+    "salesforcedx-vscode-apex.java.home",
+    "editor.formatOnSave"
   ],
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
@@ -335,7 +337,10 @@
   "prettier.configPath": ".prettierrc",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
-  "editor.formatOnSave": true,
   "window.nativeTabs": true,
-  "editor.suggest.showCustomcolors": false
+  "editor.suggest.showCustomcolors": false,
+  "salesforcedx-vscode-core.telemetry.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.formatOnSave": true
 }

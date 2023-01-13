@@ -31,6 +31,9 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+  "[Log]": {
+    "editor.wordWrap": "off"
+  },
   "apexPMD.priorityWarnThreshold": 2,
   "bookmarks.label.suggestion": "useWhenSelected",
   "bookmarks.saveBookmarksInProject": true,

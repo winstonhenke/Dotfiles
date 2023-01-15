@@ -63,18 +63,18 @@ alias lsalh='ls'
 ##########################################################################################
 
 load_script () {
-	# Just a helper function for loading some of these bash completion scripts
-	# Some installs symlink their bash completion sripts. So validate the symlink and actual path
+  # Just a helper function for loading some of these bash completion scripts
+  # Some installs symlink their bash completion sripts. So validate the symlink and actual path
 
-	script_path=$1
-	script_real_path=$(realpath $script_path)
+  script_path=$1
+  script_real_path=$(realpath $script_path)
 
-	if [[ -r $script_path && -r $(realpath $script_real_path) ]]; then
-		# Could just use script_real_path here too I guess but most docs just use the symlink
-		source $script_path
-	else
-		printf "[~/.bashrc] Issue loading script into .bashrc\n\tscript_path: $script_path\n\tscript_real_path: $script_real_path\n\tVerify the paths are valid and that the current user had read permission on the file"
-	fi
+  if [[ -r $script_path && -r $(realpath $script_real_path) ]]; then
+    # Could just use script_real_path here too I guess but most docs just use the symlink
+    source $script_path
+  else
+    printf "[~/.bashrc] Issue loading script into .bashrc\n\tscript_path: $script_path\n\tscript_real_path: $script_real_path\n\tVerify the paths are valid and that the current user had read permission on the file"
+  fi
 }
 
 
@@ -87,9 +87,9 @@ bind 'TAB:menu-complete'
 # shopt == SHell OPTions - builtin command to enable/disable/view options for the current bash shell
 # I'm not really sure why I'm checking if Bash is in posix mode...It's something I copy and pasted a long time ago
 if ! shopt -oq posix; then
-	load_script `brew --prefix`"/etc/profile.d/bash_completion.sh" # MacOS - Bash & Bash-Completion installed with HomeBrew
-	#load_script "/usr/share/bash-completion/bash_completion" # Arch
-	#load_script "/etc/bash_completion" # Ubuntu
+  load_script `brew --prefix`"/etc/profile.d/bash_completion.sh" # MacOS - Bash & Bash-Completion installed with HomeBrew
+  #load_script "/usr/share/bash-completion/bash_completion" # Arch
+  #load_script "/etc/bash_completion" # Ubuntu
 fi
 
 # Default Python venv
@@ -110,12 +110,12 @@ load_script `brew --prefix`"/etc/bash_completion.d/git-completion.bash"
 # Git Prompt
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 load_script `brew --prefix`"/etc/bash_completion.d/git-prompt.sh"
-GIT_PS1_SHOWDIRTYSTATE='y'				# Unstaged (*) and staged (+) changes will be shown next to the branch name
-GIT_PS1_SHOWSTASHSTATE='y'				# If something is stashed, then a '$' will be shown next to the branch name.
-GIT_PS1_SHOWUNTRACKEDFILES='y'			# If there're untracked files, then a '%' will be shown next to the branch name.
-# GIT_PS1_SHOWUPSTREAM='auto verbose'		# See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
-# GIT_PS1_STATESEPARATOR=':'				# The separator between the branch name and the above state symbols
-GIT_PS1_SHOWCOLORHINTS='y'				# Colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
+GIT_PS1_SHOWDIRTYSTATE='y'              # Unstaged (*) and staged (+) changes will be shown next to the branch name
+GIT_PS1_SHOWSTASHSTATE='y'              # If something is stashed, then a '$' will be shown next to the branch name.
+GIT_PS1_SHOWUNTRACKEDFILES='y'          # If there're untracked files, then a '%' will be shown next to the branch name.
+# GIT_PS1_SHOWUPSTREAM='auto verbose'   # See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
+# GIT_PS1_STATESEPARATOR=':'            # The separator between the branch name and the above state symbols
+GIT_PS1_SHOWCOLORHINTS='y'              # Colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
 
 # Brew Bash Completion
 load_script `brew --prefix`"/etc/bash_completion.d/brew"

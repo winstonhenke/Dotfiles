@@ -1,0 +1,42 @@
+#!/usr/local/bin/bash
+
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+BLUE="\e[34m"
+MAGENTA="\e[35m"
+CYAN="\e[36m"
+WHITE="\e[37m"
+BRIGHT_GREEN="\e[92m"
+
+ENDCOLOR="\e[0m"
+
+echo -e "${BRIGHT_GREEN}\n#####################\nHakuna Matata\n#####################\n"
+
+# Git
+echo -e "${CYAN}Git..."
+echo -e "${YELLOW}git config --list --show-origin${ENDCOLOR}"
+echo ""
+
+# Dotfiles
+echo -e "${CYAN}Dotfiles..."
+echo -e "${YELLOW}dot git status${MAGENTA} - Git status for dotfiles${ENDCOLOR}"
+echo -e "${YELLOW}dot ls-files${MAGENTA} - List all files being tracked${ENDCOLOR}"
+echo ""
+
+# HomeBrew
+echo -e "${CYAN}HomeBrew..."
+echo -e "${YELLOW}brew help${ENDCOLOR}"
+echo -e "${YELLOW}brew deps --tree --installed${ENDCOLOR}"
+echo -e "${YELLOW}brew bundle dump --force --file ~/.brew/Brewfile${MAGENTA} - Write all installed casks/formulae/images/taps into a Brewfile${ENDCOLOR}"
+echo -e "${YELLOW}brew update${MAGENTA} - Update all package definitions (formulae) and Homebrew itself${ENDCOLOR}"
+echo -e "${YELLOW}brew outdated${MAGENTA} - List which of your installed packages (kegs) are outdated${ENDCOLOR}"
+echo -e "${YELLOW}brew upgrade${MAGENTA} - Upgrade everything${ENDCOLOR}"
+echo -e "${YELLOW}brew upgrade <formula>${MAGENTA} - Upgrade a specific formula${ENDCOLOR}"
+echo -e "${YELLOW}brew list${MAGENTA} - List all installed formulae or casks${ENDCOLOR}"
+echo -e " ${YELLOW}brew list --full-name --verbose${ENDCOLOR}"
+echo -e " ${YELLOW}brew list --versions --verbose${ENDCOLOR}"
+echo -e "${YELLOW}brew doctor${MAGENTA} - Check your system for potential problems${ENDCOLOR}"
+echo -e "${YELLOW}brew info python${ENDCOLOR}"
+echo -e "${YELLOW}brew search java${ENDCOLOR}"
+echo ""

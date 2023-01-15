@@ -15,7 +15,7 @@ export JAVA_17_HOME="/usr/local/opt/openjdk@17"
 export JAVA_HOME="$JAVA_17_HOME"
 
 #Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
-export PATH="/usr/local/bin:${PATH}:$HOME/bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/usr/local/bin:${PATH}:$HOME/.bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1
@@ -94,13 +94,17 @@ fi
 
 # Default Python venv
 load_script "$HOME"'/.venv/default/bin/activate'
+
+# Docker
 # Docker Bash Completion - MacOS - Installed using .dmg from docker.com
-load_script "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion"
+# load_script "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion"
 # Docker Desktop now ships with built in k8s support for a single-node cluster. If I ever want to do local development on a multi-node cluster I'd likely need to install docker-machine
-#load_script "/Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion"
-load_script "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion"
+# #load_script "/Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion"
+# load_script "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion"
+
 # Dotnet Bash Completion
 load_script "$HOME"'/.bash_completion.d/dotnet-completion.bash'
+
 # Git Bash Completion
 load_script `brew --prefix`"/etc/bash_completion.d/git-completion.bash"
 # Git Prompt
@@ -115,8 +119,10 @@ GIT_PS1_SHOWCOLORHINTS='y'				# Colored hint about the current dirty state.The c
 
 # Brew Bash Completion
 load_script `brew --prefix`"/etc/bash_completion.d/brew"
+
 # Azure CLI Bash Completion - Installev via Homebrew by default with az
 load_script `brew --prefix`"/etc/bash_completion.d/az"
+
 # Amazon AWS CLI Completion. aws_completer is installed by default with the CLI tooling.
 complete -C '/usr/local/bin/aws_completer' aws
 

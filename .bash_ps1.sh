@@ -3,11 +3,7 @@
 # Not sure the shebang is necessary since I'm just sourcing it into my .bashrc but I get weird vim highlighting
 # issues around $'' without it. Probably because the $'' is only in the new version of bash? idk
 
-# https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html
-
-# Other Bash Variables
-# https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html
-# Example: PROMPT_DIRTRIM
+# See: https://github.com/winstonhenke/Docs/blob/master/Bash/Ansi_Colors.md
 
 __prompt_command ()
 {
@@ -29,7 +25,7 @@ __prompt_command ()
         pythonVenv="[`basename \"$VIRTUAL_ENV\"`]"
     fi
 
-    __git_ps1 "\n${MAGENTA}\@ ${GREEN}\u${DEFAULT}@${CYAN}\h${DEFAULT}:${YELLOW}\w${DEFAULT}" "\n${pythonVenvColor}${pythonVenv}${DEFAULT} \$"
+    __git_ps1 "${MAGENTA}\@ ${GREEN}\u${DEFAULT}@${CYAN}\h${DEFAULT}:${YELLOW}\w${DEFAULT}" "\n${pythonVenvColor}${pythonVenv}${DEFAULT} \$"
     export PS1
   else
     echo "Warning from .bashrc - Bash·function __git_ps1 not found. This is usually installed with Git along side the bash-git-completion script"

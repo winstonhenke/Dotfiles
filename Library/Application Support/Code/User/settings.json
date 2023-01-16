@@ -318,8 +318,7 @@
     "minimap.selectionOccurrenceHighlight": "#00000000",
     "minimap.warningHighlight": "#00000000"
   },
-  "workbench.editor.decorations.badges": true,
-  "workbench.editor.decorations.colors": false,
+  "workbench.editor.decorations.badges": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.openPositioning": "last",

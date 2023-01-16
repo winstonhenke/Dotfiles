@@ -1,4 +1,7 @@
 {
+  "[Log]": {
+    "editor.wordWrap": "off"
+  },
   "[javascript]": {
     "editor.quickSuggestions": {
       "comments": true,
@@ -30,9 +33,6 @@
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "[Log]": {
-    "editor.wordWrap": "off"
   },
   "apexPMD.priorityWarnThreshold": 2,
   "bookmarks.label.suggestion": "useWhenSelected",
@@ -105,6 +105,7 @@
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontSize": 13,
   "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.hover.delay": 500,
@@ -123,6 +124,7 @@
   "editor.suggest.matchOnWordStartOnly": false,
   "editor.suggest.shareSuggestSelections": true,
   "editor.suggest.showColors": false,
+  "editor.suggest.showCustomcolors": false,
   "editor.suggest.showStatusBar": true,
   "editor.suggestOnTriggerCharacters": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
@@ -140,9 +142,9 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.code-workspace": "jsonc",
+    "*.json": "json",
     "*.md": "markdown",
-    "*.resbackup": "json",
-    "*.json": "json"
+    "*.resbackup": "json"
   },
   "files.autoGuessEncoding": true,
   "files.autoSave": "onFocusChange",
@@ -173,6 +175,7 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.defaultDateSource": "committed",
   "gitlens.heatmap.toggleMode": "window",
+  "gitlens.telemetry.enabled": false,
   "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",
@@ -195,6 +198,9 @@
   "powershell.debugging.createTemporaryIntegratedConsole": true,
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
   "powershell.promptToUpdatePowerShell": false,
+  "prettier.configPath": ".prettierrc",
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
   "python.analysis.completeFunctionParens": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.experiments.enabled": false,
@@ -220,6 +226,7 @@
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "salesforcedx-vscode-core.telemetry.enabled": false,
   "salesforcedx-vscode-soql.experimental.validateQueries": true,
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
@@ -244,6 +251,7 @@
     "salesforcedx-vscode-apex.java.home",
     "editor.formatOnSave"
   ],
+  "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "underline",
@@ -294,6 +302,7 @@
   "vsicons.projectDetection.autoReload": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.commandCenter": true,
+  "window.nativeTabs": true,
   "window.newWindowDimensions": "inherit",
   "window.openWithoutArgumentsInNewWindow": "off",
   "window.restoreWindows": "none",
@@ -336,14 +345,5 @@
     "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
   ],
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "prettier.configPath": ".prettierrc",
-  "prettier.requireConfig": true,
-  "prettier.useEditorConfig": false,
-  "window.nativeTabs": true,
-  "editor.suggest.showCustomcolors": false,
-  "salesforcedx-vscode-core.telemetry.enabled": false,
-  "gitlens.telemetry.enabled": false,
-  "telemetry.telemetryLevel": "off",
-  "editor.formatOnSave": true
+  "zenMode.hideTabs": false
 }

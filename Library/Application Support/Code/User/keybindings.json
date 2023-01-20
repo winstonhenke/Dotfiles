@@ -13,5 +13,10 @@
   {
     "key": "alt+cmd+b",
     "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.selectAllMatches",
+    "when": "editorFocus && findWidgetVisible"
   }
 ]

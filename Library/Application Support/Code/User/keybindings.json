@@ -1,22 +1,26 @@
 // Place your key bindings in this file to override the defaultsauto[]
+// https://code.visualstudio.com/docs/getstarted/keybindings
+// https://code.visualstudio.com/api/references/when-clause-contexts
+// https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 [
   {
-    "key": "cmd+r",
     "command": "-workbench.action.reloadWindow",
-    "when": "isDevelopment"
-  },
-  {
     "key": "cmd+r",
+    "when": "isDevelopment && isMac"
+  },
+  {
     "command": "workbench.files.action.showActiveFileInExplorer",
-    "when": "editorFocus"
+    "key": "cmd+r",
+    "when": "editorFocus && isMac"
   },
   {
+    "command": "workbench.action.toggleAuxiliaryBar",
     "key": "alt+cmd+b",
-    "command": "workbench.action.toggleAuxiliaryBar"
+    "when": "isMac"
   },
   {
-    "key": "alt+enter",
     "command": "editor.action.selectAllMatches",
-    "when": "editorFocus && findWidgetVisible"
+    "key": "alt+enter",
+    "when": "editorFocus && findWidgetVisible && isMac"
   }
 ]

@@ -44,6 +44,7 @@
   "bookmarks.useWorkaroundForFormatters": true,
   "breadcrumbs.enabled": true,
   "cSpell.allowCompoundWords": true,
+  "cSpell.diagnosticLevel": "Hint",
   "cSpell.enableFiletypes": [
     "!jade",
     "!javascriptreact",
@@ -301,6 +302,7 @@
   "window.restoreWindows": "none",
   "window.title": "${rootName}",
   "workbench.colorCustomizations": {
+    "editorHint.foreground": "#00ff66", // Used by cSpell
     "editorOverviewRuler.addedForeground": "#00000000",
     "editorOverviewRuler.infoForeground": "#00000000",
     "editorOverviewRuler.modifiedForeground": "#00000000",

@@ -15,9 +15,6 @@
     "editor.tabSize": 2,
     "editor.wordWrap": "off"
   },
-  "[powershell]": {
-    "editor.defaultFormatter": "ms-vscode.powershell"
-  },
   "[python]": {
     "editor.defaultFormatter": null,
     "editor.formatOnPaste": false,
@@ -66,21 +63,20 @@
     "xsl"
   ],
   "cSpell.enabled": true,
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "**/**/Code/User/settings.json"
+  ],
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
   "cSpell.userWords": [
-    "cmds",
-    "Gmail",
-    "kubectl",
-    "msbuild",
-    "mssql",
-    "nuget",
-    "nupkg",
-    "openid",
     "SETGO",
-    "SFDC",
-    "SFDX",
-    "TODOs",
+    "TODO",
     "whenke",
     "winstonhenke"
   ],
@@ -94,6 +90,7 @@
   "debug.toolBarLocation": "docked",
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
@@ -120,14 +117,13 @@
   },
   "editor.renderWhitespace": "all",
   "editor.smoothScrolling": true,
-  "editor.suggest.localityBonus": true,
   "editor.suggest.matchOnWordStartOnly": false,
   "editor.suggest.shareSuggestSelections": true,
   "editor.suggest.showColors": false,
   "editor.suggest.showCustomcolors": false,
   "editor.suggest.showStatusBar": true,
   "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.wordBasedSuggestions": true,
   "editor.wrappingIndent": "deepIndent",
@@ -300,7 +296,7 @@
   "typescript.suggest.completeFunctionCalls": true,
   "vsicons.dontShowNewVersionMessage": true,
   "vsicons.projectDetection.autoReload": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "window.commandCenter": true,
   "window.nativeTabs": true,
   "window.newWindowDimensions": "inherit",
@@ -343,6 +339,7 @@
   "xml.server.binary.trustedHashes": [
     "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
   ],
+  "xml.server.vmargs": "-Xmx256M",
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false
 }

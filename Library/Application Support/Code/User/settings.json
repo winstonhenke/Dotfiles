@@ -3,11 +3,18 @@
     "editor.wordWrap": "off"
   },
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.quickSuggestions": {
       "comments": true,
       "other": true,
       "strings": true
     }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -74,12 +81,7 @@
   ],
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
-  "cSpell.userWords": [
-    "SETGO",
-    "TODO",
-    "whenke",
-    "winstonhenke"
-  ],
+  "cSpell.userWords": ["SETGO", "TODO", "whenke", "winstonhenke"],
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
   "debug.internalConsoleOptions": "openOnSessionStart",
@@ -97,7 +99,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": null,
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontSize": 13,
@@ -195,6 +197,7 @@
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
   "powershell.promptToUpdatePowerShell": false,
   "prettier.configPath": ".prettierrc",
+  "prettier.enableDebugLogs": true,
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "python.analysis.completeFunctionParens": true,
@@ -243,10 +246,7 @@
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  "settingsSync.ignoredSettings": [
-    "salesforcedx-vscode-apex.java.home",
-    "editor.formatOnSave"
-  ],
+  "settingsSync.ignoredSettings": ["salesforcedx-vscode-apex.java.home", "editor.formatOnSave"],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
@@ -276,10 +276,7 @@
     "Command Prompt": {
       "args": [],
       "icon": "terminal-cmd",
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ]
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"]
     },
     "Git Bash": {
       "source": "Git Bash"
@@ -336,9 +333,7 @@
   "workbench.tree.renderIndentGuides": "always",
   "xml.codeLens.enabled": true,
   "xml.format.spaceBeforeEmptyCloseTag": false,
-  "xml.server.binary.trustedHashes": [
-    "a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"
-  ],
+  "xml.server.binary.trustedHashes": ["a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"],
   "xml.server.vmargs": "-Xmx256M",
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false

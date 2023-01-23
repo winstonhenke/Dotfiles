@@ -213,7 +213,7 @@
   "python.venvFolders": [
     ".venv",
     "Workspace/SETGO/winston-notes/.venv",
-    "Workspace/SetGo-Projects/.venv",
+    "Workspace/SETGO/Brio-WT/.venv",
     "Workspace/Crypto/.venv",
     "Workspace/Jupyter-Notebook-POC/.venv",
     "Workspace/CryptoTaxes/.venv",

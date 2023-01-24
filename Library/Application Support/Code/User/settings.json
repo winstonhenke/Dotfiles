@@ -201,6 +201,7 @@
   "prettier.enableDebugLogs": true,
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
+  "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.experiments.enabled": false,

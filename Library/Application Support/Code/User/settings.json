@@ -314,6 +314,7 @@
     "minimap.selectionOccurrenceHighlight": "#00000000",
     "minimap.warningHighlight": "#00000000"
   },
+  "workbench.colorTheme": "Default Dark+ Experimental",
   "workbench.editor.decorations.badges": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.perEditorGroup": true,

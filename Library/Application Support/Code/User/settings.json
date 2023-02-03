@@ -99,7 +99,7 @@
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": null,
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",

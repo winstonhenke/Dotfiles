@@ -60,6 +60,9 @@ Commands: <https://docs.brew.sh/>
 
 ## NPM Notes
 
+- `npm ls` - List installed packages
+- `npm outdated` - Check for outdated packages
+- `npm update` - Update a package
 - `npm install -g @angular/cli`
 
 Globally installed NPM packages: `npm list -g --depth 0`

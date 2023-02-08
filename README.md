@@ -69,8 +69,8 @@ Globally installed NPM packages: `npm list -g --depth 0`
 
 ```bash
 /usr/local/lib
-├── @angular/cli@15.1.1
-└── npm@9.2.0
+├── @angular/cli@15.1.4
+└── npm@9.4.2
 ```
 
 ---

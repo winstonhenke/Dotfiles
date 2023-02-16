@@ -15,7 +15,7 @@ export JAVA_17_HOME="/usr/local/opt/openjdk@17"
 export JAVA_HOME="$JAVA_17_HOME"
 
 #Set PATH var. Keep /usr/local/bin at the front so Brew packages take precedent
-export PATH="/usr/local/bin:${PATH}:$HOME/.bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}:$HOME/.bin:$JAVA_HOME/bin:/usr/local/bin/aws_completer:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 #Ansi colors in iTerm2
 export CLICOLOR=1
@@ -93,7 +93,7 @@ if ! shopt -oq posix; then
 fi
 
 # Default Python venv
-load_script "$HOME"'/.venv/default/bin/activate'
+# load_script "$HOME"'/.venv/default/bin/activate'
 
 # Docker
 # Docker Bash Completion - MacOS - Installed using .dmg from docker.com

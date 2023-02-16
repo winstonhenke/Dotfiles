@@ -36,6 +36,7 @@ Once setup use the `dot` alias from your home directory
 Commands: <https://docs.brew.sh/>
 
 - `brew help`
+- `brew --prefix` - Display Homebrew’s install path
 - `brew deps --tree --installed`
 - `brew update` - Update all package definitions (formulae) and Homebrew itself
 - `brew outdated`- List which of your installed packages (kegs) are outdated

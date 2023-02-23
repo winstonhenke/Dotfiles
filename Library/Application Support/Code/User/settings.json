@@ -102,7 +102,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultFormatter": null,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontSize": 13,

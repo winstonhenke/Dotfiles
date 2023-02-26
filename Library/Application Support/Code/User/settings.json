@@ -143,8 +143,6 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.code-workspace": "jsonc",
-    "*.json": "json",
-    "*.md": "markdown",
     "*.resbackup": "json"
   },
   "files.autoGuessEncoding": true,

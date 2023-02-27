@@ -38,6 +38,9 @@
       "strings": true
     }
   },
+  "[visualforce]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -198,6 +201,7 @@
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
   "powershell.promptToUpdatePowerShell": false,
   "prettier.configPath": ".prettierrc",
+  "prettier.documentSelectors": ["**/*.page", "**/*.component", "**/*.cmp"],
   "prettier.enableDebugLogs": true,
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,

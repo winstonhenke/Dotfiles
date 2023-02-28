@@ -219,6 +219,7 @@
     ".venv",
     "Workspace/SETGO/winston-notes/.venv",
     "Workspace/SETGO/Brio-WT/.venv",
+    "Workspace/SETGO/data-loader/.venv",
     "Workspace/Crypto/.venv",
     "Workspace/Docs/.venv",
     "Workspace/Jupyter-Notebook-POC/.venv",

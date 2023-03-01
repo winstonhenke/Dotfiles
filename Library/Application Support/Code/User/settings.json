@@ -187,6 +187,7 @@
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.suggest.paths.includeWorkspaceHeaderCompletions": "onSingleOrDoubleHash",
   "markdownlint.focusMode": 2,
   "markdownlint.run": "onSave",
   "notebook.cellToolbarLocation": {

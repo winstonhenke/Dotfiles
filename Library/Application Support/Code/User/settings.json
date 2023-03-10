@@ -330,7 +330,6 @@
   "workbench.editor.sharedViewState": true,
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.untitled.labelFormat": "name",
-  "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },

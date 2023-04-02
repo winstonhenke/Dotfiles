@@ -1,0 +1,41 @@
+{
+  "title": "Mouse Buttons",
+  "rules": [
+    {
+      "description": "Mouse button4 = Cmd + c",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "c",
+              "modifiers": ["left_command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Mouse button5 = Cmd + v",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "v",
+              "modifiers": ["left_command"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

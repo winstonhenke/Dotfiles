@@ -18,7 +18,7 @@
                 },
                 "rules": [
                     {
-                        "description": "Mouse button4 = Cmd + c",
+                        "description": "Mouse button4 = Cmd + C",
                         "manipulators": [
                             {
                                 "from": {
@@ -38,7 +38,7 @@
                         ]
                     },
                     {
-                        "description": "Mouse button5 = Cmd + v",
+                        "description": "Mouse button5 = Cmd + V",
                         "manipulators": [
                             {
                                 "from": {
@@ -47,6 +47,26 @@
                                 "to": [
                                     {
                                         "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Mouse button6 = Cmd + H",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "pointing_button": "button6"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
                                         "modifiers": [
                                             "left_command"
                                         ],

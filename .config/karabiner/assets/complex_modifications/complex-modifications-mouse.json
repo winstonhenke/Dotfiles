@@ -20,6 +20,33 @@
       ]
     },
     {
+      "description": "Mouse button4 + Shift = Cmd + X",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": ["left_shift"]
+            },
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "x",
+              "modifiers": ["left_command"]
+            }
+          ],
+          "conditions": [
+            {
+              "bundle_identifiers": ["com\\.microsoft\\.VSCode", "com\\.microsoft\\.VSCodeInsiders"],
+              "type": "frontmost_application_if"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Mouse button5 = Cmd + V",
       "manipulators": [
         {

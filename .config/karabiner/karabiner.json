@@ -123,8 +123,8 @@
                         "product_id": 0,
                         "vendor_id": 0
                     },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
@@ -166,7 +166,7 @@
                         "vendor_id": 3141
                     },
                     "ignore": false,
-                    "manipulate_caps_lock_led": true,
+                    "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },

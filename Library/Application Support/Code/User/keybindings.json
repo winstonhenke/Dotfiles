@@ -6,12 +6,12 @@
   {
     "command": "-workbench.action.reloadWindow",
     "key": "cmd+r",
-    "when": "isDevelopment && isMac"
+    "when": "isMac && isDevelopment"
   },
   {
     "command": "workbench.files.action.showActiveFileInExplorer",
     "key": "cmd+r",
-    "when": "editorFocus && isMac"
+    "when": "isMac && editorFocus"
   },
   {
     "command": "workbench.action.toggleAuxiliaryBar",
@@ -21,6 +21,10 @@
   {
     "command": "editor.action.selectAllMatches",
     "key": "alt+enter",
-    "when": "editorFocus && findWidgetVisible && isMac"
+    "when": "isMac && editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "notifications.showList"
   }
 ]

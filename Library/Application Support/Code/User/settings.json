@@ -3,7 +3,7 @@
     "editor.wordWrap": "off"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -230,7 +230,7 @@
     "Workspace/Python/.venv"
   ],
   "redhat.telemetry.enabled": false,
-  "salesforcedx-vscode-apex.java.home": "/usr/local/opt/openjdk@17",
+  "salesforcedx-vscode-apex.java.home": "/opt/homebrew/opt/openjdk@17",
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,
@@ -260,11 +260,13 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.profiles.osx": {
     "bash": {
+      "args": ["-l"],
       "icon": "terminal-bash",
-      "path": "bash"
+      "path": "/opt/homebrew/bin/bash"
     },
     "fish": {
       "path": "fish"

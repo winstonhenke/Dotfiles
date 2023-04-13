@@ -169,6 +169,7 @@
   "git.untrackedChanges": "separate",
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.defaultMergeMethod": "rebase",
+  "githubPullRequests.fileListLayout": "tree",
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.advanced.maxListItems": 0,
   "gitlens.advanced.maxSearchItems": 0,

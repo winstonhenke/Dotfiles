@@ -26,5 +26,14 @@
   {
     "key": "ctrl+shift+n",
     "command": "notifications.showList"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "!editorFocus"
   }
 ]

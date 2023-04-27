@@ -37,10 +37,13 @@ alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 alias ls='ls -alh'
 alias lsalh='ls'
 
-# Better tab completion experience.
+# Display a list of the matching files
 bind 'set show-all-if-ambiguous off' # on - words which have more than one possible completion cause the matches to be listed immediately instead of ringing the bell
 bind 'set completion-ignore-case on'
+# If there are multiple matches for completion, Tab should cycle through them
 bind 'TAB:menu-complete'
+# And Shift-Tab should cycle backwards
+bind '"\e[Z": menu-complete-backward'
 
 ############################# Helper function for stuff below #############################
 load_script () {

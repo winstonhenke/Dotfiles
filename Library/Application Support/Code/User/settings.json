@@ -164,6 +164,7 @@
   "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
   "git.fetchOnPull": true,
+  "git.inputValidation": "off",
   "git.mergeEditor": true,
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",

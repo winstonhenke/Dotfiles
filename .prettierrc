@@ -6,6 +6,14 @@
     {
       "files": "**/.prettierrc",
       "options": { "parser": "json" }
+    },
+    {
+      "files": "**/*.code-workspace",
+      "options": { "parser": "json" }
+    },
+    {
+      "files": "**/*.md",
+      "options": { "parser": "markdown" }
     }
   ]
 }

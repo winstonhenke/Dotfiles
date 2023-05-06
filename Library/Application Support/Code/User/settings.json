@@ -205,7 +205,7 @@
   "powershell.powerShellDefaultVersion": "Windows PowerShell (x86)",
   "powershell.promptToUpdatePowerShell": false,
   "prettier.configPath": ".prettierrc",
-  "prettier.documentSelectors": ["**/*.md", "**/*.page", "**/*.component", "**/*.cmp"],
+  "prettier.documentSelectors": ["**/*.md", "**/*.component", "**/*.cmp"],
   "prettier.enableDebugLogs": true,
   "prettier.prettierPath": "./node_modules/prettier",
   "prettier.requireConfig": true,

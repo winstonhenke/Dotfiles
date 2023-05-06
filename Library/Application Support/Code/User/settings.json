@@ -39,7 +39,9 @@
     }
   },
   "[visualforce]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "salesforce.salesforcedx-vscode-visualforce",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
@@ -100,11 +102,12 @@
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
-  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultColorDecorators": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",
@@ -125,8 +128,7 @@
   },
   "editor.renderWhitespace": "all",
   "editor.smoothScrolling": true,
-  "editor.suggest.matchOnWordStartOnly": false,
-  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.localityBonus": true,
   "editor.suggest.showColors": false,
   "editor.suggest.showCustomcolors": false,
   "editor.suggest.showStatusBar": true,
@@ -154,7 +156,6 @@
     "**/.git": false
   },
   "files.hotExit": "onExitAndWindowClose",
-  "files.maxMemoryForLargeFilesMB": 8192,
   "git-graph.repository.commits.order": "topo",
   "git.allowForcePush": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
@@ -206,6 +207,7 @@
   "prettier.configPath": ".prettierrc",
   "prettier.documentSelectors": ["**/*.md", "**/*.page", "**/*.component", "**/*.cmp"],
   "prettier.enableDebugLogs": true,
+  "prettier.prettierPath": "./node_modules/prettier",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "python.analysis.autoImportCompletions": true,

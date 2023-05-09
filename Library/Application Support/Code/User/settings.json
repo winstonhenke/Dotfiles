@@ -170,6 +170,7 @@
   "git.mergeEditor": true,
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",
+  "github.branchProtection": true,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.fileListLayout": "tree",

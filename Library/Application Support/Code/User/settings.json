@@ -188,6 +188,7 @@
   "gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.completeFunctionCalls": true,
   "jupyter.debugJustMyCode": false,
+  "markdown.preview.breaks": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,

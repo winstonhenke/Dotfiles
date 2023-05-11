@@ -188,8 +188,10 @@
   "gitlens.views.stashes.files.layout": "tree",
   "javascript.suggest.completeFunctionCalls": true,
   "jupyter.debugJustMyCode": false,
+  "markdown.occurrencesHighlight.enabled": true,
   "markdown.preview.breaks": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.preview.markEditorSelection": false,
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
   "markdown.suggest.paths.includeWorkspaceHeaderCompletions": "onSingleOrDoubleHash",
@@ -199,6 +201,7 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
+  "notebook.showFoldingControls": "always",
   "output.smartScroll.enabled": false,
   "powershell.codeFormatting.autoCorrectAliases": true,
   "powershell.codeFormatting.preset": "OTBS",

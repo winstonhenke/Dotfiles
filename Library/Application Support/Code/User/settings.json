@@ -119,7 +119,6 @@
   "editor.hover.delay": 500,
   "editor.inlineSuggest.enabled": false,
   "editor.minimap.maxColumn": 50,
-  "editor.minimap.showSlider": "always",
   "editor.minimap.size": "fill",
   "editor.quickSuggestions": {
     "comments": "on",
@@ -127,6 +126,7 @@
     "strings": "on"
   },
   "editor.renderWhitespace": "all",
+  "editor.selectionHighlight": true,
   "editor.smoothScrolling": true,
   "editor.suggest.localityBonus": true,
   "editor.suggest.showColors": false,
@@ -251,6 +251,7 @@
   "scm.alwaysShowRepositories": true,
   "scm.autoReveal": false,
   "scm.defaultViewMode": "tree",
+  "scm.diffDecorationsGutterAction": "none",
   "scm.providerCountBadge": "visible",
   "scm.repositories.visible": 5,
   "search.exclude": {
@@ -322,16 +323,24 @@
   "window.restoreWindows": "none",
   "window.title": "${rootName}",
   "workbench.colorCustomizations": {
-    "editorHint.foreground": "#00ff66", // Used by cSpell
+    "editorHint.foreground": "#00ff66ff", // Used by cSpell
     "editorOverviewRuler.addedForeground": "#00000000",
+    "editorOverviewRuler.deletedForeground": "#00000000",
+    // findMatchForeground lays on top of selectionHighlightForeground if both are active
+    "editorOverviewRuler.findMatchForeground": "#00ff66",
     "editorOverviewRuler.infoForeground": "#00000000",
     "editorOverviewRuler.modifiedForeground": "#00000000",
+    "editorOverviewRuler.selectionHighlightForeground": "#00ff66", // Works for Apex but not Markdown
     "editorOverviewRuler.warningForeground": "#00000000",
     "minimap.errorHighlight": "#00000000",
     "minimap.findMatchHighlight": "#00000000",
+    "minimap.foregroundOpacity": "#000000ff",
     "minimap.selectionHighlight": "#00000000",
     "minimap.selectionOccurrenceHighlight": "#00000000",
-    "minimap.warningHighlight": "#00000000"
+    "minimap.warningHighlight": "#00000000",
+    "minimapGutter.addedBackground": "#00000000",
+    "minimapGutter.deletedBackground": "#00000000",
+    "minimapGutter.modifiedBackground": "#00000000"
   },
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.decorations.badges": false,

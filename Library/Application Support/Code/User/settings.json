@@ -173,6 +173,7 @@
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.fileListLayout": "tree",
+  "githubPullRequests.pullBranch": "never",
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.advanced.maxListItems": 0,
   "gitlens.advanced.maxSearchItems": 0,
@@ -351,6 +352,7 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.sharedViewState": true,
   "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabSizing": "fixed",
   "workbench.editor.untitled.labelFormat": "name",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -367,6 +369,5 @@
   "xml.server.binary.trustedHashes": ["a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"],
   "xml.server.vmargs": "-Xmx256M",
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "githubPullRequests.pullBranch": "never"
+  "zenMode.hideTabs": false
 }

@@ -90,6 +90,7 @@
   ],
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
+  "cSpell.useGitignore": false,
   "cSpell.userWords": ["SETGO", "TODO", "whenke", "winstonhenke"],
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
@@ -187,6 +188,7 @@
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",
   "gitlens.views.stashes.files.layout": "tree",
+  "hediet.vscode-drawio.resizeImages": null,
   "javascript.suggest.completeFunctionCalls": true,
   "jupyter.debugJustMyCode": false,
   "markdown.occurrencesHighlight.enabled": true,
@@ -352,7 +354,6 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.sharedViewState": true,
   "workbench.editor.tabCloseButton": "left",
-  "workbench.editor.tabSizing": "fixed",
   "workbench.editor.untitled.labelFormat": "name",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"

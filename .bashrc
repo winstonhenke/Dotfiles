@@ -96,6 +96,12 @@ load_script `brew --prefix`"/etc/bash_completion.d/brew"
 # Dotnet Completion
 load_script "$HOME"'/.bash_completion.d/dotnet-completion.bash'
 
+# NPM (Node)
+load_script `brew --prefix`"/etc/bash_completion.d/npm"
+
+# YT-DLP
+load_script `brew --prefix`"/etc/bash_completion.d/yt-dlp"
+
 # SFDX Completion
 # Run: sfdx autocomplete
 # To generate the script below

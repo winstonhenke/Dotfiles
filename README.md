@@ -162,8 +162,8 @@ Commands: <https://docs.brew.sh/>
 - `brew --prefix` - Display Homebrew’s install path
 - Brew deps
   - `brew deps --tree --include-requirements python > ./python.deps.txt` (specific formula)
-  - `brew deps --tree --installed --include-requirements > ./brew.deps.txt`
-  - `brew deps --graph --dot --installed --include-requirements --include-build > ./brew.deps.txt`
+  - `brew deps --tree --installed --include-requirements > ./brew.deps.tree.txt`
+  - `brew deps --graph --dot --installed --include-requirements --include-build > ./brew.deps.graph.txt`
   - `brew deps --graph --installed --include-requirements` - Launches a browser tab
 - `brew update` - Update all package definitions (formulae) and Homebrew itself
 - `brew outdated`- List which of your installed packages (kegs) are outdated

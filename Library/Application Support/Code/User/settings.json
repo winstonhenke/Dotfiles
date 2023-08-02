@@ -102,6 +102,7 @@
   "debug.toolBarLocation": "docked",
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",

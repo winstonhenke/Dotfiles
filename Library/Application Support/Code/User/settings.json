@@ -134,7 +134,7 @@
   "editor.suggest.showCustomcolors": false,
   "editor.suggest.showStatusBar": true,
   "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "first",
+  "editor.suggestSelection": "recentlyUsed",
   "editor.tabSize": 2,
   "editor.wordBasedSuggestions": true,
   "editor.wrappingIndent": "deepIndent",

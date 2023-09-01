@@ -217,7 +217,7 @@
   "prettier.configPath": ".prettierrc",
   "prettier.documentSelectors": ["**/*.md", "**/*.component", "**/*.cmp"],
   "prettier.enableDebugLogs": true,
-  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.prettierPath": "./node_modules/prettier/index.cjs",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "python.analysis.autoImportCompletions": true,

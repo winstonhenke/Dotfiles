@@ -102,10 +102,9 @@ load_script `brew --prefix`"/etc/bash_completion.d/npm"
 # YT-DLP
 load_script `brew --prefix`"/etc/bash_completion.d/yt-dlp"
 
-# SFDX Completion
-# Run: sfdx autocomplete
-# To generate the script below
-load_script "$HOME"'/Library/Caches/sfdx/autocomplete/bash_setup'
+# SF CLI Completion
+# See output from: 'sf autocomplete' for details here
+load_script "$HOME"'/Library/Caches/sf/autocomplete/bash_setup'
 
 # Azure (az) Completion
 # load_script `brew --prefix`"/etc/bash_completion.d/az"

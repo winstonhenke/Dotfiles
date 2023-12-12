@@ -177,6 +177,8 @@
   "gitlens.defaultDateSource": "committed",
   "gitlens.heatmap.toggleMode": "window",
   "gitlens.telemetry.enabled": false,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "gitlens.views.fileHistory.files.layout": "tree",
   "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.repositories.includeWorkingTree": true,
   "gitlens.views.searchAndCompare.files.layout": "tree",

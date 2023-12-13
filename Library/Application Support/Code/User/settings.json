@@ -114,7 +114,6 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.hover.delay": 500,
-  "editor.inlineSuggest.enabled": false,
   "editor.minimap.maxColumn": 50,
   "editor.minimap.size": "fill",
   "editor.quickSuggestions": {
@@ -167,6 +166,9 @@
   "git.mergeEditor": true,
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",
+  "github.copilot.enable": {
+    "markdown": "true"
+  },
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.fileListLayout": "tree",

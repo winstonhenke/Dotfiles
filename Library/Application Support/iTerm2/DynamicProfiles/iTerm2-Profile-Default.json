@@ -2,12 +2,12 @@
   "Profiles": [
     {
       "ASCII Anti Aliased": true,
-      "AWDS Pane Directory": "",
-      "AWDS Pane Option": "No",
-      "AWDS Tab Directory": "",
-      "AWDS Tab Option": "No",
-      "AWDS Window Directory": "",
-      "AWDS Window Option": "No",
+      "AWDS Pane Directory": "~/Downloads",
+      "AWDS Pane Option": "Yes",
+      "AWDS Tab Directory": "~/Downloads",
+      "AWDS Tab Option": "Yes",
+      "AWDS Window Directory": "~/Downloads",
+      "AWDS Window Option": "Yes",
       "Ambiguous Double Width": false,
       "Ansi 0 Color": {
         "Blue Component": 0,
@@ -134,7 +134,7 @@
       },
       "Cursor Type": 0,
       "Custom Command": "No",
-      "Custom Directory": "Yes",
+      "Custom Directory": "Advanced",
       "Default Bookmark": "No",
       "Description": "Default",
       "Disable Window Resizing": true,
@@ -494,7 +494,7 @@
         ]
       },
       "Sync Title": false,
-      "Tags": [],
+      "Tags": ["Dynamic"],
       "Terminal Type": "xterm-256color",
       "Title Components": 256,
       "Transparency": 0,

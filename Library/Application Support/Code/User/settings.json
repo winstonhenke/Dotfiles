@@ -173,6 +173,7 @@
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
+  "gitlens.advanced.fileHistoryShowMergeCommits": true,
   "gitlens.blame.heatmap.location": "left",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,

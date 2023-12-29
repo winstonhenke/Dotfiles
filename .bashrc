@@ -11,7 +11,7 @@ export JAVA_17_HOME="/opt/homebrew/opt/openjdk@17"
 export JAVA_HOME="$JAVA_17_HOME"
 
 # PATH: Keep JAVA_HOME at the front so the HomeBrew package takes precedent
-export PATH="$JAVA_HOME/bin:${PATH}:$HOME/.bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$JAVA_HOME/bin:${PATH}:$HOME/.bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$HOME/Workspace/Docs/Memes/scripts"
 eval "$(/opt/homebrew/bin/brew shellenv)" # Run this after the line above to keep other HomeBrew packages at the top
 
 export CLICOLOR=1 # Ansi colors in iTerm2

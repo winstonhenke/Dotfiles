@@ -235,7 +235,7 @@
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,
   "salesforcedx-vscode-core.telemetry.enabled": false,
-  "salesforcedx-vscode-soql.experimental.validateQueries": true,
+  "salesforcedxxperimental.validateQueries": true,
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
   "scm.autoReveal": false,

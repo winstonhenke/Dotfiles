@@ -87,7 +87,7 @@
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
   "cSpell.useGitignore": false,
-  "cSpell.userWords": ["SETGO", "TODO", "whenke", "winstonhenke"],
+  "cSpell.userWords": ["SETGO", "SOQL", "TODO", "whenke", "winstonhenke"],
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
   "debug.internalConsoleOptions": "openOnSessionStart",

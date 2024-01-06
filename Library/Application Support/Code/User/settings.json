@@ -1,4 +1,5 @@
 {
+  // cSpell:ignore esbenp, salesforcedx, salesforcedxxperimental, pylance, venvfolders, .venv, vsicons, ipynb, vmargs
   "[Log]": {
     "editor.wordWrap": "off"
   },
@@ -38,11 +39,6 @@
       "strings": true
     }
   },
-  "[visualforce]": {
-    "editor.defaultFormatter": "salesforce.salesforcedx-vscode-visualforce",
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false
-  },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -50,6 +46,7 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.enableFiletypes": [
+    "*",
     "!jade",
     "!javascriptreact",
     "!latex",
@@ -61,33 +58,21 @@
     "!scala",
     "!scss",
     "!typescriptreact",
-    "!xml",
-    "apex",
-    "bat",
-    "dockerfile",
-    "git-rebase",
-    "makefile",
-    "powershell",
-    "properties",
-    "shellscript",
-    "sql",
-    "terraform",
-    "xsl"
+    "!xml"
   ],
   "cSpell.enabled": true,
   "cSpell.ignorePaths": [
     "package-lock.json",
     "node_modules",
     "vscode-extension",
-    ".git/objects",
+    ".git",
     ".vscode",
-    ".vscode-insiders",
-    "**/**/Code/User/settings.json"
+    ".vscode-insiders"
   ],
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
   "cSpell.useGitignore": false,
-  "cSpell.userWords": ["SETGO", "SOQL", "TODO", "whenke", "winstonhenke"],
+  "cSpell.userWords": ["SETGO", "SFDC", "SOQL", "TODO", "whenke", "winstonhenke"],
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,
   "debug.internalConsoleOptions": "openOnSessionStart",
@@ -256,7 +241,6 @@
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  "settingsSync.ignoredSettings": ["salesforcedx-vscode-apex.java.home", "editor.formatOnSave"],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,

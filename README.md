@@ -6,13 +6,11 @@ What it does
 - Uses an alias so that Git commands run against the repo but files are tracked from `$HOME`
 - Eliminates the need for symbolic links like I was using before
 
-Referenced these two guides
+Referenced these guides
 
 - [What do you use to manage dotfiles?](https://news.ycombinator.com/item?id=11071754)
 - [The best way to store your dotfiles: A bare Git repository](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 - [This guy's got some cool stuff: mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
-
----
 
 ## Usage
 
@@ -22,8 +20,6 @@ Once setup use the `dot` alias from your home directory
 - `dot add -u` (you do not want to run add all)
 - `dot ls-files` - List all files being tracked
 - See `alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'` in `.bashrc`
-
----
 
 ## Setup
 
@@ -45,8 +41,6 @@ Created a `dot` alias in `$HOME/.bashrc`
   dot remote add origin https://github.com/winstonhenke/Dotfiles.git
   dot push origin master
   ```
-
----
 
 ### Setup New Rig
 
@@ -76,20 +70,16 @@ Pull Dotfiles
   - Only had one line: `gitdir: /Users/whenke/.dotgit`
   - This was why iTerm was showing the `(master)` git repo as part of PS1 when in folders that were not repos
 
----
-
 Install Brew
 
 - Install Brew: <https://brew.sh/>
 - Install Brewfile: `brew bundle --file $HOME/.brew/Brewfile`
 
----
-
 Update Default Shell
 
 - After installing `bash` with `brew` make sure to update `/etc/shells` with the path to the HomeBrew version of `bash`
 - `/etc/shells` has only one true purpose: It lists programs that `chsh` will let you change your shell to
-- Note: Verify the path `/opt/homebrew/bin/bash` is still correct. This changed when moving from my Intel -> M2 MacBook.
+- Note: Verify the path `/opt/homebrew/bin/bash` is still correct. This changed when moving from my Intel -> M2 MacBook
 
 ```bash
 # Update /etc/shells
@@ -115,8 +105,6 @@ bash --version
 which bash
 ```
 
----
-
 Restore Python Virtual Environments
 
 - `~/.bashrc` is also configured to activate the `default` venv
@@ -126,24 +114,6 @@ python3 -m venv ~/.venv/default
 source ~/.venv/default/bin/activate
 pip install -r ~/.venv/default.requirements.txt
 ```
-
----
-
-## Other Notes
-
-### Dot Diffs
-
-Was trying to find a way to view `dot diff` in VS Code but never figured this out. Was messing with the aliases below.
-
-```bash
-# Not sure why this isn't working
-alias dotdiff="GIT_WORK_TREE=$HOME GIT_DIR=$HOME/.dotgit/ && code Dotfiles.code-workspace"
-# Or
-alias dottest="GIT_WORK_TREE=$HOME GIT_DIR=$HOME/.dotgit/"
-code Dotfiles.code-workspace
-```
-
----
 
 ## Package Managers
 

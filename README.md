@@ -158,15 +158,11 @@ Commands: <https://docs.brew.sh/>
   - Useful when something was installed as a depency but when I want it added to the bundle dump
 - `brew bundle dump --force --file ~/.brew/Brewfile` - Write all installed casks/formulae/images/taps into a Brewfile
 
----
-
 ### PiP
 
 - `pip list`
   - `-o, --outdated`
   - `-u, --uptodate`
-
----
 
 ### NPM
 
@@ -182,5 +178,3 @@ Globally installed NPM packages: `npm list -g --depth 0`
 ├── @angular/cli@15.1.4
 └── npm@9.4.2
 ```
-
----

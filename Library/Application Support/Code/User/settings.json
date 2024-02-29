@@ -191,7 +191,8 @@
     "Workspace/CryptoTaxes/.venv",
     "Workspace/RSS/My-RSS/.venv",
     "Workspace/RSS/feedparser/.venv",
-    "Workspace/Python/.venv"
+    "Workspace/Python/.venv",
+    "Workspace/SETGO/setgo-poc2gp/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/opt/homebrew/opt/openjdk@17",

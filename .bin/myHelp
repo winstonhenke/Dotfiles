@@ -11,19 +11,27 @@ ENDCOLOR="\e[0m"
 
 echo -e "${BRIGHT_GREEN}\n#####################\nHakuna Matata\n#####################\n"
 
-# Git
-echo -e "${CYAN}Git..."
+# salesforce cli
+echo -e "${CYAN}sf..."
+echo -e "${YELLOW}sf whatsnew"
+echo -e "   ${MAGENTA}view the current release notes${ENDCOLOR}"
+echo ""
+
+# git
+echo -e "${CYAN}git..."
 echo -e "${YELLOW}git config --list --show-origin${ENDCOLOR}"
 echo ""
 
-# Dotfiles
-echo -e "${CYAN}Dotfiles..."
-echo -e "${YELLOW}dot git status${MAGENTA} - Git status for dotfiles${ENDCOLOR}"
-echo -e "${YELLOW}dot ls-files${MAGENTA} - List all files being tracked${ENDCOLOR}"
+# dotfiles
+echo -e "${CYAN}dotfiles..."
+echo -e "${YELLOW}dot git status"
+echo -e "   ${MAGENTA}git status for dotfiles${ENDCOLOR}"
+echo -e "${YELLOW}dot ls-files"
+echo -e "   ${MAGENTA}list all files being tracked${ENDCOLOR}"
 echo ""
 
-# HomeBrew
-echo -e "${CYAN}HomeBrew..."
+# homebrew
+echo -e "${CYAN}homebrew..."
 echo -e "${YELLOW}brew help${ENDCOLOR}"
 echo -e "${YELLOW}brew list"
 echo -e "${YELLOW}brew list --full-name --verbose${ENDCOLOR}"

@@ -19,6 +19,10 @@ export TERM=xterm-256color
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# salesforce cli environment vars
+export SF_HIDE_RELEASE_NOTES=true
+export SF_HIDE_RELEASE_NOTES_FOOTER=true
+
 # Bash history
 HISTCONTROL=ignoreboth # Don't put duplicate lines or lines starting with space in the history
 HISTSIZE=1000 

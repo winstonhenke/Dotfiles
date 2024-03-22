@@ -27,7 +27,6 @@
     "editor.wordWrap": "off"
   },
   "[python]": {
-    "editor.defaultFormatter": null,
     "editor.formatOnPaste": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4
@@ -191,8 +190,7 @@
     "Workspace/CryptoTaxes/.venv",
     "Workspace/RSS/My-RSS/.venv",
     "Workspace/RSS/feedparser/.venv",
-    "Workspace/Python/.venv",
-    "Workspace/SETGO/setgo-poc2gp/.venv"
+    "Workspace/Python/.venv"
   ],
   "redhat.telemetry.enabled": false,
   "salesforcedx-vscode-apex.java.home": "/opt/homebrew/opt/openjdk@17",

@@ -60,6 +60,7 @@
   "debug.toolBarLocation": "docked",
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingQuotes": "always",
@@ -76,6 +77,7 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.hover.delay": 500,
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 50,
   "editor.minimap.size": "fill",
   "editor.quickSuggestions": {

@@ -308,6 +308,7 @@
   "workbench.list.smoothScrolling": true,
   "workbench.panel.opensMaximized": "never",
   "workbench.sideBar.location": "left",
+  "workbench.tree.enableStickyScroll": false,
   "workbench.tree.expandMode": "doubleClick",
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always",

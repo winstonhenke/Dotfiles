@@ -133,7 +133,7 @@
   "git.mergeEditor": true,
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",
-  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "markdown": "true"
   },
@@ -173,8 +173,7 @@
   "notebook.showFoldingControls": "always",
   "output.smartScroll.enabled": false,
   "prettier.configPath": ".prettierrc",
-  "prettier.documentSelectors": ["**/*.md", "**/*.component", "**/*.cmp"],
-  "prettier.enableDebugLogs": true,
+  "prettier.enableDebugLogs": false,
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "python.analysis.autoImportCompletions": true,

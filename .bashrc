@@ -65,7 +65,7 @@ load_script () {
 ###########################################################################################
 
 # Default Python venv
-load_script "$HOME"'/.venv/default/bin/activate'
+load_script "$HOME"'/.venv/Default/bin/activate'
 
 # Git Prompt
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh

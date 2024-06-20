@@ -42,6 +42,7 @@
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "off",
   "cSpell.allowCompoundWords": true,
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.enableFiletypes": ["*", "!log", "!plaintext"],

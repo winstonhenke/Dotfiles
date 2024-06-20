@@ -295,6 +295,7 @@
   },
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.decorations.badges": false,
+  "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.openPositioning": "last",

@@ -49,6 +49,11 @@ bind 'TAB:menu-complete'
 # And Shift-Tab should cycle backwards
 bind '"\e[Z": menu-complete-backward'
 
+# --disable-warning=ExperimentalWarning
+#     was getting: ExperimentalWarning...Support for loading ES Module in require() is an experimental feature and might change at any time
+#     as was not able to get a local .npmrc project file to suppress these warnings
+export NODE_OPTIONS="--disable-warning=ExperimentalWarning"
+
 ############################# Helper function for stuff below #############################
 load_script () {
   script_path=$1

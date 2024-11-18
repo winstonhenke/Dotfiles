@@ -44,11 +44,15 @@
   "breadcrumbs.enabled": true,
   "cSpell.allowCompoundWords": true,
   "cSpell.diagnosticLevel": "Hint",
-  "cSpell.enableFiletypes": ["*", "!log", "!plaintext"],
   "cSpell.enabled": true,
+  "cSpell.enabledFileTypes": {
+    "*": true,
+    "log": false
+  },
   "cSpell.ignorePaths": [],
   "cSpell.language": "en",
   "cSpell.logLevel": "Warning",
+  "cSpell.useCustomDecorations": false,
   "cSpell.useGitignore": false,
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,

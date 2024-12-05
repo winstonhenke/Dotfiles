@@ -40,5 +40,10 @@
     "key": "f2",
     "command": "git.openFile",
     "when": "isInDiffEditor"
+  },
+  {
+    "key": "shift+cmd+L",
+    "command": "addCursorsAtSearchResults",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
   }
 ]

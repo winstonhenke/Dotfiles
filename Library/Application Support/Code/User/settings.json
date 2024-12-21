@@ -41,7 +41,6 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "breadcrumbs.enabled": true,
   "cSpell.allowCompoundWords": true,
   "cSpell.diagnosticLevel": "Hint",
   "cSpell.enabled": true,
@@ -49,10 +48,6 @@
     "*": true,
     "log": false
   },
-  "cSpell.ignorePaths": [],
-  "cSpell.language": "en",
-  "cSpell.logLevel": "Warning",
-  "cSpell.useCustomDecorations": false,
   "cSpell.useGitignore": false,
   "debug.console.closeOnEnd": true,
   "debug.console.wordWrap": false,

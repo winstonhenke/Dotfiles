@@ -72,7 +72,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultColorDecorators": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",

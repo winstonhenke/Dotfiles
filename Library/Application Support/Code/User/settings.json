@@ -1,327 +1,80 @@
 {
-  // cSpell:ignore esbenp, salesforcedx, salesforcedxxperimental, pylance, venvfolders, .venv, vsicons, ipynb, vmargs
   "[Log]": {
     "editor.wordWrap": "off"
   },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.quickSuggestions": {
-      "comments": true,
-      "other": true,
-      "strings": true
-    }
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.wordWrap": "off"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
-  "[python]": {
-    "editor.formatOnPaste": false,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4
-  },
-  "[sql]": {
-    "editor.quickSuggestions": {
-      "comments": true,
-      "other": true,
-      "strings": true
-    }
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "cSpell.allowCompoundWords": true,
-  "cSpell.diagnosticLevel": "Hint",
-  "cSpell.enabled": true,
-  "cSpell.enabledFileTypes": {
-    "*": true,
-    "log": false
-  },
-  "cSpell.useGitignore": false,
-  "debug.console.closeOnEnd": true,
-  "debug.console.wordWrap": false,
-  "debug.internalConsoleOptions": "openOnSessionStart",
-  "debug.openDebug": "openOnDebugBreak",
+  "breadcrumbs.enabled": true,
   "debug.openExplorerOnEnd": true,
-  "debug.showBreakpointsInOverviewRuler": true,
-  "debug.showSubSessionsInToolBar": true,
-  "debug.terminal.clearBeforeReusing": true,
   "debug.toolBarLocation": "docked",
-  "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
-  "editor.accessibilitySupport": "off",
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingQuotes": "always",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.copyWithSyntaxHighlighting": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontSize": 13,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "editor.guides.bracketPairs": true,
-  "editor.hover.delay": 500,
-  "editor.inlineSuggest.enabled": false,
-  "editor.lightbulb.enabled": "onCode",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
   "editor.minimap.enabled": false,
-  "editor.minimap.maxColumn": 50,
-  "editor.minimap.size": "fill",
-  "editor.quickSuggestions": {
-    "comments": "on",
-    "other": "on",
-    "strings": "on"
-  },
   "editor.renderWhitespace": "all",
-  "editor.selectionHighlight": true,
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
-  "editor.suggest.localityBonus": true,
-  "editor.suggest.showColors": false,
-  "editor.suggest.showCustomcolors": false,
-  "editor.suggest.showStatusBar": true,
-  "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  "editor.wordBasedSuggestions": "matchingDocuments",
-  "editor.wrappingIndent": "deepIndent",
-  "emmet.optimizeStylesheetParsing": false,
-  "emmet.showSuggestionsAsSnippets": true,
   "explorer.autoReveal": false,
-  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.decorations.colors": false,
   "explorer.openEditors.visible": 20,
-  "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.code-workspace": "jsonc",
-    "*.md": "markdown",
     "*.resbackup": "json"
   },
-  "files.autoGuessEncoding": true,
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/.git": false
   },
   "files.hotExit": "onExitAndWindowClose",
-  "git-graph.repository.commits.order": "topo",
-  "git-graph.repository.commits.showSignatureStatus": true,
   "git.allowForcePush": true,
-  "git.autoRepositoryDetection": "openEditors",
   "git.autoStash": true,
   "git.autofetch": "all",
-  "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
   "git.fetchOnPull": true,
-  "git.inputValidation": true,
   "git.mergeEditor": true,
   "git.openRepositoryInParentFolders": "always",
   "git.rebaseWhenSync": true,
-  "git.repositoryScanMaxDepth": -1,
   "git.untrackedChanges": "separate",
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.enable": {
-    "markdown": "true"
-  },
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.defaultMergeMethod": "rebase",
-  "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.notifications": "pullRequests",
   "githubPullRequests.pullBranch": "never",
-  "gitlens.advanced.fileHistoryShowMergeCommits": true,
-  "gitlens.blame.heatmap.location": "left",
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.defaultDateSource": "committed",
-  "gitlens.heatmap.toggleMode": "window",
-  "gitlens.telemetry.enabled": false,
-  "gitlens.views.commitDetails.files.layout": "tree",
-  "gitlens.views.fileHistory.files.layout": "tree",
-  "gitlens.views.repositories.files.layout": "tree",
-  "gitlens.views.repositories.includeWorkingTree": true,
-  "gitlens.views.searchAndCompare.files.layout": "tree",
-  "gitlens.views.stashes.files.layout": "tree",
-  "javascript.suggest.completeFunctionCalls": true,
-  "markdown.occurrencesHighlight.enabled": true,
-  "markdown.preview.breaks": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
-  "markdown.preview.markEditorSelection": false,
-  "markdown.preview.scrollEditorWithPreview": true,
-  "markdown.preview.scrollPreviewWithEditor": true,
-  "markdown.suggest.paths.includeWorkspaceHeaderCompletions": "onSingleOrDoubleHash",
   "markdown.updateLinksOnFileMove.enabled": "prompt",
-  "markdown.validate.enabled": true,
   "markdownlint.focusMode": 2,
   "markdownlint.run": "onSave",
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "notebook.showFoldingControls": "always",
-  "output.smartScroll.enabled": false,
-  "prettier.configPath": ".prettierrc",
-  "prettier.enableDebugLogs": false,
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.completeFunctionParens": true,
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "python.experiments.enabled": false,
-  "python.languageServer": "Pylance",
-  "python.terminal.activateEnvInCurrentTerminal": true,
-  "python.venvFolders": [
-    ".venv",
-    "Developer/SETGO/winston-notes/.venv",
-    "Developer/SETGO/Brio-WT/.venv",
-    "Developer/SETGO/data-loader/.venv",
-    "Developer/Crypto/.venv",
-    "Developer/Docs/.venv",
-    "Developer/Jupyter-Notebook-POC/.venv",
-    "Developer/CryptoTaxes/.venv",
-    "Developer/RSS/My-RSS/.venv",
-    "Developer/RSS/feedparser/.venv",
-    "Developer/Python/.venv"
-  ],
-  "redhat.telemetry.enabled": false,
-  "salesforcedx-vscode-apex.java.home": "/opt/homebrew/opt/openjdk@17",
-  "salesforcedx-vscode-core.clearOutputTab": true,
-  "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
-  "salesforcedx-vscode-core.show-cli-success-msg": false,
-  "salesforcedx-vscode-core.telemetry.enabled": false,
-  "salesforcedxxperimental.validateQueries": true,
   "scm.alwaysShowRepositories": true,
   "scm.autoReveal": false,
   "scm.defaultViewMode": "tree",
-  "scm.diffDecorationsGutterAction": "none",
-  "scm.providerCountBadge": "auto",
-  "scm.repositories.visible": 5,
-  "scm.showHistoryGraph": false,
-  "scm.showOutgoingChanges": "never",
   "search.exclude": {
-    "**/.git": true
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/node_modules": true
   },
-  "search.quickOpen.history.filterSortOrder": "recency",
-  "search.quickOpen.includeHistory": true,
-  "search.searchEditor.defaultNumberOfContextLines": 2,
-  "search.searchOnType": true,
-  "search.showLineNumbers": true,
-  "search.useReplacePreview": false,
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  "settingsSync.ignoredSettings": ["salesforcedx-vscode-apex.java.home"],
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "underline",
   "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.enablePersistentSessions": false,
-  "terminal.integrated.profiles.osx": {
-    "bash": {
-      "args": ["-l"],
-      "icon": "terminal-bash",
-      "path": "/opt/homebrew/bin/bash"
-    },
-    "fish": {
-      "path": "fish"
-    },
-    "pwsh": {
-      "icon": "terminal-powershell",
-      "path": "pwsh"
-    },
-    "tmux": {
-      "icon": "terminal-tmux",
-      "path": "tmux"
-    },
-    "zsh": {
-      "path": "zsh"
-    }
-  },
-  "terminal.integrated.profiles.windows": {
-    "Command Prompt": {
-      "args": [],
-      "icon": "terminal-cmd",
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"]
-    },
-    "Git Bash": {
-      "source": "Git Bash"
-    },
-    "PowerShell": {
-      "icon": "terminal-powershell",
-      "source": "PowerShell"
-    }
-  },
   "terminal.integrated.smoothScrolling": true,
-  "terminal.integrated.splitCwd": "workspaceRoot",
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.suggest.completeFunctionCalls": true,
-  "vsicons.dontShowNewVersionMessage": true,
-  "vsicons.projectDetection.autoReload": true,
-  "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
   "window.title": "${rootName}",
-  "workbench.colorCustomizations": {
-    "editorHint.foreground": "#00ff66ff", // Used by cSpell
-    "editorOverviewRuler.addedForeground": "#00000000",
-    "editorOverviewRuler.deletedForeground": "#00000000",
-    // findMatchForeground lays on top of selectionHighlightForeground if both are active
-    "editorOverviewRuler.findMatchForeground": "#00ff66",
-    "editorOverviewRuler.infoForeground": "#00000000",
-    "editorOverviewRuler.modifiedForeground": "#00000000",
-    "editorOverviewRuler.selectionHighlightForeground": "#00ff66", // Works for Apex but not Markdown
-    "editorOverviewRuler.warningForeground": "#00000000",
-    "minimap.errorHighlight": "#00000000",
-    "minimap.findMatchHighlight": "#00000000",
-    "minimap.foregroundOpacity": "#000000ff",
-    "minimap.selectionHighlight": "#00000000",
-    "minimap.selectionOccurrenceHighlight": "#00000000",
-    "minimap.warningHighlight": "#00000000",
-    "minimapGutter.addedBackground": "#00000000",
-    "minimapGutter.deletedBackground": "#00000000",
-    "minimapGutter.modifiedBackground": "#00000000"
-  },
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.decorations.badges": false,
-  "workbench.editor.editorActionsLocation": "titleBar",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.openPositioning": "last",
   "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.editor.revealIfOpen": true,
-  "workbench.editor.sharedViewState": true,
   "workbench.editor.tabActionLocation": "left",
-  "workbench.editor.untitled.labelFormat": "name",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.list.smoothScrolling": true,
-  "workbench.panel.opensMaximized": "never",
-  "workbench.sideBar.location": "left",
-  "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.expandMode": "doubleClick",
-  "workbench.tree.indent": 10,
-  "workbench.tree.renderIndentGuides": "always",
-  "xml.codeLens.enabled": true,
-  "xml.format.spaceBeforeEmptyCloseTag": false,
-  "xml.server.binary.trustedHashes": ["a1bf296a5263bc63cca97cb46692d0d523edfe9d2d4e79d5b4d245f57c6c623b"],
-  "xml.server.vmargs": "-Xmx256M",
-  "zenMode.hideLineNumbers": false
+  "workbench.iconTheme": "vscode-icons"
 }

@@ -2,6 +2,12 @@
   "[Log]": {
     "editor.wordWrap": "off"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
@@ -52,6 +58,9 @@
   "markdownlint.run": "onSave",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
+  "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+  "salesforcedx-vscode-core.telemetry.enabled": false,
+  "salesforcedx-vscode-soql.experimental.validateQueries": true,
   "scm.alwaysShowRepositories": true,
   "scm.autoReveal": false,
   "scm.defaultViewMode": "tree",
@@ -69,6 +78,7 @@
   "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.smoothScrolling": true,
+  "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
   "window.title": "${rootName}",
   "workbench.colorTheme": "Default Dark+",

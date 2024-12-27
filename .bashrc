@@ -49,14 +49,6 @@ bind 'TAB:menu-complete'
 # And Shift-Tab should cycle backwards
 bind '"\e[Z": menu-complete-backward'
 
-# was getting the following errors
-#     ExperimentalWarning...Support for loading ES Module in require() is an experimental feature and might change at any time
-#     [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-# so added the following to my .bashrc
-# as was not able to get a local .npmrc project file to suppress these warnings
-# https://nodejs.org/api/cli.html#--disable-warningcode-or-type
-export NODE_OPTIONS="--disable-warning=ExperimentalWarning --disable-warning=DeprecationWarning"
-
 ############################# Helper function for stuff below #############################
 load_script () {
   script_path=$1

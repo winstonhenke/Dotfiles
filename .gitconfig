@@ -12,7 +12,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = Winston Henke
+	name = winston henke
 	email = winston@winstonhenke.com
 [diff]
 	colorMoved = zebra

@@ -6,7 +6,8 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.wordWrap": "off"
   },
   "breadcrumbs.enabled": true,
   "debug.openExplorerOnEnd": true,

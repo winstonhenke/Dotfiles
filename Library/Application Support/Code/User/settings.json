@@ -1,4 +1,7 @@
 {
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -82,6 +85,7 @@
   "window.title": "${rootName}",
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.decorations.badges": false,
+  "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.openPositioning": "last",
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.tabActionLocation": "left",

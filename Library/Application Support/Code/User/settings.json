@@ -68,6 +68,7 @@
   "scm.defaultViewMode": "tree",
   "search.exclude": {
     "**/*.code-search": true,
+    "**/.git": true,
     "**/bower_components": true,
     "**/node_modules": true
   },

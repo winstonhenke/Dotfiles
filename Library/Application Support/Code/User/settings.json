@@ -14,6 +14,10 @@
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.wordWrap": "off"
   },
+  "[python]": {
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace"
+  },
   "breadcrumbs.enabled": true,
   "cSpell.diagnosticLevel": "Hint",
   "debug.console.wordWrap": false,

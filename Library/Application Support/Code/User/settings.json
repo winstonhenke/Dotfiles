@@ -1,5 +1,7 @@
 {
   "[javascript]": {
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json]": {
@@ -13,15 +15,19 @@
     "editor.wordWrap": "off"
   },
   "breadcrumbs.enabled": true,
+  "cSpell.diagnosticLevel": "Hint",
+  "debug.console.wordWrap": false,
   "debug.openExplorerOnEnd": true,
   "debug.toolBarLocation": "docked",
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.copyWithSyntaxHighlighting": false,
   "editor.detectIndentation": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontSize": 13,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
   "editor.formatOnType": false,
+  "editor.inlineSuggest.enabled": false,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.smoothScrolling": true,
@@ -53,12 +59,15 @@
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.notifications": "pullRequests",
   "githubPullRequests.pullBranch": "never",
+  "javascript.format.semicolons": "insert",
+  "javascript.suggest.completeFunctionCalls": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.updateLinksOnFileMove.enabled": "prompt",
   "markdownlint.focusMode": 2,
   "markdownlint.run": "onSave",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
+  "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,
   "salesforcedx-vscode-core.telemetry.enabled": false,
@@ -91,5 +100,6 @@
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.tabActionLocation": "left",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.tree.expandMode": "doubleClick"
+  "workbench.tree.expandMode": "doubleClick",
+  "xml.server.vmargs": "-Xmx1024M"
 }

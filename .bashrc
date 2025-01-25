@@ -1,19 +1,24 @@
-# For MacOS I execute this from .bash_profile. For Linux this will be executed directly.
+# for macos i execute this from .bash_profile. for linux this will be executed directly.
 
-# If not running interactively, don't do anything
+# if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Might have weird encoding issues if this isn't set so just verify it
-if [[ $LANG != "en_US.UTF-8" ]]; then echo "Warning Lang not set to en_US.UTF-8"; fi
+# might have weird encoding issues if this isn't set so just verify it
+if [[ $LANG != "en_US.UTF-8" ]]; then echo "WARNING: Lang not set to en_US.UTF-8"; fi
 
-# Java 17 needed for Salesforce VS Code extension
+# java 17 needed for salesforce vscode extension
 export JAVA_17_HOME="/opt/homebrew/opt/openjdk@17"
 export JAVA_HOME="$JAVA_17_HOME"
 
-# PATH: Keep JAVA_HOME at the front so the HomeBrew package takes precedent
+# keep JAVA_HOME at the front of PATH so the homebrew package takes precedent
 export PATH="$JAVA_HOME/bin:${PATH}:$HOME/.bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$HOME/Developer/docs/memes/scripts"
-eval "$(/opt/homebrew/bin/brew shellenv)" # Run this after the line above to keep other HomeBrew packages at the top
 
+# configure shell environment for homebrew
+# do this after 'export PATH' to keep other homebrew packages at the top
+# this will set $HOMEBREW_PREFIX
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# force_color_prompt=yes
 export CLICOLOR=1 # Ansi colors in iTerm2
 export TERM=xterm-256color
 export VISUAL=vim
@@ -23,95 +28,63 @@ export EDITOR="$VISUAL"
 export SF_HIDE_RELEASE_NOTES=true
 export SF_HIDE_RELEASE_NOTES_FOOTER=true
 
-# Bash history
-HISTCONTROL=ignoreboth # Don't put duplicate lines or lines starting with space in the history
+# hide the following terminal warning
+#   The default interactive shell is now zsh.
+#   To update your account to use zsh, please run chsh -s /bin/zsh
+#   For more details, please visit https://support.apple.com/kb/HT208050
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# bash history
+HISTCONTROL=ignoreboth # don't put duplicate lines or lines starting with space in the history
 HISTSIZE=1000 
 HISTFILESIZE=2000
-shopt -s histappend # Append to the history file, don't overwrite it
+shopt -s histappend # append to the history file, don't overwrite it
 shopt -s checkwinsize # check the window size after each command and, if necessary, update the values of LINES and COLUMNS
 
-# All PROMPT_COMMAND and PS1 configuration
-source "${HOME}/.bash_ps1.sh"
-
 # make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+# [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-#Aliases
+# aliases
 alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+# [a]ll, use a [l]ong listing format, [h]uman-readable (with -l and -s, print sizes like 1K 234M 2G etc.)
 alias ls='ls -alh'
 alias lsalh='ls'
 
-# Display a list of the matching files
+# display a list of the matching files
 bind 'set show-all-if-ambiguous off' # on - words which have more than one possible completion cause the matches to be listed immediately instead of ringing the bell
 bind 'set completion-ignore-case on'
-# If there are multiple matches for completion, Tab should cycle through them
+# if there are multiple matches for completion, Tab should cycle through them
 bind 'TAB:menu-complete'
-# And Shift-Tab should cycle backwards
+# and shift-tab should cycle backwards
 bind '"\e[Z": menu-complete-backward'
 
-############################# Helper function for stuff below #############################
-load_script () {
-  script_path=$1
-  script_real_path=$(realpath $script_path)
-
-  if [[ -r $script_path && -r $(realpath $script_real_path) ]]; then
-    # Some installs symlink their bash completion sripts. So validate the symlink and actual path
-    # Could just source script_real_path here too I guess but most docs just use the symlink ¯\_(ツ)_/¯
-    source $script_path
-  else
-    printf "[~/.bashrc] Issue loading script into .bashrc\n\tscript_path: $script_path\n\tscript_real_path: $script_real_path\n\tVerify the paths are valid and that the current user had read permission on the file"
-  fi
-}
-###########################################################################################
+# ========================= source additional scripts =========================
 
 # Default Python venv
-load_script "$HOME"'/.venv/Default/bin/activate'
+# load_script "$HOME"'/.venv/Default/bin/activate'
 
-# Git Prompt
-# https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
-load_script `brew --prefix`"/etc/bash_completion.d/git-prompt.sh"
-GIT_PS1_SHOWDIRTYSTATE='y'              # Unstaged (*) and staged (+) changes will be shown next to the branch name
-GIT_PS1_SHOWSTASHSTATE='y'              # If something is stashed, then a '$' will be shown next to the branch name.
-GIT_PS1_SHOWUNTRACKEDFILES='y'          # If there're untracked files, then a '%' will be shown next to the branch name.
-# GIT_PS1_SHOWUPSTREAM='auto verbose'   # See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
-# GIT_PS1_STATESEPARATOR=':'            # The separator between the branch name and the above state symbols
-GIT_PS1_SHOWCOLORHINTS='y'              # Colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
+# $(brew --prefix) == $HOMEBREW_PREFIX == /opt/homebrew
+if [ -n "$HOMEBREW_PREFIX" ]; then
+  source $HOMEBREW_PREFIX'/etc/profile.d/bash_completion.sh' # homebrew = bash-completion@2
+  source $HOMEBREW_PREFIX'/etc/bash_completion.d/git-completion.bash'
+  source $HOMEBREW_PREFIX'/etc/bash_completion.d/git-prompt.sh'
+  source $HOMEBREW_PREFIX'/etc/bash_completion.d/gh'
+  source $HOMEBREW_PREFIX'/etc/bash_completion.d/brew'
+  source $HOMEBREW_PREFIX'/etc/bash_completion.d/npm'
+  source $HOMEBREW_PREFIX'/etc/bash_completion.d/yt-dlp'
+  # source $HOMEBREW_PREFIX'/etc/bash_completion.d/dotnet-completion.sh'
+  # source $HOMEBREW_PREFIX'/etc/bash_completion.d/az.sh' # azure (az) cli
 
-##########################################################################################
-###
-### Bash Completion
-###
-### For MacOS this assumes you have installed everything in your Brewfile already.
-### Having issues? Make sure iTerm is running the correct version of Bash (echo $BASH_VERSION)
-### There is a dependency between bash_completion.sh and the version of Bash running and
-### HomeBrew does not automatically set the users default shell after installation.
-###
-##########################################################################################
-
-# Bash Completion
-load_script `brew --prefix`"/etc/profile.d/bash_completion.sh" # MacOS - HomeBrew:bash-completion@2
-
-# Git Completion
-load_script `brew --prefix`"/etc/bash_completion.d/git-completion.bash"
-
-# Brew Completion
-load_script `brew --prefix`"/etc/bash_completion.d/brew"
-
-# Dotnet Completion
-load_script "$HOME"'/.bash_completion.d/dotnet-completion.bash'
-
-# NPM (Node)
-load_script `brew --prefix`"/etc/bash_completion.d/npm"
-
-# YT-DLP
-load_script `brew --prefix`"/etc/bash_completion.d/yt-dlp"
+  # PROMPT_COMMAND and PS1 configuration
+  # has a dependency on git-prompt.sh
+  source "${HOME}/.bash_ps1.sh"
+else
+  echo "to to self from .bashrc, HOMEBREW_PREFIX is not set"
+fi
 
 # SF CLI Completion
 # See output from: 'sf autocomplete' for details here
-load_script "$HOME"'/Library/Caches/sf/autocomplete/bash_setup'
-
-# Azure (az) Completion
-# load_script `brew --prefix`"/etc/bash_completion.d/az"
+# load_script "$HOME"'/Library/Caches/sf/autocomplete/bash_setup'
 
 # AWS CLI Completion
 # aws_completer is installed by default with the CLI tooling.
@@ -127,3 +100,5 @@ load_script "$HOME"'/Library/Caches/sf/autocomplete/bash_setup'
 # Docker Desktop now ships with built in k8s support for a single-node cluster. If I ever want to do local development on a multi-node cluster I'd likely need to install docker-machine
 # #load_script "/Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion"
 # load_script "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion"
+
+# echo $BASH_VERSION

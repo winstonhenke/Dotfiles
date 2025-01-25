@@ -14,10 +14,6 @@
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.wordWrap": "off"
   },
-  "[python]": {
-    "editor.autoClosingBrackets": "beforeWhitespace",
-    "editor.autoClosingQuotes": "beforeWhitespace"
-  },
   "breadcrumbs.enabled": true,
   "cSpell.diagnosticLevel": "Hint",
   "debug.console.wordWrap": false,
@@ -71,6 +67,7 @@
   "markdownlint.run": "onSave",
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
+  "python.analysis.completeFunctionParens": true,
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,

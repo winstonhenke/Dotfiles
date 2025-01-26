@@ -84,7 +84,7 @@ fi
 
 # SF CLI Completion
 # See output from: 'sf autocomplete' for details here
-# load_script "$HOME"'/Library/Caches/sf/autocomplete/bash_setup'
+source $HOME'/Library/Caches/sf/autocomplete/bash_setup'
 
 # AWS CLI Completion
 # aws_completer is installed by default with the CLI tooling.

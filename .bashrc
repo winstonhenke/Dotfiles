@@ -49,6 +49,9 @@ alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 # [a]ll, use a [l]ong listing format, [h]uman-readable (with -l and -s, print sizes like 1K 234M 2G etc.)
 alias ls='ls -alh'
 alias lsalh='ls'
+# sf cli
+alias sfget='sf project retrieve preview --concise'
+alias sfpush='sf project deploy preview --concise'
 
 # display a list of the matching files
 bind 'set show-all-if-ambiguous off' # on - words which have more than one possible completion cause the matches to be listed immediately instead of ringing the bell

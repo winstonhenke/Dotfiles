@@ -101,7 +101,6 @@
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.tabActionLocation": "left",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "none",
   "workbench.tree.expandMode": "doubleClick",
   "xml.server.vmargs": "-Xmx1024M"
 }

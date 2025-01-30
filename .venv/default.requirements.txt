@@ -17,7 +17,7 @@ pylint==3.1.0
 python-dateutil==2.9.0.post0
 pytz==2024.1
 regex==2023.12.25
-requests==2.31.0
+requests==2.32.2
 six==1.16.0
 snowballstemmer==2.2.0
 tomli==2.0.1

@@ -35,8 +35,11 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
   "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
   "explorer.openEditors.visible": 20,
   "files.associations": {
     "*.code-workspace": "json"
@@ -46,9 +49,10 @@
     "**/.git": false
   },
   "files.hotExit": "onExitAndWindowClose",
+  "git-graph.commitDetailsView.fileView.fileTree.compactFolders": false,
   "git.allowForcePush": true,
-  "git.autoStash": true,
   "git.autofetch": "all",
+  "git.autoStash": true,
   "git.confirmSync": false,
   "git.fetchOnPull": true,
   "git.mergeEditor": true,
@@ -77,8 +81,8 @@
   "scm.autoReveal": false,
   "scm.defaultViewMode": "tree",
   "search.exclude": {
-    "**/*.code-search": true,
     "**/.git": true,
+    "**/*.code-search": true,
     "**/bower_components": true,
     "**/node_modules": true
   },

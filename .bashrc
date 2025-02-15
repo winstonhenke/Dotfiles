@@ -36,7 +36,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # bash history
 HISTCONTROL=ignoreboth # don't put duplicate lines or lines starting with space in the history
-HISTSIZE=1000 
+HISTSIZE=1000
 HISTFILESIZE=2000
 shopt -s histappend # append to the history file, don't overwrite it
 shopt -s checkwinsize # check the window size after each command and, if necessary, update the values of LINES and COLUMNS
@@ -50,7 +50,8 @@ alias dot='git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 alias ls='ls -alh'
 alias lsalh='ls'
 # sf cli
-alias sfget='sf project retrieve preview --concise'
+alias sforg='sf org list --all'
+alias sfpull='sf project retrieve preview --concise'
 alias sfpush='sf project deploy preview --concise'
 
 # display a list of the matching files
@@ -63,7 +64,7 @@ bind '"\e[Z": menu-complete-backward'
 
 # ========================= source additional scripts =========================
 
-# Default Python venv
+# default python venv
 # load_script "$HOME"'/.venv/Default/bin/activate'
 
 # $(brew --prefix) == $HOMEBREW_PREFIX == /opt/homebrew
@@ -75,6 +76,7 @@ if [ -n "$HOMEBREW_PREFIX" ]; then
   source $HOMEBREW_PREFIX'/etc/bash_completion.d/brew'
   source $HOMEBREW_PREFIX'/etc/bash_completion.d/npm'
   source $HOMEBREW_PREFIX'/etc/bash_completion.d/yt-dlp'
+
   # source $HOMEBREW_PREFIX'/etc/bash_completion.d/dotnet-completion.sh'
   # source $HOMEBREW_PREFIX'/etc/bash_completion.d/az.sh' # azure (az) cli
 
@@ -82,7 +84,7 @@ if [ -n "$HOMEBREW_PREFIX" ]; then
   # has a dependency on git-prompt.sh
   source "${HOME}/.bash_ps1.sh"
 else
-  echo "to to self from .bashrc, HOMEBREW_PREFIX is not set"
+  echo "note to self from .bashrc, HOMEBREW_PREFIX is not set"
 fi
 
 # SF CLI Completion

@@ -29,7 +29,7 @@ __prompt_command ()
     # (alias) /opt/homebrew/etc/bash_completion.d/git-prompt.sh
     # see script docs for differences between 0-3 arguments
     gitPS1=$(__git_ps1)
-    PS1='${PS1_MAGENTA}\@ ${PS1_GREEN}\u${DEFAULT}@${PS1_CYAN}\h${DEFAULT}:${PS1_YELLOW}\w${DEFAULT}'$gitPS1'\n${python_venv_color}${python_venv}${DEFAULT}\$ '
+    PS1="${PS1_MAGENTA}\@ ${PS1_GREEN}\u${DEFAULT}@${PS1_CYAN}\h${DEFAULT}:${PS1_YELLOW}\w${DEFAULT}"$gitPS1"\n${python_venv_color}${python_venv}${DEFAULT}\$ "
   else
     echo "Warning from .bashrc - Bash function __git_ps1 not found. This is usually installed with Git along side the bash-git-completion script"
   fi
@@ -39,7 +39,7 @@ __prompt_command ()
 GIT_PS1_SHOWDIRTYSTATE='y'              # Unstaged (*) and staged (+) changes will be shown next to the branch name
 GIT_PS1_SHOWSTASHSTATE='y'              # If something is stashed, then a '$' will be shown next to the branch name.
 GIT_PS1_SHOWUNTRACKEDFILES='y'          # If there're untracked files, then a '%' will be shown next to the branch name.
-# GIT_PS1_SHOWUPSTREAM='auto verbose'   # See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
+GIT_PS1_SHOWUPSTREAM='auto verbose'     # See the difference between HEAD and its upstream and show number of commits ahead/behind (+/-) upstream.
 GIT_PS1_STATESEPARATOR=':'              # The separator between the branch name and the above state symbols
 GIT_PS1_SHOWCOLORHINTS='y'              # Colored hint about the current dirty state.The colors are based on the·colored·output·of·"git·status·-sb"
 
@@ -53,23 +53,20 @@ GIT_PS1_SHOWCOLORHINTS='y'              # Colored hint about the current dirty s
 # SGR: 0 = reset or normal   |   SGR: 1 = bold
 # the second number is the the color(always followed by an 'm')
 # foreground ranges from: 30-37 and 90-97. background ranges from: 40-47 and 100-107
-THE_GREAT_ESCAPE=$(printf "\e")
-# colors
-DEFAULT="$THE_GREAT_ESCAPE[0;39m"
-PS1_MAGENTA="$THE_GREAT_ESCAPE[0;35m"
-PS1_GREEN="$THE_GREAT_ESCAPE[0;32m"
-PS1_CYAN="$THE_GREAT_ESCAPE[0;36m"
-PS1_YELLOW="$THE_GREAT_ESCAPE[0;33m"
-PS1_RED="$THE_GREAT_ESCAPE[0;31m"
-PS1_BLUE="$THE_GREAT_ESCAPE[0;34m"
-PS1_WHITE="$THE_GREAT_ESCAPE[0;37m"
-# bright colors
-PS1_BRIGHT_GREEN="$THE_GREAT_ESCAPE[0;92m"
-PS1_BRIGHT_YELLOW="$THE_GREAT_ESCAPE[0;93m"
-PS1_BRIGHT_MAGENTA="$THE_GREAT_ESCAPE[0;95m"
-PS1_BRIGHT_CYAN="$THE_GREAT_ESCAPE[0;96m"
+DEFAULT="\[\e[0;39m\]"
+PS1_MAGENTA="\[\e[0;35m\]"
+PS1_GREEN="\[\e[0;32m\]"
+PS1_CYAN="\[\e[0;36m\]"
+PS1_YELLOW="\[\e[0;33m\]"
+PS1_RED="\[\e[0;31m\]"
+PS1_BLUE="\[\e[0;34m\]"
+PS1_WHITE="\[\e[0;37m\]"
+PS1_BRIGHT_GREEN="\[\e[0;92m\]"
+PS1_BRIGHT_YELLOW="\[\e[0;93m\]"
+PS1_BRIGHT_MAGENTA="\[\e[0;95m\]"
+PS1_BRIGHT_CYAN="\[\e[0;96m\]"
 
-#Unicode·symbols·used·in·PS1
+# unicode symbols used in PS1
 PS1_HOME_ICON=$'\u2302' #·Don't name this HOME, that's a global variable
 
 # bash provides an environment variable called PROMPT_COMMAND

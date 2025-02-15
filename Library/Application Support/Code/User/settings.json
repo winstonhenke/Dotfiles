@@ -62,6 +62,9 @@
   "git.openRepositoryInParentFolders": "always",
   "git.rebaseWhenSync": true,
   "git.untrackedChanges": "separate",
+  "github.copilot.enable": {
+    "markdown": true
+  },
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.notifications": "pullRequests",

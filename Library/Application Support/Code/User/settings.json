@@ -79,6 +79,7 @@
   "prettier.useEditorConfig": false,
   "python.analysis.completeFunctionParens": true,
   "python.analysis.supportDocstringTemplate": true,
+  "python.experiments.enabled": false,
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
   "salesforcedx-vscode-core.show-cli-success-msg": false,

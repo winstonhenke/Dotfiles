@@ -58,6 +58,9 @@
   "git.autoStash": true,
   "git.confirmSync": false,
   "git.fetchOnPull": true,
+  "git.ignoredRepositories": [
+    "/opt/homebrew"
+  ],
   "git.mergeEditor": true,
   "git.openRepositoryInParentFolders": "always",
   "git.rebaseWhenSync": true,
@@ -78,7 +81,9 @@
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
   "python.analysis.completeFunctionParens": true,
+  "python.analysis.languageServerMode": "full",
   "python.analysis.supportDocstringTemplate": true,
+  "python.defaultInterpreterPath": "",
   "python.experiments.enabled": false,
   "salesforcedx-vscode-core.clearOutputTab": true,
   "salesforcedx-vscode-core.retrieve-test-code-coverage": true,

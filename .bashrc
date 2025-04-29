@@ -11,7 +11,7 @@ export JAVA_17_HOME="/opt/homebrew/opt/openjdk@17"
 export JAVA_HOME="$JAVA_17_HOME"
 
 # keep JAVA_HOME at the front of PATH so the homebrew package takes precedent
-export PATH="$JAVA_HOME/bin:${PATH}:$HOME/.bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$JAVA_HOME/bin:${PATH}:$HOME/.bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$HOME/Developer/docs/bin"
 
 # configure shell environment for homebrew
 # do this after 'export PATH' to keep other homebrew packages at the top

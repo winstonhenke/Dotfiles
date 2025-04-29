@@ -18,6 +18,7 @@
     "editor.wordWrap": "off"
   },
   "breadcrumbs.enabled": true,
+  "codeAnalyzer.enableV5": true,
   "cSpell.diagnosticLevel": "Hint",
   "debug.console.wordWrap": false,
   "debug.openExplorerOnEnd": true,
@@ -72,6 +73,16 @@
   "githubPullRequests.defaultMergeMethod": "rebase",
   "githubPullRequests.notifications": "pullRequests",
   "githubPullRequests.pullBranch": "never",
+  "gitlens.ai.generateCommitMessage.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.views.scm.grouped.hiddenViews": {
+    "repositories": false
+  },
+  "gitlens.views.scm.grouped.views": {
+    "launchpad": true,
+    "repositories": true,
+    "searchAndCompare": true
+  },
   "javascript.format.semicolons": "insert",
   "javascript.suggest.completeFunctionCalls": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
@@ -118,6 +129,7 @@
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.tabActionLocation": "left",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.tree.enableStickyScroll": false,
   "workbench.tree.expandMode": "doubleClick",
   "xml.server.vmargs": "-Xmx1024M"
 }

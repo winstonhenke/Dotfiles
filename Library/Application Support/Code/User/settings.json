@@ -105,6 +105,7 @@
   "salesforcedx-vscode-soql.experimental.validateQueries": true,
   "scm.alwaysShowRepositories": true,
   "scm.autoReveal": false,
+  "scm.compactFolders": false,
   "scm.defaultViewMode": "tree",
   "search.exclude": {
     "**/.git": true,
